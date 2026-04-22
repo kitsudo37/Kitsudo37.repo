@@ -1,0 +1,12 @@
+{
+    "class": "FeaturedBannersView",
+    "itemSize": "{260, 145}",
+    "itemCornerRadius": 10,
+    "banners": [
+        {
+            "title": "K37 Repository",
+            "package": "com.k37.lunartimebar",
+            "url": "https://k37ios.pages.dev/banner/banner.png"
+        }
+    ]
+}
