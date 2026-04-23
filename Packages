@@ -1,36 +1,38 @@
 Package: com.k37.lunartimebar
-Version: 1.2
+Version: 1.4
 Architecture: iphoneos-arm64
 Maintainer: Kitsudo
 Installed-Size: 356
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
-Filename: ./debs/com.k37.lunartimebar_1.2_iphoneos-arm64.deb
-Size: 20204
-MD5sum: aeb54bea8a1a97826e810662deeafd96
-SHA1: a1ae6e48181616f23281aaaf3e88cf2e708ecc27
-SHA256: 7911c6af621bee3580ae4cb6b6d6e92be1dd3d3bd55f2ceeb0a77cb55b802b9b
+Filename: ./debs/com.k37.lunartimebar_1.4_iphoneos-arm64.deb
+Size: 20908
+MD5sum: 37f4b87fe59366a9341e3fc279866f6d
+SHA1: 879a405e3218d99dc3d2c3f8ef1292ef1bf7b4a7
+SHA256: 687f5f422c0d91289d570307026b50071e0b97e512a5bebc9d79407ba5c17cc8
 Section: Tweaks
-Description: Hiển thị thứ ngày âm dương lịch trên thanh trạng thái.
+Description: Hiển thị thứ, ngày/tháng âm dương trên thanh trạng thái.
 Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/LunartimeBar.html
 Icon: https://k37ios.pages.dev/assets/LunartimeBar.png
 Name: Lunartime Bar
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/LunartimeBar.json
 
 Package: com.k37.lunartimebar
-Version: 1.2
+Version: 1.4
 Architecture: iphoneos-arm64e
 Maintainer: Kitsudo
 Installed-Size: 356
 Pre-Depends: rootless-compat(>= 0.9)
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
-Filename: ./debs/com.k37.lunartimebar_1.2_iphoneos-arm64e.deb
-Size: 21540
-MD5sum: 7acb33b55c416f3fdfa9420178b8ec05
-SHA1: 7e79a1a4757573cee7b808430228d4a435dcae8a
-SHA256: 0f3d105072414df532fe0e297553d3a93a4cc6407d78e249fcce87733e26c931
+Filename: ./debs/com.k37.lunartimebar_1.4_iphoneos-arm64e.deb
+Size: 22176
+MD5sum: 024039a90b86df83c247d213243271d9
+SHA1: acf08f1b8e3e3244aae7a455b53b9464dd094458
+SHA256: eeb6ed800fb1f176755fb60ee40c4fc204b6884ca6926f948c83f30fbea65bb3
 Section: Tweaks
-Description: Hiển thị thứ ngày âm dương lịch trên thanh trạng thái.
+Description: Hiển thị thứ, ngày/tháng âm dương trên thanh trạng thái.
 Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/LunartimeBar.html
 Icon: https://k37ios.pages.dev/assets/LunartimeBar.png
 Name: Lunartime Bar
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/LunartimeBar.json

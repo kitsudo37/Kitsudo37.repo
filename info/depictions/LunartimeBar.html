@@ -1,102 +1,102 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<title>LunarTime Bar - K37 Repo</title>
-<style>
-:root { --tint-color: #339999; }
-body { font-family: -apple-system, sans-serif; background-color: #efeff4; margin: 0; color: #000; -webkit-text-size-adjust: 100%; }
-@media (prefers-color-scheme: dark) {
-body { background-color: #000; color: #fff; }
-.card { background-color: #1c1c1e !important; }
-.separator { background-color: #38383a !important; }
-.text-muted { color: #8e8e93 !important; }
-}
-.banner { width: 100%; display: block; margin-bottom: 20px; }
-.container { padding: 0 16px 40px 16px; }
-.card { background: #fff; border-radius: 12px; overflow: hidden; margin-bottom: 20px; }
-.btn { display: block; background: var(--tint-color); color: #fff; text-decoration: none; text-align: center; padding: 14px; border-radius: 12px; font-weight: 600; margin-bottom: 10px; transition: opacity 0.2s; }
-.btn:active { opacity: 0.7; }
-.table-row { display: flex; justify-content: space-between; padding: 12px 16px; align-items: center; }
-.separator { height: 1px; background-color: #e5e5ea; margin-left: 16px; }
-.header-title { font-size: 13px; color: #8e8e93; text-transform: uppercase; margin: 0 0 8px 16px; }
-/* Chỗ này giúp ảnh ra giữa nè */
-.screenshot-container { display: flex; justify-content: center; overflow-x: auto; gap: 10px; margin-bottom: 20px; padding-bottom: 5px; }
-.screenshot-container img { width: 250px; border-radius: 10px; border: 1px solid #38383a; }
-.description { padding: 16px; line-height: 1.5; font-size: 15px; }
-.footer { text-align: center; margin-top: 30px; }
-.footer img { width: 40px; height: 40px; border-radius: 8px; margin-bottom: 8px; }
-.text-muted { color: #666; font-size: 14px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>K37 Repo - Depiction</title>
+    <style>
+        :root { --tint: #4facfe; --bg: #f2f2f7; --card: #ffffff; --sub: #8e8e93; --sep: #c6c6c8; }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding-bottom: 30px; -webkit-tap-highlight-color: transparent; }
+        .banner { width: 100%; display: block; }
+        .tabs { display: flex; background: var(--card); border-bottom: 1px solid var(--sep); position: sticky; top: 0; z-index: 10; }
+        .tab { flex: 1; padding: 12px; border: none; background: none; font-weight: 600; color: var(--sub); font-size: 14px; }
+        .tab.active { color: var(--tint); border-bottom: 2px solid var(--tint); }
+        .content { padding: 16px; display: none; }
+        .content.active { display: block; }
+        .box { background: var(--card); padding: 15px; border-radius: 12px; margin-bottom: 15px; font-size: 15px; }
+        .title { font-size: 20px; font-weight: 800; margin: 10px 0; }
+        .screenshots { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px; scroll-snap-type: x mandatory; }
+        .screenshots img { width: 240px; border-radius: 12px; border: 1px solid #ddd; flex-shrink: 0; scroll-snap-align: start; }
+        .row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 0.5px solid #eee; }
+        .row:last-child { border-bottom: none; }
+        .btn-table { display: block; padding: 12px 0; color: var(--tint); text-decoration: none; font-weight: 500; border-bottom: 0.5px solid #eee; }
+        .btn-table:last-child { border-bottom: none; }
+        .footer { text-align: center; margin-top: 20px; color: var(--sub); font-size: 12px; }
+        .log-v { font-weight: 700; margin-top: 15px; margin-bottom: 5px; }
+    </style>
 </head>
 <body>
-<img src="https://k37ios.pages.dev/banner/banner.png" class="banner" alt="Banner">
-<div class="container">
-<a href="https://t.me/jtisvietnamrepo" class="btn">Tham gia nhóm chat Telegram</a>
-<div class="card">
-<div class="table-row" onclick="window.location='https://t.me/jtisvn'">
-<span>Kênh thông báo</span>
-<span class="text-muted">›</span>
-</div>
-<div class="separator"></div>
-<div class="table-row" onclick="window.location='https://www.facebook.com/share/g/16wCy2KW8K/?mibextid=K35XfP'">
-<span>Nhóm Facebook</span>
-<span class="text-muted">›</span>
-</div>
-</div>
-<h2 class="header-title" style="text-align: center; margin-left: 0;">Ảnh chụp màn hình</h2>
-<div class="screenshot-container">
-<img src="https://k37ios.pages.dev/info/Screenshots/LunartimeBar/1.png" alt="Screenshot 1">
-</div>
-<h2 class="header-title">Mô tả</h2>
-<div class="card">
-<div class="description">
-<b style="font-size: 18px;">LunarTime Bar</b><br><br>
-• Thêm hiển thị thứ, ngày Dương/Âm lịch lên góc trái Thanh trạng thái cho các thiết bị tai thỏ.
-</div>
-</div>
-<h2 class="header-title">Thông tin</h2>
-<div class="card">
-<div class="table-row">
-<span>Tác giả</span>
-<span class="text-muted">Kitsudo</span>
-</div>
-<div class="separator"></div>
-<div class="table-row">
-<span>Phiên bản</span>
-<span class="text-muted">1.0</span>
-</div>
-<div class="separator"></div>
-<div class="table-row">
-<span>Thể loại</span>
-<span class="text-muted">Tweaks</span>
-</div>
-<div class="separator"></div>
-<div class="table-row">
-<span>Kích thước</span>
-<span class="text-muted">1 MB</span>
-</div>
-<div class="separator"></div>
-<div class="table-row">
-<span>Tương thích</span>
-<span class="text-muted">14.0 - 16.7.x</span>
-</div>
-</div>
-<h2 class="header-title">Liên kết & Hỗ trợ</h2>
-<div class="card">
-<div class="table-row" onclick="window.location='https://t.me/Kitsudo'">
-<span style="color: var(--tint-color);">Liên hệ Admin</span>
-</div>
-<div class="separator"></div>
-<div class="table-row" onclick="window.location='https://jtisvn.github.io/homepage/donate/donate.html'">
-<span style="color: var(--tint-color);">Ủng hộ tôi</span>
-</div>
-</div>
-<div class="footer">
-<img src="https://k37ios.pages.dev/CydiaIcon.png" alt="Icon"><br>
-<span class="text-muted" style="font-size: 11px;">Created by K37 Repo</span>
-</div>
-</div>
+    <img id="headerImage" class="banner">
+    <div class="tabs">
+        <button class="tab active" onclick="showTab('tab0')">Giới Thiệu</button>
+        <button class="tab" onclick="showTab('tab1')">Nhật Ký Cập Nhật</button>
+    </div>
+
+    <div id="tab0" class="content active">
+        <div id="tweakTitle" class="title"></div>
+        <div id="description" class="box"></div>
+        <div class="title">Ảnh màn hình</div>
+        <div id="screenshots" class="screenshots"></div>
+        <div class="title">Thông Tin</div>
+        <div id="infoTable" class="box"></div>
+        <div id="links" class="box" style="padding: 0 15px;"></div>
+    </div>
+
+    <div id="tab1" class="content">
+        <div id="changelog"></div>
+    </div>
+
+    <div class="footer">
+        <img src="https://k37ios.pages.dev/CydiaIcon.png" width="40" height="40" style="border-radius:8px; margin-bottom:5px;"><br>
+        Được tạo bởi ❤️ K37 Repo 
+    </div>
+
+    <script>
+        const jsonUrl = '../sileodepictions/LunartimeBar.json';
+
+        fetch(jsonUrl)
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('headerImage').src = data.headerImage;
+                const views = data.tabs[0].views;
+                
+                document.getElementById('tweakTitle').innerText = views.find(v => v.class === "DepictionHeaderView")?.title || "";
+                document.getElementById('description').innerHTML = (views.find(v => v.class === "DepictionMarkdownView")?.markdown || "").replace(/\n/g, '<br>');
+                
+                const ssData = views.find(v => v.class === "DepictionScreenshotsView");
+                if(ssData) {
+                    ssData.screenshots.forEach(s => {
+                        const img = document.createElement('img');
+                        img.src = s.url;
+                        document.getElementById('screenshots').appendChild(img);
+                    });
+                }
+
+                views.forEach(v => {
+                    if(v.class === "DepictionTableTextView") {
+                        document.getElementById('infoTable').innerHTML += `<div class="row"><span class="label" style="color:var(--sub)">${v.title}</span><b class="value">${v.text}</b></div>`;
+                    }
+                    if(v.class === "DepictionTableButtonView") {
+                        document.getElementById('links').innerHTML += `<a href="${v.action}" class="btn-table">${v.title}</a>`;
+                    }
+                });
+
+                const logs = data.tabs[1].views;
+                let logHtml = "";
+                logs.forEach(l => {
+                    if(l.title) logHtml += `<div class="log-v">${l.title}</div>`;
+                    if(l.markdown) logHtml += `<div class="box">${l.markdown.replace(/\n/g, '<br>')}</div>`;
+                });
+                document.getElementById('changelog').innerHTML = logHtml;
+            })
+            .catch(err => console.error(err));
+
+        function showTab(id) {
+            document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
 </html>

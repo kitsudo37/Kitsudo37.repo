@@ -32,7 +32,7 @@
 },
 {
 "class": "DepictionMarkdownView",
-"markdown": "Hiển thị lịch âm Dương trực tiếp trên thanh trạng thái.\n- Định dạng gồm có:\n- Thứ-ngày-tháng-năm Dương lịch\n- Ngày-tháng Âm lịch\n- Thứ-Ngày-tháng Âm/Dương lịch",
+"markdown": "Hiển thị lịch âm Dương trực tiếp trên thanh trạng thái.\n- Định dạng hiển thị gồm:\n- Thứ-ngày-tháng-năm Dương lịch\n- Ngày-tháng Âm lịch\n- Thứ-Ngày-tháng Âm/Dương lịch",
 "useSpacing": true
 },
 {
@@ -47,12 +47,20 @@
 "spacing": 16
 },
 {
+"class": "DepictionHeaderView",
+"title": "Ảnh màn hình"
+},
+{
 "class": "DepictionScreenshotsView",
 "itemCornerRadius": 14,
 "itemSize": "{240, 520}",
 "screenshots": [
 {
 "url": "https://k37ios.pages.dev/info/Screenshots/LunartimeBar/1.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/LunartimeBar/2.png",
 "accessibilityText": "Screenshot"
 }
 ]
@@ -74,13 +82,13 @@
 },
 {
 "class": "DepictionTableTextView",
-"title": "Nhà phát triển",
+"title": "Tác giả",
 "text": "Kitsudo"
 },
 {
 "class": "DepictionTableTextView",
 "title": "Phiên bản",
-"text": "1.0.1"
+"text": "1.4"
 },
 {
 "class": "DepictionTableTextView",
@@ -95,7 +103,7 @@
 {
 "class": "DepictionTableTextView",
 "title": "Kích thước",
-"text": "156 KB"
+"text": "684,75 KB"
 },
 {
 "class": "DepictionTableTextView",
@@ -103,20 +111,25 @@
 "text": "iOS 15.0 - 16.x"
 },
 {
-"class": "DepictionSpacerView",
-"spacing": 16
+"class": "DepictionTableButtonView",
+"title": "Xem mô tả",
+"action": "https://k37ios.pages.dev/info/depictions/LunartimeBar.html",
+"openExternal": 1,
+"glyph": "doc.text"
 },
 {
-"class": "DepictionButtonView",
-"text": "✈️ Liên hệ Telegram",
+"class": "DepictionTableButtonView",
+"title": "Liên hệ tôi",
 "action": "https://t.me/Kitsudo",
-"tintColor": "#24A1DE"
+"openExternal": 1,
+"glyph": "paperplane"
 },
 {
-"class": "DepictionButtonView",
-"text": "💖 Ủng hộ K37 Repo",
+"class": "DepictionTableButtonView",
+"title": "Ủng hộ tôi",
 "action": "https://k37ios.pages.dev",
-"tintColor": "#ff6b6b"
+"openExternal": 1,
+"glyph": "heart.fill"
 },
 {
 "class": "DepictionSpacerView",
@@ -142,12 +155,21 @@
 ]
 },
 {
-"tabname": "Nhật Ký",
+"tabname": "Nhật Ký Cập Nhật",
 "class": "DepictionStackView",
 "views": [
 {
 "class": "DepictionHeaderView",
-"title": "Phiên bản 1.0.1"
+"title": "Phiên bản 1.4"
+},
+{
+"class": "DepictionMarkdownView",
+"markdown": "• Thêm tuỳ chọn hiển thị ngày",
+"useSpacing": true
+},
+{
+"class": "DepictionHeaderView",
+"title": "Phiên bản 1.3"
 },
 {
 "class": "DepictionMarkdownView",
