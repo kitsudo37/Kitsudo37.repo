@@ -32,7 +32,7 @@
 },
 {
 "class": "DepictionMarkdownView",
-"markdown": "Hiển thị lịch âm Dương trực tiếp trên thanh trạng thái.",
+"markdown": "Hiển thị lịch âm Dương trực tiếp trên thanh trạng thái.\n- Định dạng gồm có:\n- Thứ-ngày-tháng-năm Dương lịch\n- Ngày-tháng Âm lịch\n- Thứ-Ngày-tháng Âm/Dương lịch",
 "useSpacing": true
 },
 {
