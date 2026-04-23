@@ -5,14 +5,68 @@ Maintainer: Kitsudo
 Installed-Size: 356
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
 Filename: ./debs/com.k37.lunartimebar_1.2_iphoneos-arm64.deb
-Size: 20232
-MD5sum: 621646e707e7c3b1fba8831b2faf2ed4
-SHA1: 52576d8198d7acea343010c7cce04c4e7a714cfb
-SHA256: 437b5247212e4ce13b4dca72231f7acd8da8953be496da7044bbe785ddc10bf4
+Size: 20204
+MD5sum: aeb54bea8a1a97826e810662deeafd96
+SHA1: a1ae6e48181616f23281aaaf3e88cf2e708ecc27
+SHA256: 7911c6af621bee3580ae4cb6b6d6e92be1dd3d3bd55f2ceeb0a77cb55b802b9b
 Section: Tweaks
 Description: Hiển thị thứ ngày âm dương lịch trên thanh trạng thái.
 Author: Kitsudo
 Icon: https://k37ios.pages.dev/assets/LunartimeBar.png
-Name: Lunartime Bar (Rootless)
+Name: Lunartime Bar
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/LunartimeBar.json
+
+Package: com.k37.lunartimebar
+Version: 1.2
+Architecture: iphoneos-arm64e
+Maintainer: Kitsudo
+Installed-Size: 356
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
+Filename: ./debs/com.k37.lunartimebar_1.2_iphoneos-arm64e.deb
+Size: 21540
+MD5sum: 7acb33b55c416f3fdfa9420178b8ec05
+SHA1: 7e79a1a4757573cee7b808430228d4a435dcae8a
+SHA256: 0f3d105072414df532fe0e297553d3a93a4cc6407d78e249fcce87733e26c931
+Section: Tweaks
+Description: Hiển thị thứ ngày âm dương lịch trên thanh trạng thái.
+Author: Kitsudo
+Icon: https://k37ios.pages.dev/assets/LunartimeBar.png
+Name: Lunartime Bar
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/LunartimeBar.json
+
+Package: com.squidforce.squidextender
+Version: 3.7.4
+Architecture: iphoneos-arm64
+Maintainer: SquidForce
+Installed-Size: 10136
+Depends: mobilesubstrate, preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.squidforce.squidextender_3.7.4_iphoneos-arm64.deb
+Size: 2309496
+MD5sum: 815732f70e9fd937793a894eb68371ac
+SHA1: 1a5179afb2bacbe4c03f8e5d6bfb2c91c7f64e66
+SHA256: ed5f68cf3e8e9184600e41958e4cc62d271b65e973b9f74e7ed022a498c96b2d
+Section: Tweaks
+Description: Extend your keyboard to be more POWERFULL!
+Author: SquidForce
+Icon: https://media.havoc.app/66fc1d79f047a492f9114f30
+Name: SquidExtender
+
+Package: com.squidforce.squidextender
+Version: 3.7.4
+Architecture: iphoneos-arm64e
+Maintainer: SquidForce
+Installed-Size: 10136
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader, com.opa334.libsandy
+Filename: ./debs/com.squidforce.squidextender_3.7.4_iphoneos-arm64e.deb
+Size: 2259616
+MD5sum: e0b0e08cf745727be9e97d1cc604d043
+SHA1: b19cc070c474c55e7ce8cd033e3caa7441f90df6
+SHA256: e9e836bfd33f8e46c6d5069c3a824a5b38e227dd43ff3b8b0bb9a15b4801a3e2
+Section: Tweaks
+Description: Extend your keyboard to be more POWERFULL!
+Author: SquidForce
+Icon: https://media.havoc.app/66fc1d79f047a492f9114f30
+Name: SquidExtender
 
