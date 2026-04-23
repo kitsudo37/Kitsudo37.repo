@@ -33,7 +33,7 @@
   {
   "class": "DepictionScreenshotsView",
   "itemCornerRadius": 14,
-  "itemSize": "{160, 346}",
+  "itemSize": "{240, 520}",
   "screenshots": [
   {
   "url": "https://k37ios.pages.dev/info/Screenshots/LunartimeBar/1.png",
@@ -54,7 +54,7 @@
   },
   {
   "class": "DepictionMarkdownView",
-  "markdown": "Hiển thị lịch âm (Lunar) trực tiếp trên thanh Status Bar. Giao diện Sileo Native siêu mượt.\n\n**Tính năng nổi bật:**\n• Hoạt động ổn định trên Rootless & Roothide.\n• Giao diện được dịch sang Tiếng Việt 100% tự nhiên.\n• Tối ưu hóa không gây hao pin.",
+  "markdown": "Hiển thị lịch âm trực tiếp trên thanh trạng thái. Giao diện mượt mà, thuần Việt.\n\n**Điểm nổi bật:**\n• Hỗ trợ mọi môi trường bẻ khóa mới nhất.\n• Ngôn ngữ Tiếng Việt dễ hiểu.\n• Tiết kiệm pin tối đa.",
   "useSpacing": true
   },
   {
@@ -80,7 +80,7 @@
   {
   "class": "DepictionTableTextView",
   "title": "Phiên bản",
-  "text": "1.0.0"
+  "text": "1.0.1"
   },
   {
   "class": "DepictionTableTextView",
@@ -127,7 +127,7 @@
   },
   {
   "class": "DepictionMarkdownView",
-  "markdown": "<div style='text-align: center; color: #888; font-size: 11px; margin-top: 5px;'>Created with ❤️ by K37 Repo </div>",
+  "markdown": "<div style='text-align: center; color: #888; font-size: 11px; margin-top: 5px;'>Được tạo bởi ❤️ K37 Repo </div>",
   "useRawFormat": true
   },
   {
@@ -142,11 +142,11 @@
   "views": [
   {
   "class": "DepictionHeaderView",
-  "title": "Phiên bản 1.0.0"
+  "title": "Phiên bản 1.0.1"
   },
   {
   "class": "DepictionMarkdownView",
-  "markdown": "• Cập nhật ngôn ngữ Tiếng Việt cho toàn bộ giao diện.\n• Sửa lỗi crash trên môi trường Rootless.\n• Phát hành lần đầu tiên trên K37 Repo.",
+  "markdown": "• Thêm tùy chỉnh vị trí và cỡ chữ\n• Thêm giao diện cài đặt",
   "useSpacing": true
   }
   ]
