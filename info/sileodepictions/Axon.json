@@ -1,0 +1,208 @@
+{
+"minVersion": "0.1",
+"headerImage": "https://k37ios.pages.dev/banner/banner.png",
+"tintColor": "#4facfe",
+"class": "DepictionTabView",
+"tabs": [
+{
+"tabname": "Giới Thiệu",
+"class": "DepictionStackView",
+"views": [
+{
+"class": "DepictionSpacerView",
+"spacing": 12
+},
+{
+"class": "DepictionButtonView",
+"text": "Tham gia nhóm chat Telegram",
+"action": "https://t.me/jtisvietnamrepo",
+"openExternal": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionHeaderView",
+"title": "Axon"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 4
+},
+{
+"class": "DepictionMarkdownView",
+"markdown": "Xem và gom nhóm thông báo trên màn hình khoá.\n- Chức năng:\n\n- Gom thông báo: Tự động nhóm tất cả thông báo trên màn hình khoá theo từng biểu tượng ứng dụng\n\+ Tương tác nhanh: Chạm vào biểu tượng để xem thông báo của ứng dụng đó, chạm lần nữa để thu gọn. Hoặc nhấn giữ để lọc (xoá) nhanh thông báo.\n+ Tuỳ chỉnh: Điều chỉnh vị trí và kiểu giao diện của các biểu tượng theo ý muốn",
+"useSpacing": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionHeaderView",
+"title": "Ảnh màn hình"
+},
+{
+"class": "DepictionScreenshotsView",
+"itemCornerRadius": 8,
+"itemSize": "{185, 400}",
+"screenshots": [
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Axon/1.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Axon/2.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Axon/4.png",
+"accessibilityText": "Screenshot"
+}
+]
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionHeaderView",
+"title": "Thông Tin"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Tác giả",
+"text": "Nepeta & Kitsudo"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Phiên bản",
+"text": "1.6"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Thể loại",
+"text": "Tweaks"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Ngày tải lên",
+"text": "14/04/2026"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Kích thước",
+"text": "1,21 MB"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Tương thích",
+"text": "iOS 15.0 - 16.7.14"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Xem mô tả",
+"action": "https://k37ios.pages.dev/info/depictions/LunartimeBar.html",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/document.png"
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Liên hệ tôi",
+"action": "https://t.me/Kitsudo",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/telegram-app.png"
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Ủng hộ tôi",
+"action": "https://k37ios.pages.dev",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/hearts.png"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 24
+},
+{
+"class": "DepictionImageView",
+"URL": "https://k37ios.pages.dev/CydiaIcon.png",
+"width": 40,
+"height": 40,
+"alignment": 1,
+"cornerRadius": 8
+},
+{
+"class": "DepictionMarkdownView",
+"markdown": "<div style='text-align: center; color: #888; font-size: 11px; margin-top: 5px;'>Được tạo bởi ❤️ K37 Repo</div>",
+"useRawFormat": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+}
+]
+},
+{
+"tabname": "Nhật Ký Cập Nhật",
+"class": "DepictionStackView",
+"views": [
+{
+"class": "DepictionHeaderView",
+"title": "Phiên bản 1.6"
+},
+{
+"class": "DepictionMarkdownView",
+"markdown": "• Thêm chuyển đổi Respring ngay lập tức khi chọn kiểu\n• Sửa lỗi và tối ưu hoá thông báo.",
+"useSpacing": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionHeaderView",
+"title": "Phiên bản 1.5"
+},
+{
+"class": "DepictionMarkdownView",
+"markdown": "• Thêm ngôn ngữ Tiếng Việt.",
+"useSpacing": true
+}
+]
+}
+]
+}

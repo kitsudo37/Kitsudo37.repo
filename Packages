@@ -1,3 +1,23 @@
+Package: com.k37.axon
+Version: 1.6
+Architecture: iphoneos-arm64
+Maintainer: K37 Repo
+Installed-Size: 652
+Depends: mobilesubstrate, firmware (>= 16.0)
+Conflicts: io.ominousness.stackxi, com.thomasfinch.priorityhub, com.ioscreatix.intelixbeta, com.ioscreatix.intelix, com.spiritoflogic.ncunify, com.spiritoflogic.unifyx, com.hidan.nclink10, org.coolstar.ventana-modern, org.coolstar.ventana, org.s1ris.spinxi
+Filename: ./debs/com.k37.axon_1.6_iphoneos-arm64.deb
+Size: 151772
+MD5sum: da838134db5e44b195873fead350afc4
+SHA1: fb1c18e9b116eb10888b536a76615b49cafdb940
+SHA256: bd38110a4a0130a5e0748bb0b5bac7349ce16be675526a301053a0901350966f
+Section: Tweaks
+Description: Gom nhóm và quản lý thông báo gọn gàng trên màn hình khóa cho iOS.
+Author: Nepeta & Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/Axon.html
+Icon: https://k37ios.pages.dev/assets/Axon.png
+Name: Axon
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Axon.json
+
 Package: com.k37.lunartimebar
 Version: 1.4
 Architecture: iphoneos-arm64
