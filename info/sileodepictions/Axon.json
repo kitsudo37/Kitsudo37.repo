@@ -32,7 +32,7 @@
 },
 {
 "class": "DepictionMarkdownView",
-"markdown": "Xem và gom nhóm thông báo trên màn hình khoá.\n Chức năng:\n\n+ Tự động nhóm tất cả thông báo trên màn hình khoá theo từng biểu tượng ứng dụng\n\n+ Chạm vào biểu tượng để xem thông báo của ứng dụng đó, chạm lần nữa để thu gọn.\n\n+ Hoặc nhấn giữ để lọc (xoá) nhanh thông báo.\n\n+ Tuỳ chỉnh vị trí và kiểu giao diện của các biểu tượng theo ý muốn",
+"markdown": "Xem và gom nhóm thông báo trên màn hình khoá.\n- Tự động nhóm tất cả thông báo theo từng biểu tượng ứng dụng\n- Chạm vào biểu tượng để xem thông báo của ứng dụng đó, chạm lần nữa để thu gọn.\n- Hoặc nhấn giữ để lọc (xoá) nhanh thông báo.\n- Tuỳ chỉnh vị trí và kiểu giao diện của các biểu tượng theo ý muốn",
 "useSpacing": true
 },
 {
@@ -61,6 +61,10 @@
 },
 {
 "url": "https://k37ios.pages.dev/info/Screenshots/Axon/2.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Axon/3.png",
 "accessibilityText": "Screenshot"
 },
 {
