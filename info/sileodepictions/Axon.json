@@ -1,7 +1,7 @@
 {
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/banner.png",
-"tintColor": "#339999",
+"tintColor": "#4facfe",
 "class": "DepictionTabView",
 "tabs": [
 {
@@ -24,7 +24,7 @@
 },
 {
 "class": "DepictionHeaderView",
-"title": "BackgroundCaller"
+"title": "Axon"
 },
 {
 "class": "DepictionSpacerView",
@@ -32,7 +32,7 @@
 },
 {
 "class": "DepictionMarkdownView",
-"markdown": "Tinh chỉnh cho phép bạn chọn Video từ ứng dụng Ảnh làm nền cho cuộc gọi đến.",
+"markdown": "Xem và gom nhóm thông báo trên màn hình khoá.\n- Tự động nhóm tất cả thông báo theo từng biểu tượng ứng dụng\n- Chạm vào biểu tượng để xem thông báo của ứng dụng đó, chạm lần nữa để thu gọn.\n- Hoặc nhấn giữ để lọc (xoá) nhanh thông báo.\n- Tuỳ chỉnh vị trí và kiểu giao diện của các biểu tượng theo ý muốn",
 "useSpacing": true
 },
 {
@@ -56,11 +56,15 @@
 "itemSize": "{185, 400}",
 "screenshots": [
 {
-"url": "https://jtisvn.github.io/infodeb/BackgroundCaller/Screenshots/1.png",
+"url": "https://k37ios.pages.dev/info/Screenshots/Axon/1.png",
 "accessibilityText": "Screenshot"
 },
 {
-"url": "https://jtisvn.github.io/infodeb/BackgroundCaller/Screenshots/2.png",
+"url": "https://k37ios.pages.dev/info/Screenshots/Axon/2.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Axon/4.png",
 "accessibilityText": "Screenshot"
 }
 ]
@@ -83,12 +87,12 @@
 {
 "class": "DepictionTableTextView",
 "title": "Tác giả",
-"text": "Kitsudo"
+"text": "Nepeta & Kitsudo"
 },
 {
 "class": "DepictionTableTextView",
 "title": "Phiên bản",
-"text": "1.0.0"
+"text": "1.6"
 },
 {
 "class": "DepictionTableTextView",
@@ -98,17 +102,17 @@
 {
 "class": "DepictionTableTextView",
 "title": "Ngày tải lên",
-"text": "08/01/2026"
+"text": "14/04/2026"
 },
 {
 "class": "DepictionTableTextView",
 "title": "Kích thước",
-"text": "529,4 KB"
+"text": "1,21 MB"
 },
 {
 "class": "DepictionTableTextView",
 "title": "Tương thích",
-"text": "iOS 15.0 - 17.0"
+"text": "iOS 15.0 - 16.7.14"
 },
 {
 "class": "DepictionSpacerView",
@@ -124,23 +128,23 @@
 {
 "class": "DepictionTableButtonView",
 "title": "Xem mô tả",
-"action": "https://k37ios.pages.dev/info/depictions/BackgroundCaller.html",
+"action": "https://k37ios.pages.dev/info/depictions/Axon.html",
 "openExternal": 1,
-"icon": "https://img.icons8.com/ios-filled/50/339999/document.png"
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/document.png"
 },
 {
 "class": "DepictionTableButtonView",
 "title": "Liên hệ tôi",
 "action": "https://t.me/Kitsudo",
 "openExternal": 1,
-"icon": "https://img.icons8.com/ios-filled/50/339999/telegram-app.png"
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/telegram-app.png"
 },
 {
 "class": "DepictionTableButtonView",
 "title": "Ủng hộ tôi",
 "action": "https://k37ios.pages.dev",
 "openExternal": 1,
-"icon": "https://img.icons8.com/ios-filled/50/339999/hearts.png"
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/hearts.png"
 },
 {
 "class": "DepictionSpacerView",
@@ -171,11 +175,31 @@
 "views": [
 {
 "class": "DepictionHeaderView",
-"title": "Phiên bản 1.0.0"
+"title": "Phiên bản 1.6"
 },
 {
 "class": "DepictionMarkdownView",
-"markdown": "• Phát hành lần đầu\n• Hỗ trợ Rootless & Roothide Jailbreak",
+"markdown": "- Thêm chuyển đổi Respring ngay lập tức khi chọn kiểu\n- Sửa lỗi và tối ưu hoá thông báo.",
+"useSpacing": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionHeaderView",
+"title": "Phiên bản 1.5"
+},
+{
+"class": "DepictionMarkdownView",
+"markdown": "- Thêm ngôn ngữ Tiếng Việt.",
 "useSpacing": true
 }
 ]

@@ -1,7 +1,7 @@
 {
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/banner.png",
-"tintColor": "#4facfe",
+"tintColor": "#339999",
 "class": "DepictionTabView",
 "tabs": [
 {
@@ -126,21 +126,21 @@
 "title": "Xem mô tả",
 "action": "https://k37ios.pages.dev/info/depictions/BackgroundCaller.html",
 "openExternal": 1,
-"icon": "https://img.icons8.com/ios-filled/50/4facfe/document.png"
+"icon": "https://img.icons8.com/ios-filled/50/339999/document.png"
 },
 {
 "class": "DepictionTableButtonView",
 "title": "Liên hệ tôi",
 "action": "https://t.me/Kitsudo",
 "openExternal": 1,
-"icon": "https://img.icons8.com/ios-filled/50/4facfe/telegram-app.png"
+"icon": "https://img.icons8.com/ios-filled/50/339999/telegram-app.png"
 },
 {
 "class": "DepictionTableButtonView",
 "title": "Ủng hộ tôi",
 "action": "https://k37ios.pages.dev",
 "openExternal": 1,
-"icon": "https://img.icons8.com/ios-filled/50/4facfe/hearts.png"
+"icon": "https://img.icons8.com/ios-filled/50/339999/hearts.png"
 },
 {
 "class": "DepictionSpacerView",
