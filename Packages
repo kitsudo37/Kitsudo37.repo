@@ -52,21 +52,3 @@ Author: SquidForce
 Icon: https://media.havoc.app/66fc1d79f047a492f9114f30
 Name: SquidExtender
 
-Package: com.squidforce.squidextender
-Version: 3.7.4
-Architecture: iphoneos-arm64e
-Maintainer: SquidForce
-Installed-Size: 10136
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate, preferenceloader, com.opa334.libsandy
-Filename: ./debs/com.squidforce.squidextender_3.7.4_iphoneos-arm64e.deb
-Size: 2259616
-MD5sum: e0b0e08cf745727be9e97d1cc604d043
-SHA1: b19cc070c474c55e7ce8cd033e3caa7441f90df6
-SHA256: e9e836bfd33f8e46c6d5069c3a824a5b38e227dd43ff3b8b0bb9a15b4801a3e2
-Section: Tweaks
-Description: Extend your keyboard to be more POWERFULL!
-Author: SquidForce
-Icon: https://media.havoc.app/66fc1d79f047a492f9114f30
-Name: SquidExtender
-
