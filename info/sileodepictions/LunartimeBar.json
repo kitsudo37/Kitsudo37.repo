@@ -52,8 +52,8 @@
 },
 {
 "class": "DepictionScreenshotsView",
-"itemCornerRadius": 14,
-"itemSize": "{240, 520}",
+"itemCornerRadius": 8,
+"itemSize": "{185, 400}",
 "screenshots": [
 {
 "url": "https://k37ios.pages.dev/info/Screenshots/LunartimeBar/1.png",
@@ -109,6 +109,17 @@
 "class": "DepictionTableTextView",
 "title": "Tương thích",
 "text": "iOS 15.0 - 16.x"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
 },
 {
 "class": "DepictionTableButtonView",
