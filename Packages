@@ -39,6 +39,25 @@ Icon: https://k37ios.pages.dev/assets/Axon.png
 Name: Axon
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Axon.json
 
+Package: com.k37.backgroundcaller
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: K37 Repo
+Installed-Size: 556
+Depends: mobilesubstrate, firmware (>= 14.0), oldabi-stub
+Filename: ./debs/com.k37.backgroundcaller_1.0.0_iphoneos-arm64.deb
+Size: 40448
+MD5sum: aa848f62b0df101e9754bd97dbcda77e
+SHA1: e02c344172843ba810e0ef15d77f393d491f41d1
+SHA256: 3f81cd23854a28519c708791b363f022b26108c159b65210d1ae5095ccf6cc7b
+Section: Tweaks
+Description: Thêm hình nền video cuộc gọi đến
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/BackgroundCaller.html
+Icon: https://k37ios.pages.dev/assets/BackgroundCaller.png
+Name: BackgroundCaller
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/BackgroundCaller.json
+
 Package: com.k37.lunartimebar
 Version: 1.4
 Architecture: iphoneos-arm64
