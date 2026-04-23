@@ -1,151 +1,156 @@
 {
-    "minVersion": "0.1",
-    "headerImage": "https://k37ios.pages.dev/banner/banner.png",
-    "tintColor": "#4facfe",
-    "class": "DepictionTabView",
-    "tabs": [
-      {
-        "tabname": "Giới Thiệu",
-        "class": "DepictionStackView",
-        "views": [
-          {
-            "class": "DepictionHeaderView",
-            "title": "LunarTimeBar"
-          },
-          {
-            "class": "DepictionSpacerView",
-            "spacing": 12
-          },
-          {
-            "class": "DepictionButtonView",
-            "text": "Tham gia nhóm chat Telegram",
-            "action": "https://t.me/jtisvietnamrepo",
-            "openExternal": true
-          },
-          {
-            "class": "DepictionSpacerView",
-            "spacing": 16
-          },
-          {
-            "class": "DepictionScreenshotsView",
-            "itemCornerRadius": 14,
-            "itemSize": "{160, 346}",
-            "screenshots": [
-              {
-                "url": "https://k37ios.pages.dev/master/info/Screenshots/LunartimeBar/1.png",
-                "accessibilityText": "Ảnh 1"
-              },
-              {
-                "url": "https://k37ios.pages.dev/master/info/Screenshots/LunartimeBar/2.png",
-                "accessibilityText": "Ảnh 2"
-              }
-            ]
-          },
-          {
-            "class": "DepictionSpacerView",
-            "spacing": 16
-          },
-          {
-            "class": "DepictionSeparatorView"
-          },
-          {
-            "class": "DepictionSpacerView",
-            "spacing": 16
-          },
-          {
-            "class": "DepictionMarkdownView",
-            "markdown": "Hiển thị lịch âm (Lunar) trực tiếp trên thanh Status Bar. Giao diện Sileo Native siêu mượt.\n\n**Tính năng nổi bật:**\n• Hoạt động ổn định trên Rootless & Roothide.\n• Giao diện được dịch sang Tiếng Việt 100% tự nhiên.\n• Tối ưu hóa không gây hao pin.",
-            "useSpacing": true
-          },
-          {
-            "class": "DepictionSpacerView",
-            "spacing": 16
-          },
-          {
-            "class": "DepictionSeparatorView"
-          },
-          {
-            "class": "DepictionSpacerView",
-            "spacing": 16
-          },
-          {
-            "class": "DepictionHeaderView",
-            "title": "Thông Tin Bổ Sung"
-          },
-          {
-            "class": "DepictionTableTextView",
-            "title": "Nhà phát triển",
-            "text": "Kitsudo"
-          },
-          {
-            "class": "DepictionTableTextView",
-            "title": "Phiên bản",
-            "text": "1.0.0"
-          },
-          {
-            "class": "DepictionTableTextView",
-            "title": "Ngày tải lên",
-            "text": "23/04/2026"
-          },
-          {
-            "class": "DepictionTableTextView",
-            "title": "Kích thước",
-            "text": "156 KB"
-          },
-          {
-            "class": "DepictionTableTextView",
-            "title": "Tương thích",
-            "text": "iOS 15.0 - 16.x"
-          },
-          {
-            "class": "DepictionSpacerView",
-            "spacing": 16
-          },
-          {
-            "class": "DepictionButtonView",
-            "text": "✈️ Liên hệ Telegram",
-            "action": "https://t.me/Kitsudo",
-            "tintColor": "#24A1DE"
-          },
-          {
-            "class": "DepictionButtonView",
-            "text": "💖 Ủng hộ K37 Repo",
-            "action": "https://k37ios.pages.dev",
-            "tintColor": "#ff6b6b"
-          },
-          {
-            "class": "DepictionSpacerView",
-            "spacing": 24
-          },
-          {
-            "class": "DepictionImageView",
-            "URL": "https://k37ios.pages.dev/CydiaIcon.png",
-            "width": 40,
-            "height": 40,
-            "alignment": 1,
-            "cornerRadius": 8
-          },
-          {
-            "class": "DepictionMarkdownView",
-            "markdown": "<div style='text-align: center; color: #888; font-size: 11px; margin-top: 5px;'>Created with ❤️ by K37 Repo </div>",
-            "useRawFormat": true
-          }
-        ]
-      },
-      {
-        "tabname": "Nhật Ký",
-        "class": "DepictionStackView",
-        "views": [
-          {
-            "class": "DepictionHeaderView",
-            "title": "Phiên bản 1.0.0"
-          },
-          {
-            "class": "DepictionMarkdownView",
-            "markdown": "• Cập nhật ngôn ngữ Tiếng Việt cho toàn bộ giao diện.\n• Sửa lỗi crash trên môi trường Rootless.\n• Phát hành lần đầu tiên trên K37 Repo.",
-            "useSpacing": true
-          }
-        ]
-      }
-    ]
+  "minVersion": "0.1",
+  "headerImage": "https://k37ios.pages.dev/banner/banner.png",
+  "tintColor": "#4facfe",
+  "class": "DepictionTabView",
+  "tabs": [
+  {
+  "tabname": "Giới Thiệu",
+  "class": "DepictionStackView",
+  "views": [
+  {
+  "class": "DepictionHeaderView",
+  "title": "LunarTimeBar"
+  },
+  {
+  "class": "DepictionSpacerView",
+  "spacing": 12
+  },
+  {
+  "class": "DepictionButtonView",
+  "text": "Tham gia nhóm chat Telegram",
+  "action": "https://t.me/jtisvietnamrepo",
+  "openExternal": true
+  },
+  {
+  "class": "DepictionSpacerView",
+  "spacing": 8
+  },
+  {
+  "class": "DepictionSubheaderView",
+  "title": "Tweak: LunarTimeBar",
+  "alignment": 1
+  },
+  {
+  "class": "DepictionSpacerView",
+  "spacing": 16
+  },
+  {
+  "class": "DepictionScreenshotsView",
+  "itemCornerRadius": 14,
+  "itemSize": "{160, 346}",
+  "screenshots": [
+  {
+  "url": "https://k37ios.pages.dev/master/info/Screenshots/LunartimeBar/1.png",
+  "accessibilityText": "Screenshot"
+  }
+  ]
+  },
+  {
+  "class": "DepictionSpacerView",
+  "spacing": 16
+  },
+  {
+  "class": "DepictionSeparatorView"
+  },
+  {
+  "class": "DepictionSpacerView",
+  "spacing": 16
+  },
+  {
+  "class": "DepictionMarkdownView",
+  "markdown": "Hiển thị lịch âm (Lunar) trực tiếp trên thanh Status Bar. Giao diện Sileo Native siêu mượt.\n\n**Tính năng nổi bật:**\n• Hoạt động ổn định trên Rootless & Roothide.\n• Giao diện được dịch sang Tiếng Việt 100% tự nhiên.\n• Tối ưu hóa không gây hao pin.",
+  "useSpacing": true
+  },
+  {
+  "class": "DepictionSpacerView",
+  "spacing": 16
+  },
+  {
+  "class": "DepictionSeparatorView"
+  },
+  {
+  "class": "DepictionSpacerView",
+  "spacing": 16
+  },
+  {
+  "class": "DepictionHeaderView",
+  "title": "Thông Tin Bổ Sung"
+  },
+  {
+  "class": "DepictionTableTextView",
+  "title": "Nhà phát triển",
+  "text": "Kitsudo"
+  },
+  {
+  "class": "DepictionTableTextView",
+  "title": "Phiên bản",
+  "text": "1.0.0"
+  },
+  {
+  "class": "DepictionTableTextView",
+  "title": "Ngày tải lên",
+  "text": "23/04/2026"
+  },
+  {
+  "class": "DepictionTableTextView",
+  "title": "Kích thước",
+  "text": "156 KB"
+  },
+  {
+  "class": "DepictionTableTextView",
+  "title": "Tương thích",
+  "text": "iOS 15.0 - 16.x"
+  },
+  {
+  "class": "DepictionSpacerView",
+  "spacing": 16
+  },
+  {
+  "class": "DepictionButtonView",
+  "text": "✈️ Liên hệ Telegram",
+  "action": "https://t.me/Kitsudo",
+  "tintColor": "#24A1DE"
+  },
+  {
+  "class": "DepictionButtonView",
+  "text": "💖 Ủng hộ K37 Repo",
+  "action": "https://k37ios.pages.dev",
+  "tintColor": "#ff6b6b"
+  },
+  {
+  "class": "DepictionSpacerView",
+  "spacing": 24
+  },
+  {
+  "class": "DepictionImageView",
+  "URL": "https://k37ios.pages.dev/CydiaIcon.png",
+  "width": 40,
+  "height": 40,
+  "alignment": 1,
+  "cornerRadius": 8
+  },
+  {
+  "class": "DepictionMarkdownView",
+  "markdown": "<div style='text-align: center; color: #888; font-size: 11px; margin-top: 5px;'>Created with ❤️ by K37 Repo </div>",
+  "useRawFormat": true
+  }
+  ]
+  },
+  {
+  "tabname": "Nhật Ký",
+  "class": "DepictionStackView",
+  "views": [
+  {
+  "class": "DepictionHeaderView",
+  "title": "Phiên bản 1.0.0"
+  },
+  {
+  "class": "DepictionMarkdownView",
+  "markdown": "• Cập nhật ngôn ngữ Tiếng Việt cho toàn bộ giao diện.\n• Sửa lỗi crash trên môi trường Rootless.\n• Phát hành lần đầu tiên trên K37 Repo.",
+  "useSpacing": true
+  }
+  ]
+  }
+  ]
   }
