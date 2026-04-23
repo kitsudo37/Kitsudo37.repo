@@ -32,7 +32,7 @@
 },
 {
 "class": "DepictionMarkdownView",
-"markdown": "Xem và gom nhóm thông báo trên màn hình khoá.\n- Chức năng:\n\n- Gom thông báo: Tự động nhóm tất cả thông báo trên màn hình khoá theo từng biểu tượng ứng dụng\n- Tương tác nhanh: Chạm vào biểu tượng để xem thông báo của ứng dụng đó, chạm lần nữa để thu gọn. Hoặc nhấn giữ để lọc (xoá) nhanh thông báo.\n- Tuỳ chỉnh: Điều chỉnh vị trí và kiểu giao diện của các biểu tượng theo ý muốn",
+"markdown": "Xem và gom nhóm thông báo trên màn hình khoá.\n Chức năng:\n Tự động nhóm tất cả thông báo trên màn hình khoá theo từng biểu tượng ứng dụng\n Chạm vào biểu tượng để xem thông báo của ứng dụng đó, chạm lần nữa để thu gọn. Hoặc nhấn giữ để lọc (xoá) nhanh thông báo.\n Tuỳ chỉnh vị trí và kiểu giao diện của các biểu tượng theo ý muốn",
 "useSpacing": true
 },
 {
@@ -179,7 +179,7 @@
 },
 {
 "class": "DepictionMarkdownView",
-"markdown": "• Thêm chuyển đổi Respring ngay lập tức khi chọn kiểu\n• Sửa lỗi và tối ưu hoá thông báo.",
+"markdown": "- Thêm chuyển đổi Respring ngay lập tức khi chọn kiểu\n- Sửa lỗi và tối ưu hoá thông báo.",
 "useSpacing": true
 },
 {

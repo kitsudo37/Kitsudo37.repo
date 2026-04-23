@@ -175,7 +175,7 @@
 },
 {
 "class": "DepictionMarkdownView",
-"markdown": "• Thêm tuỳ chọn hiển thị ngày",
+"markdown": "- Thêm tuỳ chọn hiển thị ngày",
 "useSpacing": true
 },
 {
@@ -195,7 +195,7 @@
 },
 {
 "class": "DepictionMarkdownView",
-"markdown": "• Thêm tùy chỉnh vị trí và cỡ chữ\n• Thêm giao diện cài đặt",
+"markdown": "- Thêm tùy chỉnh vị trí và cỡ chữ\n- Thêm giao diện cài đặt",
 "useSpacing": true
 }
 ]

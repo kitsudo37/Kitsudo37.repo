@@ -1,5 +1,26 @@
 Package: com.k37.axon
 Version: 1.6
+Architecture: iphoneos-arm64e
+Maintainer: K37 Repo
+Installed-Size: 652
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, firmware (>= 16.0)
+Conflicts: io.ominousness.stackxi, com.thomasfinch.priorityhub, com.ioscreatix.intelixbeta, com.ioscreatix.intelix, com.spiritoflogic.ncunify, com.spiritoflogic.unifyx, com.hidan.nclink10, org.coolstar.ventana-modern, org.coolstar.ventana, org.s1ris.spinxi
+Filename: ./debs/com.k37.axon_1.6_iphoneos-arm64e.deb
+Size: 154044
+MD5sum: 4576d38058a52b29610484fdea4a4991
+SHA1: a2439037b35a8ead6233f2d31ae781b5a7deb6bd
+SHA256: 0842f6e2623a0a90b2ebfa2f45782bb9ee480b504d5723c4016773c0712db78b
+Section: Tweaks
+Description: Gom nhóm và quản lý thông báo gọn gàng trên màn hình khóa cho iOS.
+Author: Nepeta & Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/Axon.html
+Icon: https://k37ios.pages.dev/assets/Axon.png
+Name: Axon
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Axon.json
+
+Package: com.k37.axon
+Version: 1.6
 Architecture: iphoneos-arm64
 Maintainer: K37 Repo
 Installed-Size: 652
