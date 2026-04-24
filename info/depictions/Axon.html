@@ -51,21 +51,46 @@
     </div>
     <div class="footer">
         <img src="https://k37ios.pages.dev/CydiaIcon.png" width="40" height="40" style="border-radius:8px; margin-bottom:5px;"><br>
-        Được tạo bởi ❤️ K37 Repo
+        Được tạo bởi ❤️ K37 Repo 
     </div>
 
     <script>
+        // Hàm này tự động quét và dịch cú pháp Markdown (như ####) thành HTML chữ đậm
+        function parseMD(str) {
+            if (!str) return "";
+            return str
+                .replace(/^#{1,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>') // Biến #### thành in đậm
+                .replace(/\n/g, '<br>'); // Giữ nguyên khoảng xuống dòng
+        }
+
         const jsonUrl = '../sileodepictions/Axon.json';
+        
         fetch(jsonUrl).then(res => res.json()).then(data => {
+            // TỰ ĐỘNG BẮT MÀU TINTCOLOR TỪ JSON VÀ ĐỔI MÀU GIAO DIỆN
+            if (data.tintColor) {
+                document.documentElement.style.setProperty('--tint', data.tintColor);
+            }
+
             document.getElementById('headerImage').src = data.headerImage;
             const views = data.tabs[0].views;
             document.getElementById('tweakTitle').innerText = views.find(v => v.class === "DepictionHeaderView")?.title || "";
-            document.getElementById('description').innerHTML = (views.find(v => v.class === "DepictionMarkdownView")?.markdown || "").replace(/\n/g, '<br>');
+            
+            // Đã áp dụng hàm parseMD cho phần giới thiệu
+            document.getElementById('description').innerHTML = parseMD(views.find(v => v.class === "DepictionMarkdownView")?.markdown);
             
             const ssData = views.find(v => v.class === "DepictionScreenshotsView");
-            if(ssData) ssData.screenshots.forEach(s => {
-                const img = document.createElement('img'); img.src = s.url; document.getElementById('screenshots').appendChild(img);
-            });
+            if(ssData) {
+                const ssContainer = document.getElementById('screenshots');
+                
+                // KIỂM TRA: NẾU CÓ ĐÚNG 1 ẢNH THÌ CĂN GIỮA
+                if(ssData.screenshots.length === 1) {
+                    ssContainer.style.justifyContent = 'center';
+                }
+
+                ssData.screenshots.forEach(s => {
+                    const img = document.createElement('img'); img.src = s.url; ssContainer.appendChild(img);
+                });
+            }
 
             views.forEach(v => {
                 if(v.class === "DepictionTableTextView") {
@@ -83,7 +108,9 @@
                 if(l.class === "DepictionSeparatorView") logHtml += `<div class="separator"></div>`;
                 else {
                     if(l.title) logHtml += `<div class="log-v">${l.title}</div>`;
-                    if(l.markdown) logHtml += `<div class="box">${l.markdown.replace(/\n/g, '<br>')}</div>`;
+                    
+                    // Đã áp dụng hàm parseMD cho phần nhật ký cập nhật
+                    if(l.markdown) logHtml += `<div class="box">${parseMD(l.markdown)}</div>`;
                 }
             });
             document.getElementById('changelog').innerHTML = logHtml;

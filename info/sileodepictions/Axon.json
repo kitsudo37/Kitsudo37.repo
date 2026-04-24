@@ -178,33 +178,17 @@
 "class": "DepictionStackView",
 "views": [
 {
-"class": "DepictionHeaderView",
-"title": "Phiên bản 1.6"
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "- Thêm chuyển đổi Respring ngay lập tức khi chọn kiểu\n- Sửa lỗi và tối ưu hoá thông báo.",
-"useSpacing": true
-},
-{
-"class": "DepictionSpacerView",
-"spacing": 8
+"markdown": "#### Phiên bản: 1.6\n- Thêm chuyển đổi Respring ngay lập tức khi chọn kiểu\n- Sửa lỗi và tối ưu hoá thông báo.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 },
 {
 "class": "DepictionSeparatorView"
 },
 {
-"class": "DepictionSpacerView",
-"spacing": 8
-},
-{
-"class": "DepictionHeaderView",
-"title": "Phiên bản 1.5"
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "- Thêm ngôn ngữ Tiếng Việt.",
-"useSpacing": true
+"markdown": "#### Phiên bản: 1.5\n- Thêm ngôn ngữ Tiếng Việt.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 }
 ]
 }

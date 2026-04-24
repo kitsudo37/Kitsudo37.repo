@@ -166,13 +166,9 @@
 "class": "DepictionStackView",
 "views": [
 {
-"class": "DepictionHeaderView",
-"title": "Phiên bản 1.0.0"
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "- Phát hành lần đầu\n- Hỗ trợ Rootless & Roôthide Jailbreak.",
-"useSpacing": true
+"markdown": "#### Phiên bản: 1.0.0+debug\n- Phát hành lần đầu.\n- Hỗ trợ Rootless & Roothide Jailbreak.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 }
 ]
 }
