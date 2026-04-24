@@ -1,203 +1,209 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>K37 Repository</title>
-    <style>
-        /* Nền tối giản, tĩnh, chuẩn Apple Dark Mode */
-        body { 
-            font-family: -apple-system, sans-serif; 
-            color: white; 
-            text-align: center; 
-            padding: 40px 20px; 
-            margin: 0;
-            background-color: #000;
-            background-image: radial-gradient(circle at 50% 0%, #1c1c1e 0%, #000 80%);
-            background-attachment: fixed;
-        }
-
-        .icon { width: 110px; height: 110px; border-radius: 25%; margin-bottom: 15px; box-shadow: 0 10px 30px rgba(255,255,255,0.05); }
-        h1 { font-size: 30px; font-weight: 800; margin-bottom: 12px; background: linear-gradient(45deg, #fff, #888); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        /* Khung chứa Link Repo và nút Copy */
-        .repo-link-box {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 6px 6px 6px 16px;
-            max-width: 300px;
-            margin: 0 auto 30px auto;
-            box-sizing: border-box;
-        }
-        .repo-link-box span {
-            font-size: 14.5px;
-            color: #ccc;
-            letter-spacing: 0.5px;
-        }
-
-        /* Các nút cài đặt */
-        .btn { display: block; width: 100%; max-width: 320px; margin: 12px auto; padding: 15px; border-radius: 14px; text-decoration: none; font-weight: bold; font-size: 16px; transition: all 0.2s ease; box-sizing: border-box; }
-        .sileo { background: #6042f4; color: white; }
-        .zebra { background: #fdfdfd; color: black; }
-        .btn:active { transform: scale(0.96); opacity: 0.8; }
-
-        /* Tiêu đề các mục */
-        .section-title {
-            font-size: 13px;
-            font-weight: 800;
-            color: #888;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin: 35px auto 15px auto;
-            max-width: 320px;
-            text-align: left;
-        }
-
-        /* Khung Card Kính Mờ Tối Giản */
-        .card {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 18px;
-            padding: 18px;
-            margin: 0 auto;
-            max-width: 320px;
-            text-align: left;
-            backdrop-filter: blur(12px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-            box-sizing: border-box;
-        }
-
-        /* Chữ trong phần Thông Tin */
-        .card p { margin: 8px 0; font-size: 14px; color: #ccc; line-height: 1.5; }
-        .card p b { color: #fff; }
-        .card a { color: #4facfe; text-decoration: none; font-weight: bold; }
-
-        /* Các hàng trong phần Donate */
-        .donate-row {
-            background: rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-radius: 12px;
-            padding: 12px 16px;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 14px;
-            color: #ccc;
-        }
-        .donate-row b { color: #fff; font-size: 15px; letter-spacing: 0.5px; }
-        
-        /* Nút Copy nhỏ gọn dùng chung */
-        .copy-btn {
-            background: rgba(255, 255, 255, 0.15);
-            color: #fff;
-            border: none;
-            padding: 8px 14px;
-            border-radius: 14px;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-        .copy-btn:hover { background: #4facfe; color: #fff; }
-        .copy-btn:active { transform: scale(0.95); }
-
-        /* Khung lời cảm ơn */
-        .donate-message {
-            background: rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.04);
-            border-radius: 14px;
-            padding: 16px;
-            margin-top: 15px;
-            font-size: 14.5px;
-            color: #ddd;
-            line-height: 1.6;
-            text-align: center;
-        }
-        
-        /* Hiệu ứng màu chữ K37 Repo */
-        .gradient-text {
-            background: linear-gradient(90deg, #4facfe, #b066fe);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: 800;
-            font-size: 15px;
-        }
-
-        .footer { margin-top: 40px; font-size: 12px; color: #555; text-transform: uppercase; letter-spacing: 1px; }
-    </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K37 Repository</title>
+<style>
+body { 
+font-family: -apple-system, sans-serif; 
+color: white; 
+text-align: center; 
+padding: 40px 15px; 
+margin: 0;
+background-color: #000;
+background-image: radial-gradient(circle at 50% 0%, #1c1c1e 0%, #000 80%);
+background-attachment: fixed;
+}
+.icon { width: 100px; height: 100px; border-radius: 25%; margin-bottom: 15px; box-shadow: 0 10px 30px rgba(79, 172, 254, 0.2); }
+h1 { 
+font-size: 32px; 
+font-weight: 900; 
+margin-bottom: 15px; 
+background: linear-gradient(90deg, #4facfe, #00f2fe, #b066fe, #4facfe);
+background-size: 200% auto;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: shine 4s linear infinite;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+@keyframes shine {
+to { background-position: 200% center; }
+}
+.repo-link-box {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: rgba(255, 255, 255, 0.05);
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 18px;
+padding: 5px 5px 5px 15px;
+max-width: 280px;
+margin: 0 auto 25px auto;
+}
+.repo-link-box span { font-size: 14px; color: #ccc; }
+.btn { display: block; width: 100%; max-width: 300px; margin: 10px auto; padding: 14px; border-radius: 14px; text-decoration: none; font-weight: bold; font-size: 15px; transition: 0.2s; }
+.sileo { background: #6042f4; color: white; }
+.zebra { background: #fdfdfd; color: black; }
+.btn:active { transform: scale(0.97); }
+.main-wrapper {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+max-width: 780px; 
+margin: 0 auto 30px auto;
+}
+.flex-item {
+flex: 1 1 320px;
+max-width: 380px;
+}
+.section-title {
+font-size: 12px;
+font-weight: 800;
+color: #666;
+text-transform: uppercase;
+letter-spacing: 1.5px;
+margin: 25px 0 12px 0;
+}
+.card {
+background: rgba(255, 255, 255, 0.04);
+border: 1px solid rgba(255, 255, 255, 0.08);
+border-radius: 20px;
+padding: 20px;
+backdrop-filter: blur(10px);
+box-sizing: border-box;
+text-align: left;
+height: 100%;
+}
+.card p { margin: 8px 0; font-size: 13.5px; color: #bbb; line-height: 1.6; }
+.card p b { color: #fff; }
+.card a { color: #4facfe; text-decoration: none; font-weight: 600; }
+.donate-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 10px;
+}
+.donate-info {
+flex: 1;
+}
+.donate-row {
+background: rgba(255, 255, 255, 0.03);
+border: 1px solid rgba(255, 255, 255, 0.05);
+border-radius: 12px;
+padding: 8px 12px;
+margin-bottom: 6px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 12.5px;
+}
+.qr-small {
+width: 95px;
+height: 95px;
+border-radius: 12px;
+border: 1px solid rgba(255, 255, 255, 0.1);
+background: white;
+padding: 2px;
+flex-shrink: 0;
+}
+.copy-btn {
+background: rgba(255, 255, 255, 0.1);
+color: #fff;
+border: none;
+padding: 5px 10px;
+border-radius: 8px;
+cursor: pointer;
+font-size: 10px;
+font-weight: bold;
+transition: 0.3s;
+}
+.copy-btn:hover { background: #4facfe; }
+.donate-message {
+background: rgba(0, 0, 0, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.04);
+border-radius: 14px;
+padding: 16px;
+margin-top: 12px;
+font-size: 13px;
+color: #ddd;
+line-height: 1.5;
+text-align: center;
+}
+.gradient-text {
+background: linear-gradient(90deg, #4facfe, #00f2fe);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: bold;
+}
+.footer { margin-top: 100px; padding-bottom: 40px; font-size: 11px; color: #444; letter-spacing: 1px; }
+</style>
 </head>
 <body>
-    <img src="CydiaIcon.png" class="icon" alt="K37 Icon">
-    <h1>K37 REPO</h1>
-    
-    <div class="repo-link-box">
-        <span id="repo-url">https://k37ios.pages.dev</span>
-        <button class="copy-btn" onclick="copyToClipboard('repo-url', this)">Sao chép</button>
-    </div>
-    
-    <a href="sileo://source/https://k37ios.pages.dev" class="btn sileo">Thêm vào Sileo</a>
-    <a href="zbra://sources/add/https://k37ios.pages.dev" class="btn zebra">Thêm vào Zebra</a>
-
-    <div class="section-title">THÔNG TIN LIÊN HỆ</div>
-    <div class="card">
-        <p><b>Repo được phát triển bởi:</b> Kitsudo</p>
-        
-        <p style="font-size: 13.5px; color: #aaa; margin-bottom: 15px; line-height: 1.6;">
-            K37 Repo là dự án tâm huyết chuyên cung cấp các Tweak được Việt hóa. Đồng thời là nơi chia sẻ những tinh chỉnh hệ thống, giao diện tiện ích được tối ưu hóa độ ổn định cho các thiết bị Jailbreak môi trường Rootless & Roothide hiện nay.
-        </p>
-
-        <p><b>Tình trạng:</b> Đang cập nhật tweak cho iOS 15 - 16.</p>
-        <p style="margin-top: 15px;"><b>Liên hệ:</b> 
-            <a href="https://t.me/Kitsudo">Telegram</a> 
-            <span style="color: #666; margin: 0 5px;">•</span> 
-            <a href="https://www.facebook.com/share/1JMRXio8Df/?mibextid=wwXIfr" style="color: #1877F2;">Facebook</a>
-        </p>
-    </div>
-
-    <div class="section-title">ỦNG HỘ</div>
-    <div class="card">
-        <div class="donate-row">
-            <span>Ngân hàng: <b>ACB (Á Châu)</b></span>
-        </div>
-        <div class="donate-row">
-            <span>Chủ TK: <b>NGUYEN TRUNG HIEU</b></span>
-        </div>
-        <div class="donate-row">
-            <span>STK: <b id="acb-account">20219691</b></span>
-            <button class="copy-btn" onclick="copyToClipboard('acb-account', this)">📋 Sao chép</button>
-        </div>
-        
-        <div class="donate-message">
-            Sự ủng hộ của bạn là động lực to lớn để <span class="gradient-text">K37 Repo</span> tiếp tục phát triển. Xin chân thành cảm ơn! ❤️
-        </div>
-    </div>
-
-    <div class="footer">© 2026 K37 Repo</div>
-
-    <script>
-        function copyToClipboard(elementId, btnElement) {
-            var textToCopy = document.getElementById(elementId).innerText;
-            var originalText = btnElement.innerText; // Lưu lại chữ ban đầu (Sao chép / 📋 Sao chép)
-            
-            navigator.clipboard.writeText(textToCopy).then(function() {
-                btnElement.innerText = "Đã chép!";
-                btnElement.style.background = "#4facfe";
-                btnElement.style.color = "#fff";
-                
-                // Trả lại trạng thái cũ sau 2 giây
-                setTimeout(function() {
-                    btnElement.innerText = originalText;
-                    btnElement.style.background = "";
-                }, 2000);
-            }).catch(function(err) {
-                alert('Lỗi sao chép: ' + err);
-            });
-        }
-    </script>
+<img src="https://k37ios.pages.dev/LogoSileo.png" class="icon" alt="K37 Icon">
+<h1>K37 REPO</h1>
+<div class="repo-link-box">
+<span id="repo-url">https://k37ios.pages.dev</span>
+<button class="copy-btn" onclick="copyToClipboard('repo-url', this)">Sao chép</button>
+</div>
+<a href="sileo://source/https://k37ios.pages.dev" class="btn sileo">Thêm vào Sileo</a>
+<a href="zbra://sources/add/https://k37ios.pages.dev" class="btn zebra">Thêm vào Zebra</a>
+<div class="main-wrapper">
+<div class="flex-item">
+<div class="section-title">THÔNG TIN</div>
+<div class="card">
+<p><b>Phát triển bởi:</b> Kitsudo</p>
+<p style="color: #aaa; font-size: 13px;">
+K37 Repo là dự án tâm huyết chuyên cung cấp các Tweak được Việt hóa. Đồng thời là nơi chia sẻ những tinh chỉnh hệ thống, giao diện tiện ích được tối ưu hóa độ ổn định cho các thiết bị Jailbreak môi trường Rootless & Roothide hiện nay.
+</p>
+<p><b>Tình trạng:</b> Đang cập nhật tweak cho iOS 15 - 16.</p>
+<p style="margin-top: 15px;"><b>Liên hệ:</b> 
+<a href="https://t.me/Kitsudo">Telegram</a> 
+<span style="color: #444; margin: 0 4px;">•</span> 
+<a href="https://www.facebook.com/share/1JMRXio8Df/?mibextid=wwXIfr" style="color: #1877F2;">Facebook</a>
+</p>
+<p style="margin-top: 8px;"><b>Nhóm hỗ trợ:</b> 
+<a href="https://t.me/jtisvietnamrepo">K37-JTISVN</a>
+</p>
+</div>
+</div>
+<div class="flex-item">
+<div class="section-title">ỦNG HỘ</div>
+<div class="card">
+<div class="donate-container">
+<div class="donate-info">
+<div class="donate-row">
+<span>Ngân hàng: <b>ACB</b></span>
+</div>
+<div class="donate-row">
+<span>Tên: <b>NGUYEN TRUNG HIEU</b></span>
+</div>
+<div class="donate-row">
+<span>STK: <b>20219691</b></span>
+<button class="copy-btn" onclick="copyToClipboard('acb-account', this)">📋</button>
+<span id="acb-account" style="display:none;">20219691</span>
+</div>
+</div>
+<img src="https://jtisvn.github.io/icons/apps/qr.webp" class="qr-small" alt="QR Donate">
+</div>
+<div class="donate-message">
+Sự ủng hộ của bạn là động lực to lớn để <span class="gradient-text">K37 Repo</span> tiếp tục phát triển. Xin chân thành cảm ơn! ❤️
+</div>
+</div>
+</div>
+</div>
+<div class="footer">© 2026 K37 REPO</div>
+<script>
+function copyToClipboard(elementId, btnElement) {
+var textToCopy = document.getElementById(elementId).innerText;
+var originalText = btnElement.innerText;
+navigator.clipboard.writeText(textToCopy).then(function() {
+btnElement.innerText = "Đã sao chép!";
+setTimeout(function() { btnElement.innerText = originalText; }, 2000);
+});
+}
+</script>
 </body>
 </html>
