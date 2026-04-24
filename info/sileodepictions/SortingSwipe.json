@@ -166,33 +166,17 @@
 "class": "DepictionStackView",
 "views": [
 {
-"class": "DepictionHeaderView",
-"title": "Phiên bản 1.0.7"
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "- Sửa lỗi mất icon Dock khi chọn kiểu sắp xếp.",
-"useSpacing": true
-},
-{
-"class": "DepictionSpacerView",
-"spacing": 8
+"markdown": "#### Phiên bản: 1.0.7\n- Sửa lỗi mất icon Dock khi chọn kiểu sắp xếp.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 },
 {
 "class": "DepictionSeparatorView"
 },
 {
-"class": "DepictionSpacerView",
-"spacing": 8
-},
-{
-"class": "DepictionHeaderView",
-"title": "Phiên bản 1.0.6"
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "- Thêm ngôn ngữ Tiếng Việt.",
-"useSpacing": true
+"markdown": "#### Phiên bản: 1.0.6\n- Thêm ngôn ngữ Tiếng Việt.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 }
 ]
 }
