@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>K37 Repo - Depiction</title>
+    <style>
+        :root { --tint: #4facfe; --bg: #f2f2f7; --card: #ffffff; --text: #000000; --sub: #8e8e93; --sep: #c6c6c8; }
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #000000; --card: #1c1c1e; --text: #ffffff; --sub: #8e8e93; --sep: #38383a; }
+        }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding-bottom: 30px; color: var(--text); -webkit-tap-highlight-color: transparent; }
+        .banner { width: 100%; display: block; }
+        .tabs { display: flex; background: var(--card); border-bottom: 1px solid var(--sep); position: sticky; top: 0; z-index: 10; }
+        .tab { flex: 1; padding: 12px; border: none; background: none; font-weight: 600; color: var(--sub); font-size: 14px; }
+        .tab.active { color: var(--tint); border-bottom: 2px solid var(--tint); }
+        .content { padding: 16px; display: none; }
+        .content.active { display: block; }
+        .box { background: var(--card); padding: 15px; border-radius: 12px; margin-bottom: 15px; font-size: 15px; }
+        .title { font-size: 20px; font-weight: 800; margin: 10px 0; }
+        .screenshots { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px; }
+        .screenshots img { width: 185px; height: 400px; border-radius: 8px; border: 1px solid var(--sep); flex-shrink: 0; object-fit: cover; }
+        .row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 0.5px solid var(--sep); }
+        .row:last-child { border-bottom: none; }
+        .btn-table { display: flex; align-items: center; padding: 12px 0; color: var(--tint); text-decoration: none; font-weight: 500; border-bottom: 0.5px solid var(--sep); }
+        .btn-table:last-child { border-bottom: none; }
+        .btn-table img { width: 20px; height: 20px; margin-right: 10px; filter: brightness(1); }
+        .separator { height: 0.5px; background-color: var(--sep); margin: 15px 0; }
+        .footer { text-align: center; margin-top: 20px; color: var(--sub); font-size: 12px; }
+        .log-v { font-weight: 700; margin-top: 15px; margin-bottom: 5px; }
+    </style>
+</head>
+<body>
+    <img id="headerImage" class="banner">
+    <div class="tabs">
+        <button class="tab active" onclick="showTab('tab0')">Giới Thiệu</button>
+        <button class="tab" onclick="showTab('tab1')">Nhật Ký Cập Nhật</button>
+    </div>
+    <div id="tab0" class="content active">
+        <div id="tweakTitle" class="title"></div>
+        <div id="description" class="box"></div>
+        <div class="title">Ảnh màn hình</div>
+        <div id="screenshots" class="screenshots"></div>
+        <div class="title">Thông Tin</div>
+        <div id="infoTable" class="box"></div>
+        <div class="separator"></div>
+        <div id="links" class="box" style="padding: 0 15px;"></div>
+    </div>
+    <div id="tab1" class="content">
+        <div id="changelog"></div>
+    </div>
+    <div class="footer">
+        <img src="https://k37ios.pages.dev/CydiaIcon.png" width="40" height="40" style="border-radius:8px; margin-bottom:5px;"><br>
+        Được tạo bởi ❤️ K37 Repo
+    </div>
+
+    <script>
+        const jsonUrl = '../sileodepictions/SafariBlocker.json';
+        fetch(jsonUrl).then(res => res.json()).then(data => {
+            document.getElementById('headerImage').src = data.headerImage;
+            const views = data.tabs[0].views;
+            document.getElementById('tweakTitle').innerText = views.find(v => v.class === "DepictionHeaderView")?.title || "";
+            document.getElementById('description').innerHTML = (views.find(v => v.class === "DepictionMarkdownView")?.markdown || "").replace(/\n/g, '<br>');
+            
+            const ssData = views.find(v => v.class === "DepictionScreenshotsView");
+            if(ssData) ssData.screenshots.forEach(s => {
+                const img = document.createElement('img'); img.src = s.url; document.getElementById('screenshots').appendChild(img);
+            });
+
+            views.forEach(v => {
+                if(v.class === "DepictionTableTextView") {
+                    document.getElementById('infoTable').innerHTML += `<div class="row"><span style="color:var(--sub)">${v.title}</span><b>${v.text}</b></div>`;
+                }
+                if(v.class === "DepictionTableButtonView") {
+                    const iconTag = v.icon ? `<img src="${v.icon}">` : "";
+                    document.getElementById('links').innerHTML += `<a href="${v.action}" class="btn-table">${iconTag}${v.title}</a>`;
+                }
+            });
+
+            const logs = data.tabs[1].views;
+            let logHtml = "";
+            logs.forEach(l => {
+                if(l.class === "DepictionSeparatorView") logHtml += `<div class="separator"></div>`;
+                else {
+                    if(l.title) logHtml += `<div class="log-v">${l.title}</div>`;
+                    if(l.markdown) logHtml += `<div class="box">${l.markdown.replace(/\n/g, '<br>')}</div>`;
+                }
+            });
+            document.getElementById('changelog').innerHTML = logHtml;
+        }).catch(err => console.error(err));
+
+        function showTab(id) {
+            document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>

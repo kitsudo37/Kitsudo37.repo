@@ -136,6 +136,26 @@ Icon: https://k37ios.pages.dev/assets/KineWall.png
 Name: KineWall
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/KineWall.json
 
+Package: com.k37.kinewall
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: K37 Repo
+Installed-Size: 524
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, firmware (>= 16.0), oldabi-stub
+Filename: ./debs/com.k37.kinewall_1.0.2_iphoneos-arm64e.deb
+Size: 92136
+MD5sum: b808fcd4d1420ef5456d3547749c819d
+SHA1: 3302a41965743a84f5e05828291063130c74cec7
+SHA256: 9da86f90cfe8c5178161fd69939a75f573d16a446682b8be664ebe12fcc29fe2
+Section: Applications
+Description: Ứng dụng chọn nền video màn hình khoá và màn hình chính, Chỉ hỗ trợ iOS 16+
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/KineWall.html
+Icon: https://k37ios.pages.dev/assets/KineWall.png
+Name: KineWall
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/KineWall.json
+
 Package: com.k37.lunartimebar
 Version: 1.4
 Architecture: iphoneos-arm64
@@ -174,6 +194,27 @@ Depiction: https://k37ios.pages.dev/info/depictions/LunartimeBar.html
 Icon: https://k37ios.pages.dev/assets/LunartimeBar.png
 Name: Lunartime Bar
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/LunartimeBar.json
+
+Package: com.k37.safariblocker
+Version: 1.3.1-1+debug
+Architecture: iphoneos-arm64
+Maintainer: K37 Repo
+Installed-Size: 236
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
+Filename: ./debs/com.k37.safariblocker_1.3.1-1+debug_iphoneos-arm64.deb
+Size: 39408
+MD5sum: f66cfd3d6271347ba85550bdafc0e692
+SHA1: 2e29da6496881ba704ff84eca6b012b594082699
+SHA256: ba3889d2576b48213a403028d114873b02a7769e3bbc4554409bfe9ed898548d
+Section: Tweaks
+Homepage: https://k37ios.pages.dev
+Description: Chặn các tab mới trong Safari bằng các tùy chọn nâng cao!
+Tag: role::enduser, purpose::enhancement
+Author: P2KDev & Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/SafariBlocker.html
+Icon: https://k37ios.pages.dev/assets/SafariBlocker.png
+Name: SafariBlocker
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/SafariBlocker.json
 
 Package: com.squidforce.copyvault
 Version: 1.9.0
