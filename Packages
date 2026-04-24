@@ -97,6 +97,45 @@ Icon: https://k37ios.pages.dev/assets/ClockTimeFont.png
 Name: ClockTimeFont
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/ClockTimeFont.json
 
+Package: com.k37.clocktimefont
+Version: 1.0.0+debug
+Architecture: iphoneos-arm64e
+Maintainer: K37 Repo
+Installed-Size: 1640
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, firmware (>= 15.0), oldabi-stub
+Filename: ./debs/com.k37.clocktimefont_1.0.0+debug_iphoneos-arm64e.deb
+Size: 508690
+MD5sum: 8e82cce7d69599710f029aafe0d1747f
+SHA1: 57aa4410a68ae619c9dd89fb0f7c308469bc3ddf
+SHA256: c466c23a60a728b41b9c310d6426bf3600dd4e94ce29ee762c603c7720882ae1
+Section: Tweaks
+Description: Tuỳ chỉnh phông chữ đồng hồ màn hình khoá.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/ClockTimeFont.html
+Icon: https://k37ios.pages.dev/assets/ClockTimeFont.png
+Name: ClockTimeFont
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/ClockTimeFont.json
+
+Package: com.k37.kinewall
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: K37 Repo
+Installed-Size: 524
+Depends: mobilesubstrate, firmware (>= 16.0), oldabi-stub
+Filename: ./debs/com.k37.kinewall_1.0.2_iphoneos-arm64.deb
+Size: 73196
+MD5sum: 79d5298497d465a25e4e0a6f57d2a581
+SHA1: da562cf06927edf5dffa3f915a1e5ff77f4fa9ba
+SHA256: 318a8be590df5abc6267974bb1aa9289c72f2d9531ddeb70cc2badc48d7b3c6a
+Section: Applications
+Description: Ứng dụng chọn nền video màn hình khoá và màn hình chính, Chỉ hỗ trợ iOS 16+
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/KineWall.html
+Icon: https://k37ios.pages.dev/assets/KineWall.png
+Name: KineWall
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/KineWall.json
+
 Package: com.k37.lunartimebar
 Version: 1.4
 Architecture: iphoneos-arm64
