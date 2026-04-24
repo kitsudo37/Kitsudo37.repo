@@ -78,6 +78,25 @@ Icon: https://k37ios.pages.dev/assets/BackgroundCaller.png
 Name: BackgroundCaller
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/BackgroundCaller.json
 
+Package: com.k37.clocktimefont
+Version: 1.0.0+debug
+Architecture: iphoneos-arm64
+Maintainer: K37 Repo
+Installed-Size: 1640
+Depends: mobilesubstrate, firmware (>= 15.0), oldabi-stub
+Filename: ./debs/com.k37.clocktimefont_1.0.0+debug_iphoneos-arm64.deb
+Size: 403908
+MD5sum: 64cd1094cbd0aecdbc58b099a769420e
+SHA1: b251a363ab4a1faa4937150e8648aad607c5df4d
+SHA256: a0b87fa95e598960959b1534b21d2aee929ac71d3d5b2a6c69f33c6f3f2d6021
+Section: Tweaks
+Description: Tuỳ chỉnh phông chữ đồng hồ màn hình khoá.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/ClockTimeFont.html
+Icon: https://k37ios.pages.dev/assets/ClockTimeFont.png
+Name: ClockTimeFont
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/ClockTimeFont.json
+
 Package: com.k37.lunartimebar
 Version: 1.4
 Architecture: iphoneos-arm64
