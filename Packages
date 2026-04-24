@@ -238,6 +238,25 @@ Icon: https://k37ios.pages.dev/assets/SafariBlocker.png
 Name: SafariBlocker
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/SafariBlocker.json
 
+Package: com.k37.sortingswipe
+Version: 1.0.7
+Architecture: iphoneos-arm64
+Maintainer: K37 Repo
+Installed-Size: 204
+Depends: mobilesubstrate, firmware (>= 11.0)
+Filename: ./debs/com.k37.sortingswipe_1.0.7_iphoneos-arm64.deb
+Size: 16224
+MD5sum: 0253c0882a3d8538f334fdefdb4286b5
+SHA1: f1554694c0468f6efe695c6ef0c2a7fcc3a7dff2
+SHA256: 0865732f282276afe88507f1c3b144342872c0ab28768c9f60ddee5469eb8cf5
+Section: Tweaks
+Description: Sort your homescreen icons with a swipe!
+Author: Lightmann & Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/SortingSwipe.html
+Icon: https://raw.githubusercontent.com/L1ghtmann/SortingSwipe/main/icon.png
+Name: SortingSwipe
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/SortingSwipe.json
+
 Package: com.squidforce.copyvault
 Version: 1.9.0
 Architecture: iphoneos-arm64e
