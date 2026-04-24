@@ -6,181 +6,192 @@
 <title>K37 Repository</title>
 <style>
 :root {
+    --bg-image: url('https://k37ios.pages.dev/banner/banner.png');
+    --bg-color: #f0f2f5;
     --text-main: #000000;
     --text-sub: #1a1a1a;
     --text-link: #007aff;
-    --card-bg: rgba(255, 255, 255, 0.05);
+    --card-bg: rgba(255, 255, 255, 0.02);
     --inner-bg: rgba(255, 255, 255, 0.15);
     --border-color: rgba(255, 255, 255, 0.2);
     --sileo-green: #07A892;
+    --jtisvn-btn-color: #8e9efc; 
+}
+
+[data-theme="dark"] {
+    --bg-image: none;
+    --bg-color: #1c1c1e;
+    --text-main: #ffffff;
+    --text-sub: #a1a1aa;
+    --text-link: #38bdf8;
+    --card-bg: rgba(255, 255, 255, 0.01);
+    --inner-bg: rgba(255, 255, 255, 0.05);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --jtisvn-btn-color: #a5b4fc;
 }
 
 body { 
-font-family: -apple-system, sans-serif; 
-color: var(--text-main); 
-margin: 0;
-padding: 20px;
-background-color: #f0f2f5;
-background-image: url('https://k37ios.pages.dev/banner/banner.png');
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
+    font-family: -apple-system, sans-serif; 
+    color: var(--text-main); 
+    margin: 0;
+    padding: 20px;
+    background-color: var(--bg-color);
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background 0.3s ease;
 }
 
 .main-card {
-background: var(--card-bg); 
-border: 1px solid var(--border-color);
-backdrop-filter: blur(4px);
--webkit-backdrop-filter: blur(8px);
-border-radius: 32px;
-width: 100%;
-max-width: 900px;
-padding: 35px 40px;
-box-sizing: border-box;
-box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    background: var(--card-bg); 
+    border: 1px solid var(--border-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 32px;
+    width: 100%;
+    max-width: 900px;
+    padding: 35px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+    background: var(--inner-bg);
+    border: 1px solid var(--border-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: 0.2s;
 }
 
 .header {
-display: flex;
-align-items: center;
-gap: 15px;
-margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
 }
 .header img { width: 55px; height: 55px; border-radius: 14px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-.header h1 { font-size: 26px; font-weight: 850; margin: 0; color: var(--text-main); text-shadow: 0 1px 2px rgba(255,255,255,0.8); }
+.header h1 { font-size: 26px; font-weight: 850; margin: 0; color: var(--text-main); }
 
 .content-grid {
-display: grid;
-grid-template-columns: 1fr 1.2fr;
-gap: 20px 35px;
-align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 20px 35px;
+    align-items: start;
 }
 
 .section-label { 
-font-size: 11px; 
-font-weight: 800; 
-color: var(--text-main); 
-text-transform: uppercase; 
-letter-spacing: 1.5px; 
-margin-bottom: 10px; 
+    font-size: 11px; 
+    font-weight: 800; 
+    color: var(--text-main); 
+    text-transform: uppercase; 
+    letter-spacing: 1.5px; 
+    margin-bottom: 10px; 
 }
 
-.repo-box { 
-background: var(--inner-bg);
-border: 1.5px solid var(--border-color);
-border-radius: 16px;
-display: flex; 
-justify-content: space-between; 
-align-items: center; 
-padding: 12px 15px; 
-margin-bottom: 20px; 
+.repo-box, .info-card, .donate-section, .btn {
+    background: var(--inner-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    transition: 0.3s ease;
 }
+
+.repo-box { display: flex; justify-content: space-between; align-items: center; padding: 12px 15px; margin-bottom: 20px; }
 .repo-box span { font-size: 14px; color: var(--text-link); font-weight: 800; }
 
 .copy-btn {
-background: rgba(0, 0, 0, 0.08);
-color: var(--text-main);
-border: none;
-padding: 8px 14px;
-border-radius: 10px;
-cursor: pointer;
-font-size: 11px;
-font-weight: 800;
-transition: 0.2s;
+    background: rgba(0, 0, 0, 0.1);
+    color: var(--text-main);
+    border: none;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 800;
 }
-.copy-btn:hover { background: rgba(0, 0, 0, 0.15); }
 
 .btn {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 12px;
-padding: 14px;
-border-radius: 14px;
-text-decoration: none;
-font-weight: 700;
-font-size: 15px;
-margin-bottom: 12px;
-transition: 0.2s;
-background: var(--inner-bg);
-border: 1px solid var(--border-color);
-color: var(--text-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--text-main);
 }
 .btn:hover { background: rgba(255, 255, 255, 0.3); border-color: rgba(255, 255, 255, 0.5); }
-.btn:active { transform: scale(0.96); }
 .btn img { width: 24px; height: 24px; border-radius: 6px; }
 
-.sileo-color {
-color: var(--sileo-green);
-font-weight: 800;
-}
+.sileo-color { color: var(--sileo-green); font-weight: 800; }
+.jtisvn-btn-text { color: var(--jtisvn-btn-color); font-weight: 800; }
+.telegram-color { color: #24A1DE !important; }
+.facebook-color { color: #1877F2 !important; }
 
-.intro-text {
-font-size: 13.5px;
-color: var(--text-sub);
-font-weight: 600;
-line-height: 1.6;
-text-align: left;
-margin-top: 10px;
-}
+.intro-text { font-size: 13.5px; color: var(--text-sub); font-weight: 600; line-height: 1.6; margin-top: 10px; }
 
-.info-card, .donate-section {
-background: var(--inner-bg);
-border: 1px solid var(--border-color);
-border-radius: 20px;
-padding: 20px;
-margin-bottom: 20px;
-}
-
-.info-card p { font-size: 13px; color: var(--text-sub); font-weight: 600; line-height: 1.6; margin: 8px 0; }
+.info-card, .donate-section { padding: 20px; margin-bottom: 20px; }
+.info-card p { font-size: 13px; color: var(--text-sub); font-weight: 600; margin: 8px 0; }
 .info-card b { color: var(--text-main); font-weight: 800; }
-.info-card a { color: #0056b3; text-decoration: none; font-weight: 700; }
+.info-card a { text-decoration: none; font-weight: 700; }
 
-.donate-flex { display: flex; align-items: center; gap: 15px; }
-.donate-data { flex: 1; }
 .donate-item { 
-background: rgba(255, 255, 255, 0.3); 
-padding: 10px 14px; 
-border-radius: 12px; 
-margin-bottom: 8px; 
-display: flex; 
-justify-content: space-between; 
-align-items: center;
-font-size: 13px;
-border: 1px solid rgba(0,0,0,0.05);
-color: var(--text-main);
-font-weight: 700;
+    background: rgba(255, 255, 255, 0.08); 
+    padding: 10px 14px; 
+    border-radius: 12px; 
+    margin-bottom: 8px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    font-size: 13px;
+    color: var(--text-main);
+    font-weight: 700;
+    border: 1px solid var(--border-color);
 }
-.qr-img { width: 95px; height: 95px; background: white; border-radius: 12px; padding: 2px; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.qr-img { width: 95px; height: 95px; background: white; border-radius: 12px; padding: 2px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 
 .footer-text { 
-margin-top: 40px; 
-font-size: 11px; 
-color: var(--text-sub); 
-font-weight: 700;
-display: flex; 
-justify-content: space-between; 
-align-items: center;
-border-top: 1px solid rgba(0, 0, 0, 0.1);
-padding-top: 20px;
+    margin-top: 40px; 
+    font-size: 11px; 
+    color: var(--text-sub); 
+    font-weight: 700;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
 }
 
 @media (max-width: 768px) {
-.main-card { padding: 25px; border-radius: 0; }
-.content-grid { grid-template-columns: 1fr; gap: 20px; }
-.header { justify-content: center; }
-.footer-text { flex-direction: column; gap: 12px; text-align: center; }
+    .main-card { padding: 25px; border-radius: 0; }
+    .content-grid { grid-template-columns: 1fr; }
+    .theme-toggle { top: 20px; right: 20px; }
+    .footer-text { flex-direction: column; gap: 10px; text-align: center; }
 }
 </style>
 </head>
 <body>
 
 <div class="main-card">
+    <div class="theme-toggle" id="theme-btn" onclick="toggleTheme()">🌙</div>
+
     <div class="header">
         <img src="https://k37ios.pages.dev/LogoSileo.png" alt="Logo">
         <h1>K37 REPO</h1>
@@ -199,6 +210,10 @@ padding-top: 20px;
             <a href="zbra://sources/add/https://k37ios.pages.dev" class="btn">
                 <img src="https://jtisvn.github.io/icons/apps/zebra.webp" alt="Zebra"> Thêm vào Zebra
             </a>
+            
+            <a href="https://jtisvn.github.io/" class="btn">
+                <img src="https://raw.githubusercontent.com/jtisvn/jtisvn.github.io/master/CydiaIcon.png" alt="Repo"> Repo <span class="jtisvn-btn-text">JTISVN</span>
+            </a>
 
             <div style="margin-top: 20px;">
                 <div class="section-label">Giới thiệu về Repo</div>
@@ -213,25 +228,25 @@ padding-top: 20px;
             <div class="info-card">
                 <p><b>Phát triển bởi:</b> Kitsudo</p>
                 <p><b>Tình trạng:</b> Đang cập nhật tweak cho iOS 15 - 16.</p>
-                <p><b>Liên kết:</b> <a href="https://t.me/Kitsudo">Telegram</a> • <a href="https://www.facebook.com/share/1JMRXio8Df/">Facebook</a></p>
-                <p><b>Nhóm hỗ trợ:</b> <a href="https://t.me/jtisvietnamrepo">K37-JTISVN</a></p>
+                <p><b>Liên hệ:</b> <a href="https://t.me/Kitsudo" class="telegram-color">Telegram</a> • <a href="https://www.facebook.com/share/1JMRXio8Df/" class="facebook-color">Facebook</a></p>
+                <p><b>Nhóm hỗ trợ:</b> <a href="https://t.me/jtisvietnamrepo" style="color:var(--text-link)">K37-JTISVN</a></p>
             </div>
 
             <div class="section-label">Ủng hộ</div>
             <div class="donate-section">
-                <div class="donate-flex">
-                    <div class="donate-data">
+                <div style="display: flex; align-items: center; gap: 15px;">
+                    <div style="flex: 1;">
                         <div class="donate-item"><span>Ngân hàng: <b>ACB</b></span></div>
-                        <div class="donate-item" style="font-size: 11px;"><b>NGUYEN TRUNG HIEU</b></div>
+                        <div class="donate-item" style="font-size: 11px;"><b>Chủ TK: NGUYEN TRUNG HIEU</b></div>
                         <div class="donate-item">
                             <span>STK: <b id="stk">20219691</b></span>
-                            <button class="copy-btn" style="background: rgba(0,0,0,0.1);" onclick="copy('stk', this)">📋</button>
+                            <button onclick="copy('stk', this)" style="background:none; border:none; cursor:pointer; font-size: 14px;">📋</button>
                         </div>
                     </div>
                     <img src="https://jtisvn.github.io/icons/apps/qr.webp" class="qr-img" alt="QR">
                 </div>
-                <p style="text-align: center; font-size: 11px; color: var(--text-sub); font-weight: 700; margin-top: 15px;">
-                    Sự ủng hộ của bạn giúp <b>K37 Repo</b> tiếp tục phát triển. ❤️
+                <p style="text-align: center; font-size: 11px; color: var(--text-sub); font-weight: 700; margin-top: 15px; line-height: 1.5;">
+                    Sự ủng hộ của bạn là động lực to lớn để <b>K37 Repo</b> tiếp tục phát triển. Xin chân thành cảm ơn! ❤️
                 </p>
             </div>
         </div>
@@ -244,12 +259,38 @@ padding-top: 20px;
 </div>
 
 <script>
+function toggleTheme() {
+    const body = document.body;
+    const btn = document.getElementById('theme-btn');
+    if (body.getAttribute('data-theme') === 'dark') {
+        body.removeAttribute('data-theme');
+        btn.innerText = '🌙';
+        localStorage.setItem('theme', 'light');
+    } else {
+        body.setAttribute('data-theme', 'dark');
+        btn.innerText = '☀️';
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+window.onload = () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        document.body.setAttribute('data-theme', 'dark');
+        document.getElementById('theme-btn').innerText = '☀️';
+    }
+}
+
 function copy(id, btn) {
     const text = document.getElementById(id).innerText;
-    const oldText = btn.innerText;
+    const oldText = btn.innerHTML;
     navigator.clipboard.writeText(text).then(() => {
-        btn.innerText = "Đã sao chép!";
-        setTimeout(() => btn.innerText = oldText, 2000);
+        if(id === 'stk') {
+            btn.innerHTML = "<small style='color:var(--sileo-green)'>Đã chép!</small>";
+        } else {
+            btn.innerText = "Đã sao chép!";
+        }
+        setTimeout(() => btn.innerHTML = oldText, 2000);
     });
 }
 </script>
