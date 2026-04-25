@@ -308,10 +308,10 @@ Pre-Depends: rootless-compat(>= 0.9)
 Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi
 Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2
 Filename: ./debs/com.kitsudo.nexusboard_3.3_iphoneos-arm64e.deb
-Size: 553868
-MD5sum: ca6fc94758ad6a9c7619d1ff22997bcc
-SHA1: aa3c06d5afcde71f19f886afa6f5d88a97d2dfb8
-SHA256: 2e524002c455b06d480a59e962e41a3329acf1027e1029ee2144117188d89ad2
+Size: 554736
+MD5sum: 184995c747b97faefd05bbbc1876ce32
+SHA1: 79ac727f9a0d879e3107c373572eb576a7a607a7
+SHA256: c6bd1f45a81541eb4db2ea086a95a3c4066206ec772966e905e642382b8566c5
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.
@@ -320,7 +320,7 @@ Author: Kitsudo
 Depiction: https://jtisvn.github.io/depictions/NexusBoard.html
 Icon: https://jtisvn.github.io/sectionIcons/NexusBoard.png
 Name: NexusBoard
-Sileodepiction: https://jtisvn.github.io/sileodepictions/NexusBoard.json
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/NexusBoard.json
 
 Package: com.kitsudo.tiktokautoswipe
 Version: 1.0.0
