@@ -23,17 +23,9 @@
 "spacing": 16
 },
 {
-"class": "DepictionHeaderView",
-"title": "BackgroundCaller"
-},
-{
-"class": "DepictionSpacerView",
-"spacing": 4
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "Tinh chỉnh cho phép bạn chọn Video từ ứng dụng Ảnh làm nền cho cuộc gọi đến.",
-"useSpacing": true
+"markdown": "## BackgroundCaller\nTinh chỉnh cho phép bạn chọn Video từ ứng dụng Ảnh làm nền cho cuộc gọi đến.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 },
 {
 "class": "DepictionSpacerView",
@@ -48,7 +40,9 @@
 },
 {
 "class": "DepictionHeaderView",
-"title": "Ảnh màn hình"
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
 },
 {
 "class": "DepictionScreenshotsView",
