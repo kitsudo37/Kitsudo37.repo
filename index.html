@@ -5,20 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>K37 Repository</title>
 <style>
+/* MẶC ĐỊNH LÀ CHẾ ĐỘ TỐI (DARK MODE) */
 :root {
-    --bg-image: url('https://k37ios.pages.dev/banner/banner.png');
-    --bg-color: #f0f2f5;
-    --text-main: #000000;
-    --text-sub: #1a1a1a;
-    --text-link: #007aff;
-    --card-bg: rgba(255, 255, 255, 0.02);
-    --inner-bg: rgba(255, 255, 255, 0.15);
-    --border-color: rgba(255, 255, 255, 0.2);
-    --sileo-green: #07A892;
-    --jtisvn-btn-color: #8e9efc; 
-}
-
-[data-theme="dark"] {
     --bg-image: none;
     --bg-color: #1c1c1e;
     --text-main: #ffffff;
@@ -27,7 +15,21 @@
     --card-bg: rgba(255, 255, 255, 0.01);
     --inner-bg: rgba(255, 255, 255, 0.05);
     --border-color: rgba(255, 255, 255, 0.1);
+    --sileo-green: #07A892;
     --jtisvn-btn-color: #a5b4fc;
+}
+
+/* CHẾ ĐỘ SÁNG KHI ĐƯỢC KÍCH HOẠT */
+[data-theme="light"] {
+    --bg-image: url('https://k37ios.pages.dev/banner/banner.png');
+    --bg-color: #f0f2f5;
+    --text-main: #000000;
+    --text-sub: #1a1a1a;
+    --text-link: #007aff;
+    --card-bg: rgba(255, 255, 255, 0.02);
+    --inner-bg: rgba(255, 255, 255, 0.15);
+    --border-color: rgba(255, 255, 255, 0.2);
+    --jtisvn-btn-color: #8e9efc; 
 }
 
 body { 
@@ -45,7 +47,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 .main-card {
@@ -186,11 +188,20 @@ body {
     .footer-text { flex-direction: column; gap: 10px; text-align: center; }
 }
 </style>
+<script>
+    // CHẠY NGAY LẬP TỨC ĐỂ XÁC ĐỊNH GIAO DIỆN, CHỐNG NHÁY TRẮNG
+    (function() {
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        if (savedTheme === 'light') {
+            document.documentElement.setAttribute('data-theme', 'light');
+        }
+    })();
+</script>
 </head>
 <body>
 
 <div class="main-card">
-    <div class="theme-toggle" id="theme-btn" onclick="toggleTheme()">🌙</div>
+    <div class="theme-toggle" id="theme-btn" onclick="toggleTheme()">☀️</div>
 
     <div class="header">
         <img src="https://k37ios.pages.dev/LogoSileo.png" alt="Logo">
@@ -239,7 +250,7 @@ body {
                         <div class="donate-item"><span>Ngân hàng: <b>ACB</b></span></div>
                         <div class="donate-item" style="font-size: 11px;"><b>Chủ TK: NGUYEN TRUNG HIEU</b></div>
                         <div class="donate-item">
-                            <span>STK: <b id="stk">20219691</b></span>
+                            <span>STK: <b id="stk" style="color: var(--text-link); font-size: 14.5px;">20219691</b></span>
                             <button onclick="copy('stk', this)" style="background:none; border:none; cursor:pointer; font-size: 14px;">📋</button>
                         </div>
                     </div>
@@ -259,25 +270,24 @@ body {
 </div>
 
 <script>
+// Khởi tạo icon nút bấm ngay khi load
+document.addEventListener("DOMContentLoaded", function() {
+    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    document.getElementById('theme-btn').innerText = isLight ? '🌙' : '☀️';
+});
+
 function toggleTheme() {
-    const body = document.body;
+    const html = document.documentElement;
     const btn = document.getElementById('theme-btn');
-    if (body.getAttribute('data-theme') === 'dark') {
-        body.removeAttribute('data-theme');
-        btn.innerText = '🌙';
-        localStorage.setItem('theme', 'light');
-    } else {
-        body.setAttribute('data-theme', 'dark');
+    
+    if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
         btn.innerText = '☀️';
         localStorage.setItem('theme', 'dark');
-    }
-}
-
-window.onload = () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
-        document.body.setAttribute('data-theme', 'dark');
-        document.getElementById('theme-btn').innerText = '☀️';
+    } else {
+        html.setAttribute('data-theme', 'light');
+        btn.innerText = '🌙';
+        localStorage.setItem('theme', 'light');
     }
 }
 
