@@ -55,15 +55,15 @@
     </div>
 
     <script>
-        // Hàm này tự động quét và dịch cú pháp Markdown (như ####) thành HTML chữ đậm
+        // Hàm tự động quét và dịch cú pháp Markdown thành HTML
         function parseMD(str) {
             if (!str) return "";
             return str
-                .replace(/^#{1,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>') // Biến #### thành in đậm
+                .replace(/^#{1,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>') // Biến thẻ # thành in đậm
                 .replace(/\n/g, '<br>'); // Giữ nguyên khoảng xuống dòng
         }
 
-        const jsonUrl = '../sileodepictions/BackgroundCaller.json';
+        const jsonUrl = '../sileodepictions/BackgroundCaller.json'; // Thay đổi đường dẫn JSON ở đây tùy ý
         fetch(jsonUrl).then(res => res.json()).then(data => {
             // TỰ ĐỘNG BẮT MÀU TINTCOLOR TỪ JSON VÀ ĐỔI MÀU GIAO DIỆN
             if (data.tintColor) {
@@ -72,16 +72,32 @@
 
             document.getElementById('headerImage').src = data.headerImage;
             const views = data.tabs[0].views;
-            document.getElementById('tweakTitle').innerText = views.find(v => v.class === "DepictionHeaderView")?.title || "";
             
-            // Đã áp dụng hàm parseMD cho phần giới thiệu
-            document.getElementById('description').innerHTML = parseMD(views.find(v => v.class === "DepictionMarkdownView")?.markdown);
+            // XỬ LÝ THÔNG MINH: TÌM TÊN TWEAK TỪ JSON GỘP HOẶC TÁCH RỜI
+            let mdView = views.find(v => v.class === "DepictionMarkdownView");
+            let mdContent = mdView ? mdView.markdown : "";
+            let tweakName = "";
+            
+            // Tìm cú pháp "## Tên Tweak" trong Markdown
+            let titleMatch = mdContent.match(/^##\s+(.*)/m);
+            if (titleMatch) {
+                tweakName = titleMatch[1]; // Lấy được tên Tweak
+                mdContent = mdContent.replace(/^##\s+.*\n?/, ''); // Bóc tách xong thì xóa dòng ## đi để mô tả gọn gàng
+            } else {
+                // Fallback nếu dùng form JSON cũ: Tìm Header đầu tiên nhưng tuyệt đối né chữ "Ảnh màn hình"
+                let headerView = views.find(v => v.class === "DepictionHeaderView" && v.title !== "Ảnh màn hình");
+                tweakName = headerView ? headerView.title : "";
+            }
+
+            // Gán tên Tweak và in Markdown ra mô tả
+            document.getElementById('tweakTitle').innerText = tweakName;
+            document.getElementById('description').innerHTML = parseMD(mdContent);
             
             const ssData = views.find(v => v.class === "DepictionScreenshotsView");
             if(ssData) {
                 const ssContainer = document.getElementById('screenshots');
                 
-                // KIỂM TRA: NẾU CÓ ĐÚNG 1 ẢNH THÌ CĂN GIỮA
+                // NẾU CÓ ĐÚNG 1 ẢNH THÌ CĂN GIỮA MÀN HÌNH
                 if(ssData.screenshots.length === 1) {
                     ssContainer.style.justifyContent = 'center';
                 }
@@ -107,8 +123,7 @@
                 if(l.class === "DepictionSeparatorView") logHtml += `<div class="separator"></div>`;
                 else {
                     if(l.title) logHtml += `<div class="log-v">${l.title}</div>`;
-                    
-                    // Đã áp dụng hàm parseMD cho phần nhật ký cập nhật
+                    // Dịch Markdown cho Nhật Ký Cập Nhật
                     if(l.markdown) logHtml += `<div class="box">${parseMD(l.markdown)}</div>`;
                 }
             });

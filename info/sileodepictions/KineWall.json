@@ -23,17 +23,9 @@
 "spacing": 16
 },
 {
-"class": "DepictionHeaderView",
-"title": "KineWall"
-},
-{
-"class": "DepictionSpacerView",
-"spacing": 4
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "Ứng dụng cho phép bạn cài đặt Video làm hình nền cho Màn hình khóa và Màn hình chính một cách dễ dàng.\n\n**Lưu ý:** Chỉ hoạt động trên thiết bị chip A12 trở lên chạy iOS 16 trở lên.\n\n**Tính năng:**\n- Tùy chọn video riêng biệt cho màn hình khóa và màn hình chính.\n- Hỗ trợ bật/tắt âm thanh của video.\n- Thanh trượt điều chỉnh mức âm lượng video.\n- Hẹn giờ đổi video tự động theo ý muốn.\n\n*Yêu cầu cài gói **oldabi-stub** (Rootless) và **oldabi** (Roothide) trước khi cài đặt tweak này.*",
-"useSpacing": true
+"markdown": "## KineWall\nỨng dụng cho phép bạn cài đặt Video làm hình nền cho Màn hình khóa và Màn hình chính một cách dễ dàng.\n\n**Lưu ý:** Chỉ hoạt động trên thiết bị chip A12 trở lên chạy iOS 16 trở lên.\n\n**Tính năng:**\n- Tùy chọn video riêng biệt cho màn hình khóa và màn hình chính.\n- Hỗ trợ bật/tắt âm thanh của video.\n- Thanh trượt điều chỉnh mức âm lượng video.\n- Hẹn giờ đổi video tự động theo ý muốn.\n\n*Yêu cầu cài gói **oldabi-stub** (Rootless) và **oldabi** (Roothide) trước khi cài đặt tweak này.*",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 },
 {
 "class": "DepictionSpacerView",
@@ -48,7 +40,9 @@
 },
 {
 "class": "DepictionHeaderView",
-"title": "Ảnh màn hình"
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
 },
 {
 "class": "DepictionScreenshotsView",

@@ -23,17 +23,9 @@
 "spacing": 16
 },
 {
-"class": "DepictionHeaderView",
-"title": "Axon"
-},
-{
-"class": "DepictionSpacerView",
-"spacing": 4
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "Xem và gom nhóm thông báo trên màn hình khoá.\n- Tự động nhóm tất cả thông báo theo từng biểu tượng ứng dụng\n- Chạm vào biểu tượng để xem thông báo của ứng dụng đó, chạm lần nữa để thu gọn.\n- Hoặc nhấn giữ để lọc (xoá) nhanh thông báo.\n- Tuỳ chỉnh vị trí và kiểu giao diện của các biểu tượng theo ý muốn",
-"useSpacing": true
+"markdown": "## Axon\nXem và gom nhóm thông báo trên màn hình khoá.\n- Tự động nhóm tất cả thông báo theo từng biểu tượng ứng dụng\n- Chạm vào biểu tượng để xem thông báo của ứng dụng đó, chạm lần nữa để thu gọn.\n- Hoặc nhấn giữ để lọc (xoá) nhanh thông báo.\n- Tuỳ chỉnh vị trí và kiểu giao diện của các biểu tượng theo ý muốn",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 },
 {
 "class": "DepictionSpacerView",
@@ -48,7 +40,9 @@
 },
 {
 "class": "DepictionHeaderView",
-"title": "Ảnh màn hình"
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
 },
 {
 "class": "DepictionScreenshotsView",

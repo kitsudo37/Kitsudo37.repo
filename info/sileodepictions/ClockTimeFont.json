@@ -23,17 +23,9 @@
 "spacing": 16
 },
 {
-"class": "DepictionHeaderView",
-"title": "ClockTimeFont"
-},
-{
-"class": "DepictionSpacerView",
-"spacing": 4
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "Tuỳ chỉnh phông chữ đồng hồ trên màn hình khoá của bạn.\n- Hướng dẫn cài đặt:\n- Chuẩn bị sẵn tệp phông chữ (hỗ trợ định dạng .ttf, .ttc, .otf, .otc).\n• Tải về từ ứng dụng Tệp chọn phông chữ trong cài đặt tweak.\n- Phông chữ ngay lập tức tự động áp dụng.\n- Có thể tuỳ chỉnh kích thước phông chữ theo ý muốn.\n- Lưu ý: Đối với các thiết bị chạy chip A12 trở lên vui lòng tải gói Legacy arm64 Support trước khi cài đặt tweak này.",
-"useSpacing": true
+"markdown": "## ClockTimeFont\nTuỳ chỉnh phông chữ đồng hồ trên màn hình khoá của bạn.\n- Hướng dẫn cài đặt:\n- Chuẩn bị sẵn tệp phông chữ (hỗ trợ định dạng .ttf, .ttc, .otf, .otc).\n• Tải về từ ứng dụng Tệp chọn phông chữ trong cài đặt tweak.\n- Phông chữ ngay lập tức tự động áp dụng.\n- Có thể tuỳ chỉnh kích thước phông chữ theo ý muốn.\n- Lưu ý: Đối với các thiết bị chạy chip A12 trở lên vui lòng tải gói Legacy arm64 Support trước khi cài đặt tweak này.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 },
 {
 "class": "DepictionSpacerView",
@@ -48,7 +40,9 @@
 },
 {
 "class": "DepictionHeaderView",
-"title": "Ảnh màn hình"
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
 },
 {
 "class": "DepictionScreenshotsView",

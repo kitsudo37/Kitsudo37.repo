@@ -23,17 +23,9 @@
 "spacing": 16
 },
 {
-"class": "DepictionHeaderView",
-"title": "LunarTimeBar"
-},
-{
-"class": "DepictionSpacerView",
-"spacing": 4
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "Hiển thị lịch âm Dương trên thanh trạng thái.\n- Định dạng hiển thị gồm:\n- Thứ-ngày-tháng-năm Dương lịch\n- Ngày-tháng Âm lịch\n- Thứ-Ngày-tháng Âm/Dương lịch",
-"useSpacing": true
+"markdown": "## LunarTimeBar\nHiển thị lịch âm Dương trên thanh trạng thái.\n- Định dạng hiển thị gồm:\n- Thứ-ngày-tháng-năm Dương lịch\n- Ngày-tháng Âm lịch\n- Thứ-Ngày-tháng Âm/Dương lịch",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 },
 {
 "class": "DepictionSpacerView",
@@ -48,7 +40,9 @@
 },
 {
 "class": "DepictionHeaderView",
-"title": "Ảnh màn hình"
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
 },
 {
 "class": "DepictionScreenshotsView",

@@ -18,29 +18,13 @@
         .content.active { display: block; }
         .box { background: var(--card); padding: 15px; border-radius: 12px; margin-bottom: 15px; font-size: 15px; }
         .title { font-size: 20px; font-weight: 800; margin: 10px 0; }
-        
-        .screenshots { 
-            display: flex; 
-            overflow-x: auto; 
-            gap: 10px; 
-            padding-bottom: 10px; 
-            justify-content: center; 
-        }
-        .screenshots img { 
-            width: 100%; 
-            max-width: 350px; 
-            height: auto; 
-            border-radius: 8px; 
-            border: 1px solid var(--sep); 
-            flex-shrink: 0; 
-            object-fit: contain; 
-        }
-
+        .screenshots { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px; }
+        .screenshots img { width: 185px; height: 400px; border-radius: 8px; border: 1px solid var(--sep); flex-shrink: 0; object-fit: cover; }
         .row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 0.5px solid var(--sep); }
         .row:last-child { border-bottom: none; }
         .btn-table { display: flex; align-items: center; padding: 12px 0; color: var(--tint); text-decoration: none; font-weight: 500; border-bottom: 0.5px solid var(--sep); }
         .btn-table:last-child { border-bottom: none; }
-        .btn-table img { width: 20px; height: 20px; margin-right: 10px; }
+        .btn-table img { width: 20px; height: 20px; margin-right: 10px; filter: brightness(1); }
         .separator { height: 0.5px; background-color: var(--sep); margin: 15px 0; }
         .footer { text-align: center; margin-top: 20px; color: var(--sub); font-size: 12px; }
         .log-v { font-weight: 700; margin-top: 15px; margin-bottom: 5px; }
@@ -71,16 +55,16 @@
     </div>
 
     <script>
-        // Hàm này tự động quét và dịch cú pháp Markdown (như ####) thành HTML chữ đậm
+        // Cập nhật hàm dịch Markdown để xử lý đa dạng tiêu đề
         function parseMD(str) {
             if (!str) return "";
             return str
-                .replace(/^#{1,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>') // Biến #### thành in đậm
+                .replace(/^##\s+(.*)/gm, '<span style="font-size: 18px; font-weight: 800; color: var(--text); display: block; margin-bottom: 8px;">$1</span>') // Xử lý nếu vẫn còn ##
+                .replace(/^#{3,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>') // Biến #### thành in đậm
                 .replace(/\n/g, '<br>'); // Giữ nguyên khoảng xuống dòng
         }
 
         const jsonUrl = '../sileodepictions/ClockTimeFont.json';
-        
         fetch(jsonUrl).then(res => res.json()).then(data => {
             // TỰ ĐỘNG BẮT MÀU TINTCOLOR TỪ JSON VÀ ĐỔI MÀU GIAO DIỆN
             if (data.tintColor) {
@@ -89,14 +73,35 @@
 
             document.getElementById('headerImage').src = data.headerImage;
             const views = data.tabs[0].views;
-            document.getElementById('tweakTitle').innerText = views.find(v => v.class === "DepictionHeaderView")?.title || "";
             
-            // Đã áp dụng hàm parseMD cho phần giới thiệu
-            document.getElementById('description').innerHTML = parseMD(views.find(v => v.class === "DepictionMarkdownView")?.markdown);
+            // XỬ LÝ THÔNG MINH BẮT ĐÚNG TÊN TWEAK VÀ NÉ ẢNH MÀN HÌNH
+            let mdView = views.find(v => v.class === "DepictionMarkdownView");
+            let mdContent = mdView ? mdView.markdown : "";
+            let tweakName = "";
+
+            // Tìm cú pháp "## Tên Tweak" trong Markdown
+            let titleMatch = mdContent.match(/^##\s+(.*)/m);
+            if (titleMatch) {
+                tweakName = titleMatch[1]; // Bóc lấy tên Tweak
+                mdContent = mdContent.replace(/^##\s+.*\n?/, ''); // Xóa dòng ## đi để không bị lặp trong box mô tả
+            } else {
+                // Nếu là JSON kiểu cũ, tìm Header nhưng né "Ảnh màn hình"
+                let headerView = views.find(v => v.class === "DepictionHeaderView" && v.title !== "Ảnh màn hình");
+                tweakName = headerView ? headerView.title : "";
+            }
+
+            document.getElementById('tweakTitle').innerText = tweakName;
+            document.getElementById('description').innerHTML = parseMD(mdContent);
             
             const ssData = views.find(v => v.class === "DepictionScreenshotsView");
             if(ssData) {
                 const ssContainer = document.getElementById('screenshots');
+                
+                // KIỂM TRA: NẾU CÓ ĐÚNG 1 ẢNH THÌ CĂN GIỮA
+                if(ssData.screenshots.length === 1) {
+                    ssContainer.style.justifyContent = 'center';
+                }
+
                 ssData.screenshots.forEach(s => {
                     const img = document.createElement('img'); img.src = s.url; ssContainer.appendChild(img);
                 });

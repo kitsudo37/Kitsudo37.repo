@@ -23,17 +23,9 @@
 "spacing": 16
 },
 {
-"class": "DepictionHeaderView",
-"title": "SortingSwipe"
-},
-{
-"class": "DepictionSpacerView",
-"spacing": 4
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "Sắp xếp các biểu tượng ứng dụng trên màn hình chính bằng cách vuốt lên để hiện bảng menu tuỳ chọn:\n\n- Sắp xếp theo bảng chữ cái.\n- Sắp xếp theo số huy hiệu.\n- Sắp xếp theo tông màu.\n- Sắp xếp ngẫu nhiên.\n- Sắp xếp theo dung lượng ứng dụng.\n- Lưu bố cục hiện tại.\n- Tải bố cục đã lưu.\n\n Dự kiến sẽ bổ sung thêm trong bản cập nhật tới.\n\n Lưu ý: Bạn phải lưu sẵn bố cục ứng dụng trước khi chọn sắp xếp nếu muốn về lại mặc định ban đầu.",
-"useSpacing": true
+"markdown": "## SortingSwipe\nSắp xếp các biểu tượng ứng dụng trên màn hình chính bằng cách vuốt lên để hiện bảng menu tuỳ chọn:\n\n- Sắp xếp theo bảng chữ cái.\n- Sắp xếp theo số huy hiệu.\n- Sắp xếp theo tông màu.\n- Sắp xếp ngẫu nhiên.\n- Sắp xếp theo dung lượng ứng dụng.\n- Lưu bố cục hiện tại.\n- Tải bố cục đã lưu.\n\n Dự kiến sẽ bổ sung thêm trong bản cập nhật tới.\n\n Lưu ý: Bạn phải lưu sẵn bố cục ứng dụng trước khi chọn sắp xếp nếu muốn về lại mặc định ban đầu.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 },
 {
 "class": "DepictionSpacerView",
@@ -48,7 +40,9 @@
 },
 {
 "class": "DepictionHeaderView",
-"title": "Ảnh màn hình"
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
 },
 {
 "class": "DepictionScreenshotsView",

@@ -23,17 +23,9 @@
 "spacing": 16
 },
 {
-"class": "DepictionHeaderView",
-"title": "SafariBlocker"
-},
-{
-"class": "DepictionSpacerView",
-"spacing": 4
-},
-{
-"class": "DepictionMarkdownView",
-"markdown": "Chặn nhảy các tab hoặc cửa sổ mới tự mở trong Safari một cách chủ động.\n\nSafariBlocker giúp ngăn chặn các trang web tự động mở tab mới hay popup làm phiền khi duyệt web.\n- Tính năng:\n- Chặn tự động mở tab mới trong Safari.\n- Tuỳ chọn cho phép hoặc chặn popup.\n- Gọn nhẹ, không làm chậm khi duyệt web.\n- Có mục cấu hình riêng trong Cài đặt.",
-"useSpacing": true
+"markdown": "## SafariBlocker\nChặn nhảy các tab hoặc cửa sổ mới tự mở trong Safari một cách chủ động.\n\nSafariBlocker giúp ngăn chặn các trang web tự động mở tab mới hay popup làm phiền khi duyệt web.\n- Tính năng:\n- Chặn tự động mở tab mới trong Safari.\n- Tuỳ chọn cho phép hoặc chặn popup.\n- Gọn nhẹ, không làm chậm khi duyệt web.\n- Có mục cấu hình riêng trong Cài đặt.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
 },
 {
 "class": "DepictionSpacerView",
@@ -48,7 +40,9 @@
 },
 {
 "class": "DepictionHeaderView",
-"title": "Ảnh màn hình"
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
 },
 {
 "class": "DepictionScreenshotsView",

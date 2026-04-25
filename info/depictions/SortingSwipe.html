@@ -51,26 +51,47 @@
     </div>
     <div class="footer">
         <img src="https://k37ios.pages.dev/CydiaIcon.png" width="40" height="40" style="border-radius:8px; margin-bottom:5px;"><br>
-        Được tạo bởi ❤️ K37 Repo
+        Được tạo bởi ❤️ K37 Repo 
     </div>
 
     <script>
-        // Hàm này tự động quét và dịch cú pháp Markdown (như ####) thành HTML chữ đậm
+        // Cập nhật hàm dịch Markdown để xử lý đa dạng tiêu đề
         function parseMD(str) {
             if (!str) return "";
             return str
-                .replace(/^#{1,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>') // Biến #### thành in đậm
+                .replace(/^##\s+(.*)/gm, '<span style="font-size: 18px; font-weight: 800; color: var(--text); display: block; margin-bottom: 8px;">$1</span>') // Xử lý nếu vẫn còn ##
+                .replace(/^#{3,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>') // Biến #### thành in đậm
                 .replace(/\n/g, '<br>'); // Giữ nguyên khoảng xuống dòng
         }
 
         const jsonUrl = '../sileodepictions/SortingSwipe.json';
         fetch(jsonUrl).then(res => res.json()).then(data => {
+            // TỰ ĐỘNG BẮT MÀU TINTCOLOR TỪ JSON VÀ ĐỔI MÀU GIAO DIỆN
+            if (data.tintColor) {
+                document.documentElement.style.setProperty('--tint', data.tintColor);
+            }
+
             document.getElementById('headerImage').src = data.headerImage;
             const views = data.tabs[0].views;
-            document.getElementById('tweakTitle').innerText = views.find(v => v.class === "DepictionHeaderView")?.title || "";
             
-            // Đã áp dụng hàm parseMD cho phần giới thiệu
-            document.getElementById('description').innerHTML = parseMD(views.find(v => v.class === "DepictionMarkdownView")?.markdown);
+            // XỬ LÝ THÔNG MINH BẮT ĐÚNG TÊN TWEAK VÀ NÉ ẢNH MÀN HÌNH
+            let mdView = views.find(v => v.class === "DepictionMarkdownView");
+            let mdContent = mdView ? mdView.markdown : "";
+            let tweakName = "";
+
+            // Tìm cú pháp "## Tên Tweak" trong Markdown
+            let titleMatch = mdContent.match(/^##\s+(.*)/m);
+            if (titleMatch) {
+                tweakName = titleMatch[1]; // Bóc lấy tên Tweak
+                mdContent = mdContent.replace(/^##\s+.*\n?/, ''); // Xóa dòng ## đi để không bị lặp trong box mô tả
+            } else {
+                // Nếu là JSON kiểu cũ, tìm Header nhưng né "Ảnh màn hình"
+                let headerView = views.find(v => v.class === "DepictionHeaderView" && v.title !== "Ảnh màn hình");
+                tweakName = headerView ? headerView.title : "";
+            }
+
+            document.getElementById('tweakTitle').innerText = tweakName;
+            document.getElementById('description').innerHTML = parseMD(mdContent);
             
             const ssData = views.find(v => v.class === "DepictionScreenshotsView");
             if(ssData) {
