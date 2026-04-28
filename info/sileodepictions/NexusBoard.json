@@ -127,7 +127,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "22/4/2026",
+"text": "28/4/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -145,7 +145,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "3.3",
+"text": "3.5",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -186,7 +186,7 @@
 },
 {
 "class":"DepictionLabelView",
-"text":"Created with ❤️ by K37 Repo",
+"text":"Created with ❤️ by Kitsudo",
 "textColor":"#999999",
 "fontSize":"11.0",
 "alignment":1
@@ -197,6 +197,22 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 3.5\n- Thêm tuỳ chọn ảnh nền sáng tối trên Trung tâm điều khiển\n\n- Thêm tuỳ chỉnh sắp xếp mô đun kết nố\n- Thêm tuỳ chỉnh bố cục mô đun kết nối\n- Thêm xoa ngang thanh trượt Độ sáng & Âm lượng.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
+{
+"markdown":"### Phiên bản 3.4\n- Sửa lỗi xoá thông báo chức năng gom nhóm.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 3.3\n- Thêm thay đổi nhãn theo màu biểu tượng\n- Thẻm Tuỳ chỉnh bố cục biểu tượng thư mục.",
 "useSpacing":true,
