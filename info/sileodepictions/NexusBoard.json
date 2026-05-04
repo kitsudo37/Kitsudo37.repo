@@ -127,7 +127,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "3/5/2026",
+"text": "4/5/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -145,7 +145,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "3.8",
+"text": "3.9",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -197,6 +197,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 3.9\n- Thêm nhóm sắp xếp cài đặt 3 thành phần riêng.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 3.8\n- Thêm ẩn thông báo cập nhật iOS trong trang cài đặt\n- Thêm ẩn cảnh báo bảo trì pin thong mục Tình trạng pin & sạc.",
 "useSpacing":true,
