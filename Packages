@@ -278,40 +278,17 @@ Name: SortingSwipe
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/SortingSwipe.json
 
 Package: com.kitsudo.nexusboard
-Version: 3.9
+Version: 3.9k
 Architecture: iphoneos-arm64
 Maintainer: JTISVN Repo
-Installed-Size: 2644
-Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0)
-Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2
-Filename: ./debs/com.kitsudo.nexusboard_3.9_iphoneos-arm64.deb
-Size: 611860
-MD5sum: 3a4a1432890b53d9ff0991d8a43ccef3
-SHA1: ce116d45d9e2c5f9577cd05d8a6cd61a9dddda34
-SHA256: e3a3a992e9bb6a70f4d829b7b80bffebab3d3d7e6783c5e3654f468530d5d208
-Section: Tweaks
-Homepage: https://jtisvn.github.io/
-Description: Customize SpringBoard with many useful features for iOS.
-  	 *  Tùy chỉnh SpringBoard với nhiều tính năng hữu ích cho iOS.
-Author: Kitsudo
-Depiction: https://jtisvn.github.io/depictions/NexusBoard.html
-Icon: https://jtisvn.github.io/sectionIcons/NexusBoard.png
-Name: NexusBoard
-Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/NexusBoard.json
-
-Package: com.kitsudo.nexusboard
-Version: 3.9
-Architecture: iphoneos-arm64e
-Maintainer: JTISVN Repo
-Installed-Size: 2644
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi
-Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2
-Filename: ./debs/com.kitsudo.nexusboard_3.9_iphoneos-arm64e.deb
-Size: 612256
-MD5sum: d872372dc7add7c4c24576e77cd7da65
-SHA1: f9195729cbce4b8d904884c159788d867e5a0188
-SHA256: 7363d66c556d9d0eef69ff3ce6c3adec41eb18f0e9b72e3dc4e7b5b98fb44ec7
+Installed-Size: 2756
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi-stub
+Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
+Filename: ./debs/com.kitsudo.nexusboard_3.9k_iphoneos-arm64.deb
+Size: 627356
+MD5sum: 3c601ce561c3c03d14105a8db1a35953
+SHA1: f4494f07e6d455a29f1f804fc63b0d517935c877
+SHA256: a985305fa20e559b2e5b19a7075d359c8428fa37e36244757e84573a7974e8c4
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.

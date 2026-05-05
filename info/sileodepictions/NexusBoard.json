@@ -127,7 +127,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "4/5/2026",
+"text": "5/5/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,7 +198,7 @@
 "tabname":"Nhật ký thay đổi",
 "views":[
 {
-"markdown":"### Phiên bản 3.9\n- Thêm nhóm sắp xếp cài đặt 3 thành phần riêng.",
+"markdown":"### Phiên bản 3.9\n Thêm tuỳ chỉnh độ mờ nền & trong suốt các mục trong cài đặt\n- Thêm tuỳ chọn hình nền sáng tối trong cài đặt\n-Thêm tuỳ chọn ảnh cho mục trên nhóm iCloud trong cài đặt\n- Thêm nhóm sắp xếp cài đặt 3 thành phần riêng.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
