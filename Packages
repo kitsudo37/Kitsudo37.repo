@@ -1,20 +1,3 @@
-Package: com.34306.shimastyle
-Version: 1.0.2.1-20d8497
-Architecture: iphoneos-arm64e
-Maintainer: Little 34306 , romlayvn
-Installed-Size: 408
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader, org.thebigboss.libcolorpicker | ws.hbang.alderis
-Filename: ./debs/com.34306.shimastyle_1.0.2.1-20d8497_iphoneos-arm64e.deb
-Size: 41226
-MD5sum: 6898ff8de348552406b3e55122498866
-SHA1: 10ce96d66a6d522bf424202dd8e9ac260a256e32
-SHA256: 8de0703ae5b6dbeb9e4d4d86c472ef023e1120c959d183b373bbe2205f33b8a2
-Section: Tweaks
-Description: Force all notifications to Dynamic Island with custom background support. Supports iOS 16-26.
-Author: 34306
-Name: ShimaStyle
-
 Package: com.k37.axon
 Version: 1.6
 Architecture: iphoneos-arm64e
