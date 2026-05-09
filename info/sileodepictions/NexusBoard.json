@@ -127,7 +127,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "7/5/2026",
+"text": "9/5/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -145,7 +145,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "4.1",
+"text": "4.3",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -197,6 +197,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 4.3\n- Thêm nhập cấu hình cài đặt\n- Thêm xuất cấu hình cài đặt.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 4.2\n- Thêm chia sẻ Wi-Fi đã kết nối bằng mã QR\n- Thêm hiển thị mặt khẩu Wi-Fi & sao chép\n- Thẻm chế độ PIP video trong ứng dụng Ảnh\n- Thêm xáo trộn ngẫu nhiên bàn phím mật mã\n- Thêm ẩn chữ \"Vuốt lên để mở\" dưới đáy Màn hình khoá.\n- Sửa lỗi safemode trên 1 số thiết bị A11 trở xuống",
 "useSpacing":true,
