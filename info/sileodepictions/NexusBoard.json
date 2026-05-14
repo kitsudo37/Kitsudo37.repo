@@ -199,7 +199,7 @@
 "tabname":"Nhật ký thay đổi",
 "views":[
 {
-"markdown":"### Phiên bản 4.5\n- \n- Thêm mục thông tin, liên hệ báo cáo lỗi & yêu cầu tính năng\n- Thêm video bìa trên mục iCloud trong cài đặt\n- Sửa một số lỗi.",
+"markdown":"### Phiên bản 4.5\n- Thêm mục thông tin, liên hệ báo cáo lỗi & yêu cầu tính năng\n- Thêm video bìa trên mục iCloud trong cài đặt\n- Thay đổi & sửa một số lỗi.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
