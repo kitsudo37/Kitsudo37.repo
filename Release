@@ -1,9 +1,8 @@
-Origin: K37 Repo
-Label: K37 Repo
+Origin: Kitsudo37 Repo
+Label: Kitsudo37 Repo
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Kho tweak của Kitsudo.
-Icon: https://k37ios.pages.dev/LogoSileo.png
