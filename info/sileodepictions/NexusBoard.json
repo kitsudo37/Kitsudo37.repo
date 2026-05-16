@@ -199,7 +199,7 @@
 "tabname":"Nhật ký thay đổi",
 "views":[
 {
-"markdown":"### Phiên bản 4.6\n- Thêm tự động cuộn video tiếp thro sau khi xem hết video hiện tại\n-  Thêm ẩn logo phần thưởng sự kiện.",
+"markdown":"### Phiên bản 4.6\n- Thêm tự động cuộn video tiếp thro sau khi xem hết video hiện tại\n- Thêm ẩn logo phần thưởng sự kiện ứng dụng TikTok.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
