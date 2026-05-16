@@ -19,4 +19,4 @@ git add .
 git commit -m "Auto Update Repo qua Bash Script"
 git push
 
-echo "✅ XONG! TOAN BO TWEAK DA HA CANH TREN MAY!"
+echo "✅ XONG! TOAN BO TWEAK DA UPLOAD LEN SILEO!"
