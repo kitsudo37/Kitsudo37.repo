@@ -1,0 +1,193 @@
+{
+"minVersion": "0.1",
+"headerImage": "https://k37ios.pages.dev/banner/banner.png",
+"tintColor": "#4facfe",
+"class": "DepictionTabView",
+"tabs": [
+{
+"tabname": "Giới Thiệu",
+"class": "DepictionStackView",
+"views": [
+{
+"class": "DepictionSpacerView",
+"spacing": 12
+},
+{
+"class": "DepictionButtonView",
+"text": "Tham gia nhóm chat Telegram",
+"action": "https://t.me/jtisvietnamrepo",
+"openExternal": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"markdown": "##Zonelà một tinh chỉnh quản lý hình nền cực kỳ mạnh mẽ dành cho các thiết bị chạy **iOS 14 - 17**. Tweak này biến Màn hình khóa (Lockscreen) và Màn hình chính (Homescreen) nhàm chán của iOS thành không gian sống động với các file hình nền tương tác định dạng **`.tendies`** và video chất lượng cao.\n\n**Các tính năng nổi bật:**\n* **Đa dạng chế độ hiển thị:** Hỗ trợ thiết lập hình nền Video truyền thống và hình nền Tương tác (`.tendies`). Cho phép dùng chung một hình nền cho cả hai màn hình hoặc cài đặt hoàn toàn độc lập.\n* **Engine Nâng cao:** Thuật toán xử lý mới giúp nhận diện xuất sắc các file hình nền tương tác phức tạp, tương thích hoàn hảo với Chế độ tối (Dark Mode).\n* **Chỉnh sửa Layer chuyên sâu:** Zone cho phép bạn \"mổ xẻ\" file hình nền. Bạn có thể thay thế hình ảnh của từng lớp (nền, nổi, tiền cảnh). Hỗ trợ can thiệp thẳng vào mã hoạt ảnh CAML.\n* **Tiện ích màn hình:** Tích hợp tính năng **Chạm kép để khóa màn hình**, tùy chỉnh tắt/bật đổ bóng chữ và thanh trượt điều chỉnh tốc độ hoạt ảnh.\n\n**🔋 Tối ưu hóa Pin & Hiệu năng:**\n* **Kiểm soát khung hình (Downsampling):** Cho phép ép độ phân giải khi render xuống mức 70%, 50% hoặc 25% so với bản gốc. Giúp thiết bị chạy mượt mà, tiết kiệm pin.\n* **Quản lý RAM thông minh:** Hình nền tương tác sẽ tự động chuyển sang trạng thái \"ngủ\" (Sleep) và giải phóng triệt để bộ nhớ khi bạn dùng app khác.\n* **Tương thích Nguồn điện thấp:** Tự động tạm dừng mọi hoạt ảnh khát pin khi bật chế độ Nguồn điện thấp (Low Power Mode).",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionHeaderView",
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
+},
+{
+"class": "DepictionScreenshotsView",
+"itemCornerRadius": 8,
+"itemSize": "{185, 400}",
+"screenshots": [
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Zone/1.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Zone/2.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Zone/3.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Zone/4.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Zone/5.png",
+"accessibilityText": "Screenshot"
+}
+]
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionHeaderView",
+"title": "Thông Tin"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Tác giả",
+"text": "iosdump"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Phiên bản",
+"text": "2.0"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Thể loại",
+"text": "Tweaks"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Ngày tải lên",
+"text": "14/06/2026"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Kích thước",
+"text": "1,21 MB"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Tương thích",
+"text": "iOS 14.0 - 17.0"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Xem mô tả",
+"action": "https://k37ios.pages.dev/info/depictions/Axon.html",
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/document.png"
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Liên hệ tôi",
+"action": "https://t.me/Kitsudo",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/telegram-app.png"
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Ủng hộ tôi",
+"action": "https://k37ios.pages.dev",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/hearts.png"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 24
+},
+{
+"class": "DepictionImageView",
+"URL": "https://k37ios.pages.dev/CydiaIcon.png",
+"width": 40,
+"height": 40,
+"alignment": 1,
+"cornerRadius": 8
+},
+{
+"class": "DepictionMarkdownView",
+"markdown": "<div style='text-align: center; color: #888; font-size: 11px; margin-top: 5px;'>Được tạo bởi ❤️ K37 Repo </div>",
+"useRawFormat": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+}
+]
+},
+{
+"tabname": "Nhật Ký Cập Nhật",
+"class": "DepictionStackView",
+"views": [
+{
+"markdown": "#### Phiên bản: 2.0\n- Thêm đày đủ ngôn ngữ tiếng việt\n- Sửa lỗi.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"markdown": "#### Phiên bản: 1.5\n- Thêm ngôn ngữ Tiếng Việt.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+}
+]
+}
+]
+}

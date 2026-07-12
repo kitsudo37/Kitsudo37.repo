@@ -277,6 +277,61 @@ Icon: https://raw.githubusercontent.com/L1ghtmann/SortingSwipe/main/icon.png
 Name: SortingSwipe
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/SortingSwipe.json
 
+Package: com.k37.zone
+Version: 2.0.0
+Architecture: iphoneos-arm64
+Maintainer: iosdump
+Installed-Size: 1148
+Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport
+Filename: ./debs/com.k37.zone_2.0.0_iphoneos-arm64.deb
+Size: 219872
+MD5sum: 482270981e17d4620a41f079e28dfbb4
+SHA1: 28ffd211e4b22cde3c3953331a9f4c16f9ad2e83
+SHA256: d18a1df126cb692d3dbd3a722191e446908bb4216cdfcb17e4afc2ae59b8cd13
+Section: Tweaks
+Description: Zone là tinh chỉnh giúp cài đặt hình nền tương tác định dạng .tendies hình nền video. Hỗ trợ iOS 14 - 17.
+Author: iosdump
+Depiction: https://jtisvn.github.io/depictions/Zone.html
+Icon: https://jtisvn.github.io/sectionIcons/Zone.png
+Name: Zone
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Zone.json
+
+Package: com.k37.zone
+Version: 2.0.0
+Architecture: iphoneos-arm64e
+Maintainer: iosdump
+Installed-Size: 1144
+Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport
+Filename: ./debs/com.k37.zone_2.0.0_iphoneos-arm64e.deb
+Size: 218132
+MD5sum: 3d6ab323243f62adbc3aa47ce8d34cfe
+SHA1: c63d6ca91847b795646bd9015e3cf42db4061dbc
+SHA256: 5cd663c3bef451793c897534901fce4a9249de48eb54e43fb62cd46542db0862
+Section: Tweaks
+Description: Zone là tinh chỉnh giúp cài đặt hình nền tương tác định dạng .tendies hình nền video. Hỗ trợ iOS 14 - 17.
+Author: iosdump
+Depiction: https://jtisvn.github.io/depictions/Zone.html
+Icon: https://jtisvn.github.io/sectionIcons/Zone.png
+Name: Zone
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Zone.json
+
+Package: com.kitsudo.chromasettings
+Version: 1.0
+Architecture: all
+Maintainer: K37 Repo
+Filename: ./debs/chromasettings_1.0_all.deb
+Size: 1533840
+MD5sum: 9b19a2167430282916e8b20bf9049725
+SHA1: 0a0ac29ac2ef1f866fabb807f0ebdf777d376141
+SHA256: 7fa75acb1c9d3b7dd5b212c6e8e5f63ab2932283dac562a707f7c236382b1470
+Section: Themes
+Description: Chủ đề setting Snoked
+Author: Kitsudo
+Depiction: https://jtisvn.github.io/depictions/ChromaSettings.html
+Icon: https://jtisvn.github.io/sectionIcons/Themes.png
+Name: Setting Chroma
+Sileodepiction: https://jtisvn.github.io/sileodepictions/ChromaSettings.json
+
 Package: com.kitsudo.nexusboard
 Version: 4.7
 Architecture: iphoneos-arm64e
