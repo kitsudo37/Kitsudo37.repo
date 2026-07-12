@@ -285,14 +285,14 @@ Installed-Size: 1148
 Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport
 Filename: ./debs/com.k37.zone_2.0.0_iphoneos-arm64.deb
 Size: 219872
-MD5sum: 482270981e17d4620a41f079e28dfbb4
-SHA1: 28ffd211e4b22cde3c3953331a9f4c16f9ad2e83
-SHA256: d18a1df126cb692d3dbd3a722191e446908bb4216cdfcb17e4afc2ae59b8cd13
+MD5sum: 800cd217fb7f81c1c98dacfabd2d5d60
+SHA1: 74edf7ffbb4efa0b346c5385a0b5e04553d6732e
+SHA256: 4fcb48b75a970b60f7a300f7c715a12c1b2d275948ed716c5987820203070bc5
 Section: Tweaks
 Description: Zone là tinh chỉnh giúp cài đặt hình nền tương tác định dạng .tendies hình nền video. Hỗ trợ iOS 14 - 17.
 Author: iosdump
 Depiction: https://jtisvn.github.io/depictions/Zone.html
-Icon: https://jtisvn.github.io/sectionIcons/Zone.png
+Icon: https://k37ios.pages.dev/assets/Zone.png
 Name: Zone
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Zone.json
 
@@ -303,15 +303,15 @@ Maintainer: iosdump
 Installed-Size: 1144
 Depends: mobilesubstrate, preferenceloader, unzip, com.opa334.ccsupport
 Filename: ./debs/com.k37.zone_2.0.0_iphoneos-arm64e.deb
-Size: 218132
-MD5sum: 3d6ab323243f62adbc3aa47ce8d34cfe
-SHA1: c63d6ca91847b795646bd9015e3cf42db4061dbc
-SHA256: 5cd663c3bef451793c897534901fce4a9249de48eb54e43fb62cd46542db0862
+Size: 218128
+MD5sum: f29e5cd83c92489e7156cd09efbaaa33
+SHA1: 16e004f3d3d8f2a936ae51ec95042f6dfda89565
+SHA256: 1a7180571dc4349aa51f4020c17665b6661d807c62ca1dbc26e3612dca1106e1
 Section: Tweaks
 Description: Zone là tinh chỉnh giúp cài đặt hình nền tương tác định dạng .tendies hình nền video. Hỗ trợ iOS 14 - 17.
 Author: iosdump
 Depiction: https://jtisvn.github.io/depictions/Zone.html
-Icon: https://jtisvn.github.io/sectionIcons/Zone.png
+Icon: https://k37ios.pages.dev/assets/Zone.png
 Name: Zone
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Zone.json
 
