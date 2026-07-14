@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "4.8",
+"version": "4.9",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "2/6/2026",
+"text": "7/7/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "4.8",
+"text": "4.9",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản4.9\n- Thêm tuỳ chọn vị trí nút X trong Đa nhiệm\n- Sửa lỗi lệch tỉ lệ Trung tâm điều khiển khi bật tính năng đa nhiệm iPad.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 4.8\n- Thêm xoá tiền tố URL trong Safari\n- Thêm hiển thị đầy đủ URL trong Safari\n- Thêm hiển thị thanh trạng thái trong đa nhiệm\n- Sửa lỗi.",
 "useSpacing":true,

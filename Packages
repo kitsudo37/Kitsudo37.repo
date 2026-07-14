@@ -422,6 +422,51 @@ Icon: https://jtisvn.github.io/sectionIcons/NexusBoard.png
 Name: NexusBoard
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/NexusBoard.json
 
+Package: com.kitsudo.nexusboard
+Version: 4.9
+Architecture: iphoneos-arm64e
+Maintainer: JTISVN Repo
+Installed-Size: 3248
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi
+Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
+Filename: ./debs/com.kitsudo.nexusboard_4.9_iphoneos-arm64e.deb
+Size: 770304
+MD5sum: e07457bcb157db78b288fe16a03f8ea9
+SHA1: 5e33f264feb747d987e88b8ea827fb29abb264ac
+SHA256: 548c5dcbc38f1193b2d310b0e732ef52a7ab3d71ed345de5419f429625c80c55
+Section: Tweaks
+Homepage: https://jtisvn.github.io/
+Description: Customize SpringBoard with many useful features for iOS.
+  	 *  Tùy chỉnh SpringBoard với nhiều tính năng hữu ích cho iOS.
+Author: Kitsudo
+Depiction: https://jtisvn.github.io/depictions/NexusBoard.html
+Icon: https://jtisvn.github.io/sectionIcons/NexusBoard.png
+Name: NexusBoard
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/NexusBoard.json
+
+Package: com.kitsudo.nexusboard
+Version: 4.9
+Architecture: iphoneos-arm64
+Maintainer: JTISVN Repo
+Installed-Size: 3248
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi-stub
+Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
+Filename: ./debs/com.kitsudo.nexusboard_4.9_iphoneos-arm64.deb
+Size: 772276
+MD5sum: 0258875732a132568f28ed1676bf5b7e
+SHA1: f9068f04fce1ccd09e78c76e273f377c40104a42
+SHA256: f0fb7ff1bcda8223589b305e9bd741feb4affac5d46089b9a1b4c64ca93732ef
+Section: Tweaks
+Homepage: https://jtisvn.github.io/
+Description: Customize SpringBoard with many useful features for iOS.
+  	 *  Tùy chỉnh SpringBoard với nhiều tính năng hữu ích cho iOS.
+Author: Kitsudo
+Depiction: https://jtisvn.github.io/depictions/NexusBoard.html
+Icon: https://jtisvn.github.io/sectionIcons/NexusBoard.png
+Name: NexusBoard
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/NexusBoard.json
+
 Package: com.kitsudo.tiktokautoswipe
 Version: 1.0.0
 Architecture: iphoneos-arm64e
