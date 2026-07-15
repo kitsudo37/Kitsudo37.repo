@@ -199,7 +199,7 @@
 "tabname":"Nhật ký thay đổi",
 "views":[
 {
-"markdown":"### Phiên bản 4.9\n- Thêm tuỳ chỉnh video hiển thị trên Trung tâm điều khiển\n- Thêm video trên Trung tâm điều khiển\n- Thêm tuỳ chọn vị trí nút X trong Đa nhiệm\n- Sửa lỗi lệch tỉ lệ Trung tâm điều khiển khi bật tính năng đa nhiệm iPad.",
+"markdown":"### Phiên bản 4.9\n- Thêm tuỳ chỉnh video hiển thị trên Trung tâm điều khiển\n- Thêm tuỳ chọn vị trí nút X trong Đa nhiệm\n- Sửa lỗi lệch tỉ lệ Trung tâm điều khiển khi bật tính năng đa nhiệm iPad.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
