@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "4.9",
+"version": "5.0",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "7/7/2026",
+"text": "19/7/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "4.9",
+"text": "5.0",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -159,7 +159,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "2,1 MB",
+"text": "2,5 MB",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 5.0\n- Thêm thời gian chính xác cuộc gọi gần đây\n- Thêm bỏ qua xác nhận xoá ảnh & video\n- Sửa lỗi bị dề biểu tượng khi tuỳ chỉnh thư mục 5x5 6x6\n- Sửa lại tách riêng ẩn tên ứng dụng MHC và trong thư mục",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 4.9\n- Thêm tuỳ chỉnh video hiển thị trên Trung tâm điều khiển\n- Thêm tuỳ chọn vị trí nút X trong Đa nhiệm\n- Sửa lỗi lệch tỉ lệ Trung tâm điều khiển khi bật tính năng đa nhiệm iPad.",
 "useSpacing":true,
