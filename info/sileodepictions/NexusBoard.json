@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "5.0",
+"version": "5.1",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "19/7/2026",
+"text": "25/7/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "5.0",
+"text": "5.1",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 5.1\n- Thêm tuỳ chọn màu viền các mô đun Trung tâm điều khiển\n- Thêm tuy chọn màu cuộc gọi đến, gọi đi và gọi nhỡ trong tab gần đây\n- Sửa lỗi tính năng hiển thị tên dưới biểu tượng thanh Dock k hoạt động\n- Sửa lỗi đen màn cài đặt.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 5.0\n- Thêm thời gian chính xác cuộc gọi gần đây\n- Thêm bỏ qua xác nhận xoá ảnh & video\n- Sửa lỗi bị đè biểu tượng chọn tuỳ chỉnh thư mục 5x5 6x6\n- Sửa lại tách riêng ẩn tên ứng dụng MHC và trong thư mục",
 "useSpacing":true,
