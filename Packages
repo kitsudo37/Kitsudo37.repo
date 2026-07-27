@@ -1,3 +1,44 @@
+Package: com.jtisvn.infinitemedia
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: JTISVN Repo
+Installed-Size: 484
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
+Filename: ./debs/com.jtisvn.infinitemedia_1.0.2_iphoneos-arm64e.deb
+Size: 65372
+MD5sum: fb4ff14fc1be449b43cd7b821c930d0b
+SHA1: a91ffe5f3b89f238dfa164b97fa30001742f38f5
+SHA256: ab78d8111b1039b4f181ce0f050aef21192795c0501dd675c697113fe09fbef0
+Section: Tweaks
+Homepage: https://jtisvn.github.io
+Description: Nâng cao trải nghiệm thư vuện Ảnh & Camera.
+Author: Kitsudo
+Depiction: http://jtisvn.github.io/depiction/InfiniteMedia.html
+Icon: https://k37ios.pages.dev/assets/InfiniteMedia.png
+Name: InfiniteMedia
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/InfiniteMedia.json
+
+Package: com.jtisvn.infinitemedia
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: JTISVN Repo
+Installed-Size: 484
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
+Filename: ./debs/com.jtisvn.infinitemedia_1.0.2_iphoneos-arm64.deb
+Size: 65372
+MD5sum: 10ed0623b679392de4d0fcf6d22e5135
+SHA1: 29fb338f42c6dece82b74eb46c392d75134f5992
+SHA256: 8982c70f1307d8db4b148957cbe370e1d1bd5e002a0cb091c7a1678e01955613
+Section: Tweaks
+Homepage: https://jtisvn.github.io
+Description: Nâng cao trải nghiệm thư vuện Ảnh & Camera.
+Author: Kitsudo
+Depiction: http://jtisvn.github.io/depiction/InfiniteMedia.html
+Icon: https://k37ios.pages.dev/assets/InfiniteMedia.png
+Name: InfiniteMedia
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/InfiniteMedia.json
+
 Package: com.k37.axon
 Version: 1.6
 Architecture: iphoneos-arm64e
@@ -314,6 +355,47 @@ Depiction: https://jtisvn.github.io/depictions/Zone.html
 Icon: https://k37ios.pages.dev/assets/Zone.png
 Name: Zone
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Zone.json
+
+Package: com.kitsudo.lockbuttoncall
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Maintainer: Kitsudo
+Installed-Size: 172
+Depends: mobilesubstrate (>= 15.0)
+Filename: ./debs/com.kitsudo.lockbuttoncall_0.0.1_iphoneos-arm64.deb
+Size: 6044
+MD5sum: 7f00ebe3e309b228dd3dae0f00bd3ae8
+SHA1: 4d86445804cf40f40e00f955121eea153460a862
+SHA256: 4461ff2d168c5682f4afabd76e90073e6e503b579ab6e3e9fc6d7813dab59096
+Section: Tweaks
+Description: Replace "slide to answer" with Answer/Decline buttons on Lock Screen.
+  	 *  Thay thế thanh trượt trả lời cuộc gọi bằng nút bấm Chấp nhận/Từ chối trên màn hình khóa.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/ClockTimeFont.html
+Icon: https://k37ios.pages.dev/assets/LockButtonCall.png
+Name: LockButtonCall
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/LockButtonCall.json
+
+Package: com.kitsudo.lockbuttoncall
+Version: 0.0.1
+Architecture: iphoneos-arm64e
+Maintainer: Kitsudo
+Installed-Size: 172
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate (>= 15.0)
+Filename: ./debs/com.kitsudo.lockbuttoncall_0.0.1_iphoneos-arm64e.deb
+Size: 6052
+MD5sum: da57ce3c1390c7e0138215ff8989edf0
+SHA1: a900d240aa09a194feed1cea77aab727b44febd5
+SHA256: a7221140ea60f3e4cffe2a5c8d3668267537642acd25fd69de602a3ae5f4f47a
+Section: Tweaks
+Description: Replace "slide to answer" with Answer/Decline buttons on Lock Screen.
+  	 *  Thay thế thanh trượt trả lời cuộc gọi bằng nút bấm Chấp nhận/Từ chối trên màn hình khóa.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/ClockTimeFont.html
+Icon: https://k37ios.pages.dev/assets/LockButtonCall.png
+Name: LockButtonCall
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/LockButtonCall.json
 
 Package: com.kitsudo.nexusboard
 Version: 4.7
