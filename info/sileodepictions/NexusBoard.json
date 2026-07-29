@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "5.2",
+"version": "5.3",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "26/7/2026",
+"text": "29/7/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "5.2",
+"text": "5.3",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 5.3\n- Thêm hiển thị viền và màu viền cho thư mục\n- Thêm chạm để đóng nhanh thư mục\n- Thêm thu nhỏ thanh trang chủ\n- Thêm menu mới: tuỳ chỉnh thư mục\n- Thay đổi mục thông tin hiện thị tên máy & hệ điều hành iOS\n- Sửa lỗi tràn Ram cho 1 số thiết bị.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 5.2\n- Thêm lại tính năng hiện nút từ chối cuộc gọi đến (mấy phiên bản lần trước bị lỗi nên giờ đã fix rồi nha)\n- Sửa lỗi bo góc thanh volume khi nhấn phím cứng tăng giảm âm lượng.",
 "useSpacing":true,
