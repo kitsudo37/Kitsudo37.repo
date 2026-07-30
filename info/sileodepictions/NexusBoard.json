@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "5.3",
+"version": "5.4",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "29/7/2026",
+"text": "30/7/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "5.3",
+"text": "5.4",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 5.4\n- Thêm tuỳ chỉnh chữ Nhập mặt mã trên Màn hình khoá\n- Thêm tuỳ chọn kích thước thẻ đa nhiệm iPad\n- Thêm tuỳ chỉnh bo góc thẻ trong Đa nhiệm\n- Sửa lỗi hiển thị 1 ứng dụng trên thư mục.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 5.3\n- Thêm hiển thị viền và màu viền cho thư mục\n- Thêm chạm để đóng nhanh thư mục\n- Thêm thu nhỏ thanh trang chủ\n- Thêm menu mới: tuỳ chỉnh thư mục\n- Thay đổi mục thông tin hiện thị tên máy & hệ điều hành iOS\n- Sửa lỗi tràn Ram cho 1 số thiết bị.",
 "useSpacing":true,
