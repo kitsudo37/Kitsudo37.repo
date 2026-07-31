@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "5.4",
+"version": "5.5",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "5.4",
+"text": "5.5",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 5.5\n- Thêm tuỳ chọn màu thanh trang chủ (HomeBar)\n- Thêm tuỳ chỉnh văn bản dưới đáy trên Màn hình khoá.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 5.4\n- Thêm tuỳ chỉnh chữ Nhập mặt mã trên Màn hình khoá\n- Thêm tuỳ chọn kích thước thẻ đa nhiệm iPad\n- Thêm tuỳ chỉnh bo góc thẻ trong Đa nhiệm\n- Sửa lỗi hiển thị 1 ứng dụng trên thư mục.",
 "useSpacing":true,
