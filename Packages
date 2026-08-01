@@ -80,45 +80,6 @@ Icon: https://k37ios.pages.dev/assets/Axon.png
 Name: Axon
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Axon.json
 
-Package: com.k37.backgroundcaller
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Maintainer: K37 Repo
-Installed-Size: 556
-Depends: mobilesubstrate, firmware (>= 14.0), oldabi-stub
-Filename: ./debs/com.k37.backgroundcaller_1.0.0_iphoneos-arm64.deb
-Size: 40448
-MD5sum: aa848f62b0df101e9754bd97dbcda77e
-SHA1: e02c344172843ba810e0ef15d77f393d491f41d1
-SHA256: 3f81cd23854a28519c708791b363f022b26108c159b65210d1ae5095ccf6cc7b
-Section: Tweaks
-Description: Thêm hình nền video cuộc gọi đến
-Author: Kitsudo
-Depiction: https://k37ios.pages.dev/info/depictions/BackgroundCaller.html
-Icon: https://k37ios.pages.dev/assets/BackgroundCaller.png
-Name: BackgroundCaller
-Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/BackgroundCaller.json
-
-Package: com.k37.backgroundcaller
-Version: 1.0.0
-Architecture: iphoneos-arm64e
-Maintainer: K37 Repo
-Installed-Size: 556
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate, firmware (>= 14.0), oldabi
-Filename: ./debs/com.k37.backgroundcaller_1.0.0_iphoneos-arm64e.deb
-Size: 40424
-MD5sum: 53b5d046785ec7afa4bd35b4e6becacd
-SHA1: e6824bd2a1e87fda2a25c845d811ec55094fbe4f
-SHA256: c6d0722d4e8229bfe70aa6b9b7f6e6672ae14e5c65b8241c90a826c950f03ea1
-Section: Tweaks
-Description: Thêm hình nền video cuộc gọi đến
-Author: Kitsudo
-Depiction: https://k37ios.pages.dev/info/depictions/BackgroundCaller.html
-Icon: https://k37ios.pages.dev/assets/BackgroundCaller.png
-Name: BackgroundCaller
-Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/BackgroundCaller.json
-
 Package: com.k37.clocktimefont
 Version: 1.0.0+debug
 Architecture: iphoneos-arm64
@@ -355,6 +316,47 @@ Depiction: https://jtisvn.github.io/depictions/Zone.html
 Icon: https://k37ios.pages.dev/assets/Zone.png
 Name: Zone
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Zone.json
+
+Package: com.kitsudo.backgroundcaller
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: Kitsudo
+Installed-Size: 496
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: ./debs/com.kitsudo.backgroundcaller_1.0.2_iphoneos-arm64.deb
+Size: 40444
+MD5sum: 572b57057391fee6b31986061ece42e9
+SHA1: 9709bcb1fec1a2eddb7f6caa603d29a07f145583
+SHA256: 188330cd96af16af45f849f2d146ce659c03bd95e6a03495d89afebc64834ea1
+Section: Tweaks
+Homepage: https://k37ios.pages.dev
+Description: Thêm hình nền ảnh hoặc video cho cuộc gọi đến và cuộc gọi đi.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/BackgroundCaller.html
+Icon: https://k37ios.pages.dev/assets/BackgroundCaller.png
+Name: BackgroundCaller
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/BackgroundCaller.json
+
+Package: com.kitsudo.backgroundcaller
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: Kitsudo
+Installed-Size: 496
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: ./debs/com.kitsudo.backgroundcaller_1.0.2_iphoneos-arm64e.deb
+Size: 40516
+MD5sum: 5790ba11c670fd81ba4d8d3859d49105
+SHA1: acc7dd6a3dfb3c6e8bba899008dbabf846a3929f
+SHA256: 781fee6f15fb0ae44445f2d2bea6d1a0f128542971c2ed4319aee4400ede710d
+Section: Tweaks
+Homepage: https://k37ios.pages.dev
+Description: Thêm hình nền ảnh hoặc video cho cuộc gọi đến và cuộc gọi đi.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/BackgroundCaller.html
+Icon: https://k37ios.pages.dev/assets/BackgroundCaller.png
+Name: BackgroundCaller
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/BackgroundCaller.json
 
 Package: com.kitsudo.lockbuttoncall
 Version: 0.0.1
@@ -769,6 +771,29 @@ Size: 839104
 MD5sum: 668908308247b2911d33326f5ef8a194
 SHA1: 6514213387cc8f5122c1d2922027cdb2a7b3fe8a
 SHA256: 4259d235c5f09ca715cbf6feceb6527ca9cc46b6cdbd789a2b2d02a76c2cc3b3
+Section: Tweaks
+Homepage: https://jtisvn.github.io/
+Description: Customize SpringBoard with many useful features for iOS.
+  	 *  Tùy chỉnh SpringBoard với nhiều tính năng hữu ích cho iOS.
+Author: Kitsudo
+Depiction: https://jtisvn.github.io/depictions/NexusBoard.html
+Icon: https://jtisvn.github.io/sectionIcons/NexusBoard.png
+Name: NexusBoard
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/NexusBoard.json
+
+Package: com.kitsudo.nexusboard
+Version: 5.5
+Architecture: iphoneos-arm64e
+Maintainer: JTISVN Repo
+Installed-Size: 3588
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi
+Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
+Filename: ./debs/com.kitsudo.nexusboard_5.5_iphoneos-arm64e.deb
+Size: 838632
+MD5sum: c23d7eb6a48c46450f462005d7d23e12
+SHA1: a63bbc442160aabd06b2e24d3889526a97609f4a
+SHA256: ed6c5a9cff24e86ef7e6495090bda5168486a7c1b7ad04cc43c99b0b6c600f37
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.
