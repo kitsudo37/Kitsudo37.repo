@@ -804,6 +804,45 @@ Icon: https://jtisvn.github.io/sectionIcons/NexusBoard.png
 Name: NexusBoard
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/NexusBoard.json
 
+Package: com.kitsudo.poweractions
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Maintainer: Kitsudo
+Installed-Size: 172
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: ./debs/com.kitsudo.poweractions_0.0.1_iphoneos-arm64.deb
+Size: 9932
+MD5sum: fdf1748cd6a3fee538ed4b284f931b34
+SHA1: fe3df82af12238097bbe57ef4cd403aaa4d88e8e
+SHA256: 95bfbc124e2fd9ed462cdf6f6ab9ef475166d6d97042e2b0b3952ffdc27d4339
+Section: Tweaks
+Description: Dọn dẹp bộ nhớ đệm ứng dụng nhanh bằng thao tác nhấn giữ nút Nguồn.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/PowerActions.html
+Icon: https://k37ios.pages.dev/assets/PowerActions.png
+Name: PowerCacheClear
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PowerActions.json
+
+Package: com.kitsudo.poweractions
+Version: 0.0.1
+Architecture: iphoneos-arm64e
+Maintainer: Kitsudo
+Installed-Size: 172
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: ./debs/com.kitsudo.poweractions_0.0.1_iphoneos-arm64e.deb
+Size: 10124
+MD5sum: 5e8e7fc89562390ea3e3d74745780456
+SHA1: 265ba60cae09cdd7b3443e094298ec2ca60c265f
+SHA256: 86a70cd03d2183a2e0b2d6176f39dc379f3d75871b559c79d14e48258e9750ff
+Section: Tweaks
+Description: Dọn dẹp bộ nhớ đệm ứng dụng nhanh bằng thao tác nhấn giữ nút Nguồn.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/PowerActions.html
+Icon: https://k37ios.pages.dev/assets/PowerActions.png
+Name: PowerCacheClear
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PowerActions.json
+
 Package: com.kitsudo.tiktokautoswipe
 Version: 1.0.0
 Architecture: iphoneos-arm64e
