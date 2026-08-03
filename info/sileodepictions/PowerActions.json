@@ -24,7 +24,7 @@
 "itemSize":"{185,400}"
 },
 {
-"markdown":"### PowerActions\n\n- Dọn dẹp bộ nhớ đệm các ứng dụng nhanh bằng cách nhấn giữ nút nguồn trên thiết bị.",
+"markdown":"### PowerActions\n\n-Biến nút nguồn vật lý thành trung tâm điều khiển tiện ích!\n- PowerActions là tinh chỉnh giúp bạn gán các tác vụ tiện ích vào thao tác Nhấn giữ nút nguồn, mang lại sự tiện lợi và nhanh chóng tối đa.",
 "useSpacing": false,
 "class": "DepictionMarkdownView"
 },
@@ -79,13 +79,13 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "Ngày tải lên",
+"text": "Ngày cập nhật",
 "textColor": "#777",
 "margins": "{16,0,8,0}"
 },
 {
 "class": "DepictionLabelView",
-"text": "03/08/2026",
+"text": "04/08/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -103,7 +103,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "0.0.1",
+"text": "1.0.1",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -156,7 +156,15 @@
 "tabname":"Nhật ký cập nhật",
 "views":[
 {
-"markdown": "### Phiên bản 1.0.0\n- Phát hành lần đầu.",
+"markdown":"### Phiên bản 1.0.1\n- Thêm tuỳ chọn menu các tính năng mới gồm:\n- Bật dền pin\n- Chụp ảnh màn hình\n- Xoá huy hiệu badges\n- Resếping làm mới màn hình và sẽ bổ sung thêm..",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
+{
+"markdown": "### Phiên bản 0.0.1\n- Phát hành lần đầu.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
@@ -171,7 +179,7 @@
 "class":"DepictionStackView"
 },
 {
-"tabname":"Hỗ Trợ",
+"tabname":"Liên Hệ Hỗ Trợ",
 "views":[
 {
 "class":"DepictionTableButtonView",
