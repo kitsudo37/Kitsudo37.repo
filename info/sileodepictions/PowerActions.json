@@ -1,6 +1,6 @@
 {
 "minVersion":"0.1",
-"headerImage":"https://k37ios.pages.dev/banner/banner.png",
+"headerImage":"https://k37ios.pages.dev/banner/PowerActions.png",
 "tintColor":"#33CCFF",
 "tabs":[
 {
@@ -24,7 +24,7 @@
 "itemSize":"{185,400}"
 },
 {
-"markdown":"### PowerActions\n\n-Biến nút nguồn vật lý thành trung tâm điều khiển tiện ích!\n- PowerActions là tinh chỉnh giúp bạn gán các tác vụ tiện ích vào thao tác Nhấn giữ nút nguồn, mang lại sự tiện lợi và nhanh chóng tối đa.",
+"markdown":"### PowerActions\n\n-Biến nút nguồn vật lý thành trung tâm điều khiển tiện ích!\n- PowerActions là tinh chỉnh giúp bạn gán các tác vụ tiện ích vào thao tác Nhấn giữ nút nguồn, mang lại sự tiện lợi và nhanh chóng tối đa.\n- Cơ chế hoạt động:\n- Kích hoạt nhanh (Bật 1 tính năng): Chạy ngay lập tức lệnh được chọn khi nhấn giữ nút nguồn, không qua menu trung gian.\n- Menu Pop-up (Bật từ 2 tính năng trở lên): Hiển thị ngay một menu giao diện để bạn tự do lựa chọn tác vụ.\n- Dọn dẹp hệ thống\n- Xem chi tiết pin\n- Bật tắt đèn pin\n- Chụp ảnh màn hình\n- Xoá huy hiệu thông báo\n- Respring làm mới màn hình\n- Và sẽ bổ sung thêm trong bản cập nhật tới",
 "useSpacing": false,
 "class": "DepictionMarkdownView"
 },
@@ -103,7 +103,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "1.0.1",
+"text": "1.0.2",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -156,7 +156,15 @@
 "tabname":"Nhật ký cập nhật",
 "views":[
 {
-"markdown":"### Phiên bản 1.0.1\n- Thêm tuỳ chọn menu các tính năng mới gồm:\n- Bật dền pin\n- Chụp ảnh màn hình\n- Xoá huy hiệu badges\n- Resếping làm mới màn hình và sẽ bổ sung thêm..",
+"markdown":"### Phiên bản 1.0.2\n- Thêm hiển thị chi tiết pin\n- Thay đổi giao diện menu khi nhấn giữ nút nguồn\n- Thêm tuỳ chỉnh tweak trong cài đặt.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
+{
+"markdown":"### Phiên bản 1.0.1\n- Thêm tuỳ chọn menu các tính năng mới gồm:\n- Bật dền pin\n- Chụp ảnh màn hình\n- Xoá huy hiệu badges\n- Respring làm mới màn hình\n- Và sẽ bổ sung thêm..",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },

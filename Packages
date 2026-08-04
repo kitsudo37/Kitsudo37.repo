@@ -882,6 +882,45 @@ Icon: https://k37ios.pages.dev/assets/PowerActions.png
 Name: PowerActions
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PowerActions.json
 
+Package: com.kitsudo.poweractions
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: Kitsudo
+Installed-Size: 548
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: ./debs/com.kitsudo.poweractions_1.0.2_iphoneos-arm64e.deb
+Size: 76216
+MD5sum: 7bb47ed475a28c55b2fa4a59f422aae1
+SHA1: f09c1c91c2a49d42e76fa92eca2e8b15b39add9b
+SHA256: a9e836f9203e5e8cb4711f1a1ee46dfadfc8a8c75d88559bf76045af715e517c
+Section: Tweaks
+Description: PowerActions Menu Tweak with Preferences.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/PowerActions.html
+Icon: https://k37ios.pages.dev/assets/PowerActions.png
+Name: PowerActions
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PowerActions.json
+
+Package: com.kitsudo.poweractions
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: Kitsudo
+Installed-Size: 548
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: ./debs/com.kitsudo.poweractions_1.0.2_iphoneos-arm64.deb
+Size: 76188
+MD5sum: c4f770b0ff497f0a22b3f2b65b588b20
+SHA1: 3dc7aea050629d1cbcac03eec74d2f124daf781d
+SHA256: f69e04175135eb157315dc905c97b11b21bc85fd34b3b5c204739141470a5c78
+Section: Tweaks
+Description: PowerActions Menu Tweak with Preferences.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/PowerActions.html
+Icon: https://k37ios.pages.dev/assets/PowerActions.png
+Name: PowerActions
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PowerActions.json
+
 Package: com.kitsudo.tiktokautoswipe
 Version: 1.0.0
 Architecture: iphoneos-arm64e
