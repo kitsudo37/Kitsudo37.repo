@@ -1,7 +1,7 @@
 {
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/banner.png",
-"tintColor": "#33CCFF",
+"tintColor": "#0099FF",
 "class": "DepictionTabView",
 "tabs": [
 {
@@ -83,7 +83,7 @@
 {
 "class": "DepictionTableTextView",
 "title": "Thể loại",
-"text": "Applications"
+"text": "Tweaks"
 },
 {
 "class": "DepictionTableTextView",
@@ -128,7 +128,7 @@
 {
 "class": "DepictionTableButtonView",
 "title": "Ủng hộ tôi",
-"action": "https://k37ios.pages.dev",
+"action": "https://k37ios.pages.dev/info/depictions/donate.html",
 "openExternal": 1,
 "icon": "https://img.icons8.com/ios-filled/50/6A5ACD/hearts.png"
 },
