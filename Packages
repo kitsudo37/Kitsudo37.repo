@@ -763,14 +763,14 @@ Package: com.kitsudo.nexusboard
 Version: 5.5
 Architecture: iphoneos-arm64
 Maintainer: JTISVN Repo
-Installed-Size: 3632
+Installed-Size: 3812
 Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi-stub
 Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
 Filename: ./debs/com.kitsudo.nexusboard_5.5_iphoneos-arm64.deb
-Size: 840428
-MD5sum: bf84f95fad11cc0ae01120ade340fc77
-SHA1: edde98e58b4080c527469102ee968919f82b27e6
-SHA256: 06213a0ddebecd0d3b4abe3548dc0fe7bb7d5c3de869149fe677fc36d7912d55
+Size: 869824
+MD5sum: 5cb0b1c9b020392b4ffb1e4699591b59
+SHA1: 21fc31650286df55eafff520f75a66e672e37a4f
+SHA256: 2224696e42d7d5fdbb2e63329d31b2abd300eeac8a1cfb8d3c2b5ff90aa0feed
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.
@@ -785,15 +785,15 @@ Package: com.kitsudo.nexusboard
 Version: 5.5
 Architecture: iphoneos-arm64e
 Maintainer: JTISVN Repo
-Installed-Size: 3632
+Installed-Size: 3812
 Pre-Depends: rootless-compat(>= 0.9)
 Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi
 Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
 Filename: ./debs/com.kitsudo.nexusboard_5.5_iphoneos-arm64e.deb
-Size: 840360
-MD5sum: 9216a881d4d224165dad015eb99435fa
-SHA1: 22b917a563df0cceac0dce73241fb1b941b51293
-SHA256: 20b33d13c52c91889c17db4c90b6846a2312f4b899ec3a0cecde3cca9610bddf
+Size: 866456
+MD5sum: 258f331ff13fe63eacc89957aa725851
+SHA1: ce90c6f8c7dfe1c9396ef51a90b41794765445e1
+SHA256: edafb232347449df758570f3b6b842039bf0ec2a2329ed305ae471eb3433d5fc
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.
@@ -913,6 +913,45 @@ Size: 76188
 MD5sum: c4f770b0ff497f0a22b3f2b65b588b20
 SHA1: 3dc7aea050629d1cbcac03eec74d2f124daf781d
 SHA256: f69e04175135eb157315dc905c97b11b21bc85fd34b3b5c204739141470a5c78
+Section: Tweaks
+Description: PowerActions Menu Tweak with Preferences.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/PowerActions.html
+Icon: https://k37ios.pages.dev/assets/PowerActions.png
+Name: PowerActions
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PowerActions.json
+
+Package: com.kitsudo.poweractions
+Version: 1.0.3
+Architecture: iphoneos-arm64e
+Maintainer: Kitsudo
+Installed-Size: 552
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: ./debs/com.kitsudo.poweractions_1.0.3_iphoneos-arm64e.deb
+Size: 79832
+MD5sum: 2fa00bcb3bdd15a9239d4f88f6c614a9
+SHA1: b1a13e90ee89e63458afe3d503393ae9ebd770a4
+SHA256: f0198d5da1addcfa091648a63ecb9da704f42e046fa762e2c9bab81c750c511b
+Section: Tweaks
+Description: PowerActions Menu Tweak with Preferences.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/PowerActions.html
+Icon: https://k37ios.pages.dev/assets/PowerActions.png
+Name: PowerActions
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PowerActions.json
+
+Package: com.kitsudo.poweractions
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Maintainer: Kitsudo
+Installed-Size: 552
+Depends: mobilesubstrate, firmware (>= 15.0)
+Filename: ./debs/com.kitsudo.poweractions_1.0.3_iphoneos-arm64.deb
+Size: 79816
+MD5sum: b84113c5ce6037cdb20dc346bf84e3db
+SHA1: 0c675478f4c9f8d45f81f9a5a35e9e332a4d7dc1
+SHA256: d947f87c1ae5040368268a274c72cf2e691eb3259204016c1965023261450f1a
 Section: Tweaks
 Description: PowerActions Menu Tweak with Preferences.
 Author: Kitsudo
