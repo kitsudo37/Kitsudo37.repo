@@ -763,14 +763,14 @@ Package: com.kitsudo.nexusboard
 Version: 5.5
 Architecture: iphoneos-arm64
 Maintainer: JTISVN Repo
-Installed-Size: 3812
+Installed-Size: 3632
 Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi-stub
 Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
 Filename: ./debs/com.kitsudo.nexusboard_5.5_iphoneos-arm64.deb
-Size: 869824
-MD5sum: 5cb0b1c9b020392b4ffb1e4699591b59
-SHA1: 21fc31650286df55eafff520f75a66e672e37a4f
-SHA256: 2224696e42d7d5fdbb2e63329d31b2abd300eeac8a1cfb8d3c2b5ff90aa0feed
+Size: 840192
+MD5sum: c84f2aa844bd350eee99156adfd336b6
+SHA1: 2cfd088e074045bc8c432a6b2e62024d9c731f2d
+SHA256: 76b2b94af527d94f86f76474798162713e13dc762e01c2cac732e1dbb0e03f3c
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.
@@ -785,15 +785,15 @@ Package: com.kitsudo.nexusboard
 Version: 5.5
 Architecture: iphoneos-arm64e
 Maintainer: JTISVN Repo
-Installed-Size: 3812
+Installed-Size: 3632
 Pre-Depends: rootless-compat(>= 0.9)
 Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi
 Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
 Filename: ./debs/com.kitsudo.nexusboard_5.5_iphoneos-arm64e.deb
-Size: 866456
-MD5sum: 258f331ff13fe63eacc89957aa725851
-SHA1: ce90c6f8c7dfe1c9396ef51a90b41794765445e1
-SHA256: edafb232347449df758570f3b6b842039bf0ec2a2329ed305ae471eb3433d5fc
+Size: 839792
+MD5sum: 0a188f6fefdfc2bf685fe48edefec114
+SHA1: 176c034d300d39963eedf6d7a39fbefcbeb601f0
+SHA256: 1295c829828dc24397c2999a9145be00750dad45e4200ca6011ab1dcfbf7c7d7
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.
