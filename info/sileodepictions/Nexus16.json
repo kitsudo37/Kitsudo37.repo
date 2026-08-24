@@ -23,7 +23,7 @@
 "spacing": 16
 },
 {
-"markdown": "## Nexus16\Tinh chỉnh mạnh mẽ và tối ưu, được thiết kế đặc biệt để giúp bạn tùy biến mọi ngóc ngách trên Màn hình Khóa, Với giao diện cài đặt thân thiện, hiện đại và cơ chế Live-Update,Nexus 16 mang đến trải nghiệm tinh chỉnh mượt mà và trực quan nhất.",
+"markdown": "### Nexus16\n\n- Tinh chỉnh mạnh mẽ và tối ưu, được thiết kế đặc biệt để giúp bạn tùy biến mọi ngóc ngách trên Màn hình Khóa.\n- Với giao diện cài đặt thân thiện, hiện đại cùng cơ chế Live-Update, Nexus 16 mang đến trải nghiệm tùy biến mượt mà và trực quan nhất.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
@@ -126,7 +126,7 @@
 {
 "class": "DepictionTableButtonView",
 "title": "Xem mô tả",
-"action": "https://k37ios.pages.dev/info/depictions/Axon.html",
+"action": "https://k37ios.pages.dev/info/depictions/Nexus16.html",
 "icon": "https://img.icons8.com/ios-filled/50/4facfe/document.png"
 },
 {
@@ -171,7 +171,7 @@
 "class": "DepictionStackView",
 "views": [
 {
-"markdown": "#### Phiên bản: 1.0.1\n- Thêm tuỳ chọn phông chữ & kích thước chữ\n- Thêm hiển thị giây trên đồng hồ.",
+"markdown": "#### Phiên bản: 1.0.1\n- Thêm tùy chọn phông chữ & kích thước chữ.\n- Thêm hiển thị giây trên đồng hồ.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
