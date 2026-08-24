@@ -1,0 +1,189 @@
+{
+"minVersion": "0.1",
+"headerImage": "https://k37ios.pages.dev/banner/Nexus16.png",
+"tintColor": "#FF9900",
+"class": "DepictionTabView",
+"tabs": [
+{
+"tabname": "Giới Thiệu",
+"class": "DepictionStackView",
+"views": [
+{
+"class": "DepictionSpacerView",
+"spacing": 12
+},
+{
+"class": "DepictionButtonView",
+"text": "Tham gia nhóm chat Telegram",
+"action": "https://t.me/jtisvietnamrepo",
+"openExternal": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"markdown": "## Nexus16\Tinh chỉnh mạnh mẽ và tối ưu, được thiết kế đặc biệt để giúp bạn tùy biến mọi ngóc ngách trên Màn hình Khóa, Với giao diện cài đặt thân thiện, hiện đại và cơ chế Live-Update,Nexus 16 mang đến trải nghiệm tinh chỉnh mượt mà và trực quan nhất.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionHeaderView",
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
+},
+{
+"class": "DepictionScreenshotsView",
+"itemCornerRadius": 8,
+"itemSize": "{185, 400}",
+"screenshots": [
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Nexus16/1.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Nexus16/2.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Nexus16/3.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/Nexus16/4.png",
+"accessibilityText": "Screenshot"
+}
+]
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionHeaderView",
+"title": "Thông Tin"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Tác giả",
+"text": "Kitsudo"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Phiên bản",
+"text": "1.0.1"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Thể loại",
+"text": "Tweaks"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Ngày tải lên",
+"text": "14/08/2026"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Kích thước",
+"text": "553,1 KB"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Tương thích",
+"text": "iOS 16.0 - 17.2"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Xem mô tả",
+"action": "https://k37ios.pages.dev/info/depictions/Axon.html",
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/document.png"
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Liên hệ tôi",
+"action": "https://t.me/Kitsudo",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/telegram-app.png"
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Ủng hộ tôi",
+"action": "https://k37ios.pages.dev/info/depictions/donate.html",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/4facfe/hearts.png"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 24
+},
+{
+"class": "DepictionImageView",
+"URL": "https://k37ios.pages.dev/CydiaIcon.png",
+"width": 40,
+"height": 40,
+"alignment": 1,
+"cornerRadius": 8
+},
+{
+"class": "DepictionMarkdownView",
+"markdown": "<div style='text-align: center; color: #888; font-size: 11px; margin-top: 5px;'>Được tạo bởi ❤️ K37 Repo </div>",
+"useRawFormat": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+}
+]
+},
+{
+"tabname": "Nhật Ký Cập Nhật",
+"class": "DepictionStackView",
+"views": [
+{
+"markdown": "#### Phiên bản: 1.0.1\n- Thêm tuỳ chọn phông chữ & kích thước chữ\n- Thêm hiển thị giây trên đồng hồ.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"markdown": "#### Phiên bản: 1.0.0\n- Phát hành lần đầu.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+}
+]
+}
+]
+}
