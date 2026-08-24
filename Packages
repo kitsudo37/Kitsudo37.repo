@@ -399,6 +399,47 @@ Icon: https://k37ios.pages.dev/assets/LockButtonCall.png
 Name: LockButtonCall
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/LockButtonCall.json
 
+Package: com.kitsudo.nexus16
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: Kitsudo
+Installed-Size: 488
+Depends: mobilesubstrate, firmware (>= 16.0)
+Filename: ./debs/com.kitsudo.nexus16_1.0.1_iphoneos-arm64.deb
+Size: 50528
+MD5sum: b9c7d4172711e0223877fb83b8a3c16c
+SHA1: a0c4dd0539e366d295854d87c6f8e714f4fd4bce
+SHA256: 251c7974c8aa77a3b198240c45e1330a49dae96b3889e9df55b8705d3ea02068
+Section: Tweaks
+Homepage: https://k37ios.pages.dev
+Description: Next-level lockscreen customisation for iOS 16+
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/Nexus16.html
+Icon: https://k37ios.pages.dev/assets/Nexus16.png
+Name: Nexus16
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Nexus16.json
+
+Package: com.kitsudo.nexus16
+Version: 1.0.1
+Architecture: iphoneos-arm64e
+Maintainer: Kitsudo
+Installed-Size: 488
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, firmware (>= 16.0)
+Filename: ./debs/com.kitsudo.nexus16_1.0.1_iphoneos-arm64e.deb
+Size: 50636
+MD5sum: 6c3872f3dc2f138934092493c8bf70ae
+SHA1: 833482c916094eb601bb905aec2fa75606697318
+SHA256: 1318ebd3dbc8f83435ccf8fde5cfb280b3f2b09affab616a833da196a0cc6754
+Section: Tweaks
+Homepage: https://k37ios.pages.dev
+Description: Next-level lockscreen customisation for iOS 16+
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/Nexus16.html
+Icon: https://k37ios.pages.dev/assets/Nexus16.png
+Name: Nexus16
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Nexus16.json
+
 Package: com.kitsudo.nexusboard
 Version: 4.7
 Architecture: iphoneos-arm64e
@@ -839,6 +880,51 @@ Size: 908596
 MD5sum: c0dbdc1d189ebf3a0b053867125250e0
 SHA1: 882284ea2ba2c9948ef0e09eceb07ab046992a44
 SHA256: 3221b4a89a9156185ab63425c54a8d5d271a40915d813d4f81da133b9877a11c
+Section: Tweaks
+Homepage: https://jtisvn.github.io/
+Description: Customize SpringBoard with many useful features for iOS.
+  	 *  Tùy chỉnh SpringBoard với nhiều tính năng hữu ích cho iOS.
+Author: Kitsudo
+Depiction: https://jtisvn.github.io/depictions/NexusBoard.html
+Icon: https://jtisvn.github.io/sectionIcons/NexusBoard.png
+Name: NexusBoard
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/NexusBoard.json
+
+Package: com.kitsudo.nexusboard
+Version: 5.7
+Architecture: iphoneos-arm64e
+Maintainer: JTISVN Repo
+Installed-Size: 4060
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi
+Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
+Filename: ./debs/com.kitsudo.nexusboard_5.7_iphoneos-arm64e.deb
+Size: 916184
+MD5sum: 7101b49b393ec2bf9dce00e44a9a4620
+SHA1: 0bf0d373faf86ac37eeb899bbe4a1a13b8e9c2f0
+SHA256: edbd574a552bd2b22d078a25c7c4d8331ff335db4eba859c03dd20fcc05008d4
+Section: Tweaks
+Homepage: https://jtisvn.github.io/
+Description: Customize SpringBoard with many useful features for iOS.
+  	 *  Tùy chỉnh SpringBoard với nhiều tính năng hữu ích cho iOS.
+Author: Kitsudo
+Depiction: https://jtisvn.github.io/depictions/NexusBoard.html
+Icon: https://jtisvn.github.io/sectionIcons/NexusBoard.png
+Name: NexusBoard
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/NexusBoard.json
+
+Package: com.kitsudo.nexusboard
+Version: 5.7
+Architecture: iphoneos-arm64
+Maintainer: JTISVN Repo
+Installed-Size: 4060
+Depends: mobilesubstrate, preferenceloader, firmware (>= 14.0), oldabi-stub
+Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
+Filename: ./debs/com.kitsudo.nexusboard_5.7_iphoneos-arm64.deb
+Size: 915236
+MD5sum: b265cecd7a006d8cc636a3392613941b
+SHA1: 617eb93ea7e73ccca005ca975cd54649e1c92431
+SHA256: 9846fcfe82338484362f838e79a4c37b9ece3b856d852e418f647c79f8377a0f
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.

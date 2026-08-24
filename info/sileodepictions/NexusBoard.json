@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "5.6",
+"version": "5.7",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "22/08/2026",
+"text": "24/08/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "5.6",
+"text": "5.7",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 5.7\n- Thêm tuỳ chọn & thay đổi cỡ chũ đồng hồ và ngày tháng trên Màn hình khoá\n- Thêm hiển thị số giây trên đồng hồ Màn hình khoá.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 5.6\n- Thêm nút tải xuống video trình phát trên Safari\n- Thêm bỏ qua tuỳ chọn menu & hiển thị thông báo tiến trình tải video\n- Sửa lỗi cài đặt Thư mục không hiển thị.",
 "useSpacing":true,
