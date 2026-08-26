@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "5.8",
+"version": "5.9",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "25/08/2026",
+"text": "26/08/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "5.8",
+"text": "5.9",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown":"### Phiên bản 5.9\n- Thêm hiển thị thời tiết trên thanh trạng thái\n- Thêm Làm mở thư mục kiều iOS 9\n- Thêm in đậm & Tuỳ chỉnh vị trí và kích thước tiêu đề thư mục.",
+"useSpacing":true,
+"class":"DepictionMarkdownView"
+},
+{
+"class":"DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 5.8\n- Thêm Add phông chữ đồng hồ mới từ Tệp định dạng .tff\n- Sửa lỗi tuỳ chỉnh cỡ chữ k hoạt động trên Màn hình khoá.",
 "useSpacing":true,
