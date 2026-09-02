@@ -17,9 +17,9 @@
         .content { padding: 16px; display: none; }
         .content.active { display: block; }
         .box { background: var(--card); padding: 15px; border-radius: 12px; margin-bottom: 15px; font-size: 15px; }
-        .title { font-size: 20px; font-weight: 800; margin: 10px 0; }
-        .screenshots { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px; }
-        .screenshots img { width: 185px; height: 400px; border-radius: 8px; border: 1px solid var(--sep); flex-shrink: 0; object-fit: cover; }
+        .title { font-size: 20px; font-weight: 800; margin: 15px 0 10px 0; }
+        .screenshots { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+        .screenshots img { width: 185px; height: 400px; border-radius: 8px; border: 1px solid var(--sep); flex-shrink: 0; object-fit: cover; scroll-snap-align: start; cursor: pointer; }
         .row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 0.5px solid var(--sep); }
         .row:last-child { border-bottom: none; }
         .btn-table { display: flex; align-items: center; padding: 12px 0; color: var(--tint); text-decoration: none; font-weight: 500; border-bottom: 0.5px solid var(--sep); }
@@ -28,64 +28,95 @@
         .separator { height: 0.5px; background-color: var(--sep); margin: 15px 0; }
         .footer { text-align: center; margin-top: 20px; color: var(--sub); font-size: 12px; }
         .log-v { font-weight: 700; margin-top: 15px; margin-bottom: 5px; }
+
+        /* Lightbox phóng to ảnh & vuốt */
+        #lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; display: none; align-items: center; justify-content: center; touch-action: none; }
+        #lightbox.active { display: flex; }
+        #lightbox img { max-width: 90%; max-height: 85vh; border-radius: 8px; object-fit: contain; user-select: none; }
+        .lb-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.2); color: white; border: none; font-size: 24px; padding: 12px 16px; cursor: pointer; border-radius: 50%; z-index: 10000; }
+        #lb-prev { left: 15px; }
+        #lb-next { right: 15px; }
+        #lb-close { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.2); color: white; border: none; font-size: 20px; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; z-index: 10000; }
     </style>
 </head>
 <body>
     <img id="headerImage" class="banner">
     <div class="tabs">
-        <button class="tab active" onclick="showTab('tab0')">Giới Thiệu</button>
-        <button class="tab" onclick="showTab('tab1')">Nhật Ký Cập Nhật</button>
+        <button class="tab" onclick="showTab('tab0', event)">Giới Thiệu</button>
+        <button class="tab" onclick="showTab('tab1', event)">Nhật Ký Cập Nhật</button>
     </div>
-    <div id="tab0" class="content active">
-        <div id="tweakTitle" class="title"></div>
-        <div id="description" class="box"></div>
-        <div class="title">Ảnh màn hình</div>
+    
+    <div id="tab0" class="content">
+        <div id="tweakTitle" class="title" style="margin-top:0;"></div>
+        
+        <!-- ĐÃ ĐƯA ẢNH MÀN HÌNH LÊN TRÊN MÔ TẢ -->
+        <div class="title" style="margin-top:0;">Ảnh màn hình</div>
         <div id="screenshots" class="screenshots"></div>
+
+        <div class="title">Giới thiệu</div>
+        <div id="description" class="box"></div>
+
         <div class="title">Thông Tin</div>
         <div id="infoTable" class="box"></div>
         <div class="separator"></div>
         <div id="links" class="box" style="padding: 0 15px;"></div>
     </div>
+
     <div id="tab1" class="content">
         <div id="changelog"></div>
     </div>
+
     <div class="footer">
         <img src="https://k37ios.pages.dev/CydiaIcon.png" width="40" height="40" style="border-radius:8px; margin-bottom:5px;"><br>
         Được tạo bởi ❤️ K37 Repo 
     </div>
 
+    <!-- Khung Lightbox Xem Ảnh Phóng To -->
+    <div id="lightbox">
+        <button id="lb-close" onclick="closeLightbox()">&times;</button>
+        <button id="lb-prev" class="lb-btn" onclick="changeSlide(-1)">&#10094;</button>
+        <img id="lb-img" src="">
+        <button id="lb-next" class="lb-btn" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
     <script>
-        // Cập nhật hàm dịch Markdown để xử lý đa dạng tiêu đề
         function parseMD(str) {
             if (!str) return "";
             return str
-                .replace(/^##\s+(.*)/gm, '<span style="font-size: 18px; font-weight: 800; color: var(--text); display: block; margin-bottom: 8px;">$1</span>') // Xử lý nếu vẫn còn ##
-                .replace(/^#{3,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>') // Biến #### thành in đậm
-                .replace(/\n/g, '<br>'); // Giữ nguyên khoảng xuống dòng
+                .replace(/^##\s+(.*)/gm, '<span style="font-size: 18px; font-weight: 800; color: var(--text); display: block; margin-bottom: 8px;">$1</span>')
+                .replace(/^#{3,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>')
+                .replace(/\n/g, '<br>');
         }
 
-        const jsonUrl = '../sileodepictions/NexusBoard.json';
+        // Tự động nhận diện file JSON cùng tên hoặc mặc định
+        const pathSegments = window.location.pathname.split('/');
+        const fileName = pathSegments[pathSegments.length - 1].replace('.html', '.json');
+        const jsonUrl = fileName && fileName !== '' ? `../sileodepictions/${fileName}` : '../sileodepictions/NexusBoard.json';
+
+        let screenshotList = [];
+        let currentIndex = 0;
+
         fetch(jsonUrl).then(res => res.json()).then(data => {
-            // TỰ ĐỘNG BẮT MÀU TINTCOLOR TỪ JSON VÀ ĐỔI MÀU GIAO DIỆN
             if (data.tintColor) {
                 document.documentElement.style.setProperty('--tint', data.tintColor);
             }
 
-            document.getElementById('headerImage').src = data.headerImage;
+            if (data.headerImage) {
+                document.getElementById('headerImage').src = data.headerImage;
+            }
+
             const views = data.tabs[0].views;
             
-            // XỬ LÝ THÔNG MINH BẮT ĐÚNG TÊN TWEAK VÀ NÉ ẢNH MÀN HÌNH
+            // Xử lý bắt tên Tweak từ Markdown hoặc HeaderView
             let mdView = views.find(v => v.class === "DepictionMarkdownView");
             let mdContent = mdView ? mdView.markdown : "";
             let tweakName = "";
 
-            // Tìm cú pháp "## Tên Tweak" trong Markdown
             let titleMatch = mdContent.match(/^##\s+(.*)/m);
             if (titleMatch) {
-                tweakName = titleMatch[1]; // Bóc lấy tên Tweak
-                mdContent = mdContent.replace(/^##\s+.*\n?/, ''); // Xóa dòng ## đi để không bị lặp trong box mô tả
+                tweakName = titleMatch[1];
+                mdContent = mdContent.replace(/^##\s+.*\n?/, '');
             } else {
-                // Nếu là JSON kiểu cũ, tìm Header nhưng né "Ảnh màn hình"
                 let headerView = views.find(v => v.class === "DepictionHeaderView" && v.title !== "Ảnh màn hình");
                 tweakName = headerView ? headerView.title : "";
             }
@@ -93,49 +124,111 @@
             document.getElementById('tweakTitle').innerText = tweakName;
             document.getElementById('description').innerHTML = parseMD(mdContent);
             
+            // Xử lý Ảnh màn hình
             const ssData = views.find(v => v.class === "DepictionScreenshotsView");
-            if(ssData) {
+            if(ssData && ssData.screenshots) {
                 const ssContainer = document.getElementById('screenshots');
-                
-                // KIỂM TRA: NẾU CÓ ĐÚNG 1 ẢNH THÌ CĂN GIỮA
-                if(ssData.screenshots.length === 1) {
+                screenshotList = ssData.screenshots.map(s => s.url);
+
+                if(screenshotList.length === 1) {
                     ssContainer.style.justifyContent = 'center';
                 }
 
-                ssData.screenshots.forEach(s => {
-                    const img = document.createElement('img'); img.src = s.url; ssContainer.appendChild(img);
+                screenshotList.forEach((url, idx) => {
+                    const img = document.createElement('img'); 
+                    img.src = url; 
+                    img.onclick = () => openLightbox(idx);
+                    ssContainer.appendChild(img);
                 });
             }
 
+            // Xử lý Bảng thông tin và Nút bấm (Sửa lỗi không hiển thị thông tin)
+            let infoTableHtml = "";
+            let linksHtml = "";
+            
             views.forEach(v => {
                 if(v.class === "DepictionTableTextView") {
-                    document.getElementById('infoTable').innerHTML += `<div class="row"><span style="color:var(--sub)">${v.title}</span><b>${v.text}</b></div>`;
+                    infoTableHtml += `<div class="row"><span style="color:var(--sub)">${v.title}</span><b>${v.text}</b></div>`;
                 }
                 if(v.class === "DepictionTableButtonView") {
                     const iconTag = v.icon ? `<img src="${v.icon}">` : "";
-                    document.getElementById('links').innerHTML += `<a href="${v.action}" class="btn-table">${iconTag}${v.title}</a>`;
+                    linksHtml += `<a href="${v.action}" class="btn-table"${v.openExternal ? ' target="_blank"' : ''}>${iconTag}${v.title}</a>`;
                 }
             });
 
-            const logs = data.tabs[1].views;
-            let logHtml = "";
-            logs.forEach(l => {
-                if(l.class === "DepictionSeparatorView") logHtml += `<div class="separator"></div>`;
-                else {
-                    if(l.title) logHtml += `<div class="log-v">${l.title}</div>`;
-                    
-                    // Đã áp dụng hàm parseMD cho phần nhật ký cập nhật
-                    if(l.markdown) logHtml += `<div class="box">${parseMD(l.markdown)}</div>`;
-                }
-            });
-            document.getElementById('changelog').innerHTML = logHtml;
-        }).catch(err => console.error(err));
+            document.getElementById('infoTable').innerHTML = infoTableHtml;
+            document.getElementById('links').innerHTML = linksHtml;
 
-        function showTab(id) {
+            // Xử lý Nhật ký cập nhật
+            if(data.tabs[1] && data.tabs[1].views) {
+                const logs = data.tabs[1].views;
+                let logHtml = "";
+                logs.forEach(l => {
+                    if(l.class === "DepictionSeparatorView") logHtml += `<div class="separator"></div>`;
+                    else {
+                        if(l.title) logHtml += `<div class="log-v">${l.title}</div>`;
+                        if(l.markdown) logHtml += `<div class="box">${parseMD(l.markdown)}</div>`;
+                    }
+                });
+                document.getElementById('changelog').innerHTML = logHtml;
+            }
+
+            // Mặc định kích hoạt tab đầu tiên chuẩn xác
+            showTab('tab0');
+        }).catch(err => console.error("Lỗi tải JSON depiction:", err));
+
+        function showTab(id, evt) {
             document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.getElementById(id).classList.add('active');
-            event.currentTarget.classList.add('active');
+            if(evt) {
+                evt.currentTarget.classList.add('active');
+            } else {
+                document.querySelector('.tab').classList.add('active');
+            }
+        }
+
+        // Logic Lightbox & Vuốt cảm ứng (Swipe)
+        const lb = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lb-img');
+
+        function openLightbox(index) {
+            currentIndex = index;
+            lbImg.src = screenshotList[currentIndex];
+            lb.classList.add('active');
+        }
+
+        function closeLightbox() {
+            lb.classList.remove('active');
+        }
+
+        function changeSlide(direction) {
+            currentIndex += direction;
+            if (currentIndex >= screenshotList.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = screenshotList.length - 1;
+            lbImg.src = screenshotList[currentIndex];
+        }
+
+        // Bắt sự kiện vuốt tay (Swipe left/right) trên điện thoại
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        lb.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+
+        lb.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, false);
+
+        function handleSwipe() {
+            if (touchEndX < touchStartX - 50) {
+                changeSlide(1); // Vuốt sang trái -> Ảnh tiếp theo
+            }
+            if (touchEndX > touchStartX + 50) {
+                changeSlide(-1); // Vuốt sang phải -> Ảnh trước đó
+            }
         }
     </script>
 </body>
