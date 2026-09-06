@@ -5,6 +5,7 @@
     "banners": [
         {
             "title": "K37 Repository",
+            "subtitle": "VietNam Number One",
             "package": "com.k37.lunartimebar",
             "url": "https://k37ios.pages.dev/banner/banner.png"
         }
