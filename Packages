@@ -445,18 +445,18 @@ Maintainer: Kitsudo
 Installed-Size: 400
 Depends: mobilesubstrate, firmware (>= 15.0)
 Filename: ./debs/com.kitsudo.backgroundcaller_1.0.3_iphoneos-arm64.deb
-Size: 30568
-MD5sum: 730c8e736f64a7b3e2ee40434ba451b0
-SHA1: 5699c2f2ce9cdd6aa93fd2aa82a446cf5d62cbf2
-SHA256: 25a21933b32258aca268ae19d399b7b1bd4f84111f919046a2bb53b9d308bd17
+Size: 30636
+MD5sum: ad3215e7599440789e95c1c1586ca4a4
+SHA1: 8c61b058234d32dbe5a68e1237400e48d596e0f1
+SHA256: 08fce8bb11f0332a995d6588c9832240f8d7f190226c9e81e5e748015889ba87
 Section: Tweaks
-Homepage: https://jtisvn.github.io/
+Homepage: https://k37ios.pages.dev
 Description: Thêm hình nền ảnh hoặc video cho cuộc gọi đến và cuộc gọi đi.
 Author: Kitsudo
-Depiction: http://jtisvn.github.io/depiction/BackgroundCaller.html
-Icon: https://jtisvn.github.io/sectionIcons/BackgroundCaller.png
+Depiction: https://k37ios.pages.dev/info/depictions/BackgroundCaller.html
+Icon: https://k37ios.pages.dev/assets/BackgroundCaller.png
 Name: BackgroundCaller
-Sileodepiction: https://jtisvn.github.io/sileodepictions/BackgroundCaller.json
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/BackgroundCaller.json
 
 Package: com.kitsudo.backgroundcaller
 Version: 1.0.3
@@ -466,18 +466,18 @@ Installed-Size: 400
 Pre-Depends: rootless-compat(>= 0.9)
 Depends: mobilesubstrate, firmware (>= 15.0)
 Filename: ./debs/com.kitsudo.backgroundcaller_1.0.3_iphoneos-arm64e.deb
-Size: 39160
-MD5sum: 8cc47f3ef08fabda132a7965e13b5b6a
-SHA1: b286d731bac2b893569c84b7be5999ffceca5ee6
-SHA256: 71ebe9ac1e8babba4714c708095459eedafe5771f89c2330013d19c1ed95f2f8
+Size: 29788
+MD5sum: 74e4567bf4ba948b0df21e44f788b009
+SHA1: 0b187540acc68cfd7ae051f5bb84b3d1b000ba88
+SHA256: 72a1525589bb3de727d917bef2d6068e30271dcffa729c3ca1db89b173fd7252
 Section: Tweaks
-Homepage: https://jtisvn.github.io/
+Homepage: https://k37ios.pages.dev
 Description: Thêm hình nền ảnh hoặc video cho cuộc gọi đến và cuộc gọi đi.
 Author: Kitsudo
-Depiction: http://jtisvn.github.io/depiction/BackgroundCaller.html
-Icon: https://jtisvn.github.io/sectionIcons/BackgroundCaller.png
+Depiction: https://k37ios.pages.dev/info/depictions/BackgroundCaller.html
+Icon: https://k37ios.pages.dev/assets/BackgroundCaller.png
 Name: BackgroundCaller
-Sileodepiction: https://jtisvn.github.io/sileodepictions/BackgroundCaller.json
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/BackgroundCaller.json
 
 Package: com.kitsudo.lockbuttoncall
 Version: 0.0.1
