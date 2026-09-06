@@ -164,6 +164,14 @@
 "class": "DepictionStackView",
 "views": [
 {
+"markdown": "#### Phiên bản: 1.5\n- Loại bỏ gói phụ thuộc",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
 "markdown": "#### Phiên bản: 1.4\n- Thêm tuỳ chọn hiển thị ngày",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
