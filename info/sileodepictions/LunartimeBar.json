@@ -164,7 +164,7 @@
 "class": "DepictionStackView",
 "views": [
 {
-"markdown": "#### Phiên bản: 1.5\n- Loại bỏ gói phụ thuộc",
+"markdown": "#### Phiên bản: 1.5\n- Loại bỏ gói phụ thuộc Legacy arm64e Support.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },

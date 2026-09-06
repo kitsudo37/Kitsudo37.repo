@@ -172,7 +172,7 @@
 "tabname":"Nhật ký cập nhật",
 "views":[
 {
-"markdown": "#### Phiên bản: 1.0.4\n- Loại bỏ gói phụ thuộc Legacy arm64e Support.",
+"markdown": "#### Phiên bản: 1.0.5\n- Loại bỏ gói phụ thuộc Legacy arm64e Support.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
