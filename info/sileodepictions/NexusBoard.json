@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "6.2",
+"version": "6.3",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "02/09/2026",
+"text": "07/09/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "6.2",
+"text": "6.3",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown": "#### Phiên bản 6.3\n- Thêm thời gian hoạt động trên mô đun Trung tâm điều khiển\n- Thêm tuỳ chỉnh màu biểu tương thanh trượt Độ sáng và Âm lượng.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
 {
 "markdown":"### Phiên bản 6.2.1\n- Loại bỏ gói phụ thuộc Legacy arm64e Support.",
 "useSpacing":true,
