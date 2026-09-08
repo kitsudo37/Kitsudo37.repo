@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "6.3",
+"version": "6.4",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "07/09/2026",
+"text": "08/09/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "6.3",
+"text": "6.4",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown": "#### Phiên bản 6.4\n- Thêm tự động mở bàn phím khi nhấn tab mới trên Safari\n- Thêm tự động mở bán phím nhập mật mã sau khi Touch ID hoặc Face ID thất bại trên Màn hình khoá.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
 {
 "markdown": "#### Phiên bản 6.3\n- Thêm thời gian hoạt động trên mô đun Trung tâm điều khiển\n- Thêm tuỳ chỉnh màu biểu tương thanh trượt Độ sáng và Âm lượng.",
 "useSpacing": true,
