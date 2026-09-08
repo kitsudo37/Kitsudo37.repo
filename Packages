@@ -1333,10 +1333,10 @@ Pre-Depends: rootless-compat(>= 0.9)
 Depends: mobilesubstrate, preferenceloader, ws.hbang.alderis, firmware (>= 15.0), com.opa334.ccsupport
 Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
 Filename: ./debs/com.kitsudo.nexusboard_6.3_iphoneos-arm64e.deb
-Size: 1364992
-MD5sum: 43df04890293f3d3c89f78492bf2a4d6
-SHA1: ea78af02e9a97413a09abcc845bc46a1c127d518
-SHA256: dd163eb63815693a8ec046d16dbf40f081a38b484e830e85ecf63992177b30a3
+Size: 1364984
+MD5sum: c3d7b7c911aced8de8c94d73a62abed3
+SHA1: df506016f6631aec0464bd3bc4b4b76ea8807154
+SHA256: f51b018eed9c857f198443d518ba4c05a656fb057b11ed9ba8e500b3994f4f6b
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.
@@ -1355,10 +1355,10 @@ Installed-Size: 6404
 Depends: mobilesubstrate, preferenceloader, ws.hbang.alderis, firmware (>= 15.0), com.opa334.ccsupport
 Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
 Filename: ./debs/com.kitsudo.nexusboard_6.3_iphoneos-arm64.deb
-Size: 1378966
-MD5sum: 99cd8a5333cc2f7f6ff0280e22dac9ce
-SHA1: b3dd6cec622222b0030e384b650fb5e781357cb6
-SHA256: e0cbcfa9d745212697208ec863a476a036815c4586a8d2d454427e9959329269
+Size: 1377156
+MD5sum: a9f8539f23ed1b2823b079a03003e3f1
+SHA1: cfbd2893e80cddd28c5a6b03e0040cddac3a423f
+SHA256: ffcfffb572e196d2d7ba7cfca29b6232210f81ac7c3624ee170de2a9294ecba0
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.
@@ -1378,10 +1378,10 @@ Pre-Depends: rootless-compat(>= 0.9)
 Depends: mobilesubstrate, preferenceloader, ws.hbang.alderis, firmware (>= 15.0), com.opa334.ccsupport
 Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
 Filename: ./debs/com.kitsudo.nexusboard_6.4_iphoneos-arm64e.deb
-Size: 3424400
-MD5sum: c7e70e7b817e1fab0a679ca471b728f4
-SHA1: 6d1fe875bd512dd16e0fb162eccc3495ec8b6148
-SHA256: 5eaac8fcd36688f0f8933d65b6df44c320d1ac7e9e10effbd5a27e8298481f5b
+Size: 1364720
+MD5sum: a7ef6f8c5e8bee61a19f730f3fcda8ef
+SHA1: a572ce6e4da676db60f939738fb5097b2651ffe2
+SHA256: 76545036de6388e4e9ae9dfad9c95018168f23799b4cfaa7dfadc28dec2818d2
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.
@@ -1400,10 +1400,10 @@ Installed-Size: 6404
 Depends: mobilesubstrate, preferenceloader, ws.hbang.alderis, firmware (>= 15.0), com.opa334.ccsupport
 Conflicts: com.tomaszpoliszuk.lockscreenbatterymagsafe, com.jtisvn.lunartimebar, com.den.locktouchx, com.bvn.lunartime, com.bvn.ghostboard.rl, com.bvn.ghostboard, com.bvn.infobattery, com.bvn.infobattery-r2, me.luki.april, com.jtis.april, com.bienvannhat.april
 Filename: ./debs/com.kitsudo.nexusboard_6.4_iphoneos-arm64.deb
-Size: 1380632
-MD5sum: 3d508214be990fee28338d954fffc0bf
-SHA1: 1ffa0761725dcbd0e1055bc0e2193b0e40c0e889
-SHA256: af11a3e7b873f8290d5e566bea8489178e41241570da48a691559c7f0db611f8
+Size: 1378964
+MD5sum: de465a1a69dd8c44eac775ec83f4c907
+SHA1: a3fcee558b90d5b4759d9eca69e4899484d349c6
+SHA256: 64a00069f01ca4a20a8dced0fd66e75a1632794bb150137b6b1b904a9d99c922
 Section: Tweaks
 Homepage: https://jtisvn.github.io/
 Description: Customize SpringBoard with many useful features for iOS.

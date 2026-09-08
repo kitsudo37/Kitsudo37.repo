@@ -109,7 +109,7 @@
             slider.scrollLeft = scrollLeftPos - walk;
         });
 
-        const jsonUrl = '../sileodepictions/Axon.json';
+        const jsonUrl = '../sileodepictions/KineWall.json';
         fetch(jsonUrl).then(res => res.json()).then(data => {
             if (data.tintColor) {
                 document.documentElement.style.setProperty('--tint', data.tintColor);
