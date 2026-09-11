@@ -8,7 +8,11 @@
 "tabname":"Giới thiệu",
 "views":[
 {
-"markdown":"### NexusBoard\n\n- Tinh chỉnh \"All-in-One\" giúp bạn trải nghiệm tùy biến giao diện SpringBoard với hàng loạt tính năng hữu ích cho iOS.",
+"spacing": 12,
+"class": "DepictionSpacerView"
+},
+{
+"markdown":"### NexusBoard\n\nTinh chỉnh \"All-in-One\" giúp bạn trải nghiệm tùy biến giao diện SpringBoard với hàng loạt tính năng hữu ích cho iOS.",
 "useSpacing": false,
 "class": "DepictionMarkdownView"
 },
@@ -310,7 +314,7 @@
 {
 "markdown":"### Phiên bản 5.3\n- Thêm hiển thị viền và màu viền cho thư mục.\n- Thêm chạm để đóng nhanh thư mục.\n- Thêm thu nhỏ thanh trang chủ.\n- Thêm menu mới: tuỳ chỉnh thư mục.\n- Thay đổi mục thông tin hiển thị tên máy & hệ điều hành iOS.\n- Sửa lỗi tràn RAM cho một số thiết bị.",
 "useSpacing":true,
-"class":"DepictionMarkdownView"
+"class":"DepictionSeparatorView"
 },
 {
 "class":"DepictionSeparatorView"
