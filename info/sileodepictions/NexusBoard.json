@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "6.4",
+"version": "6.5",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -128,7 +128,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "08/09/2026",
+"text": "11/09/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -146,7 +146,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "6.4",
+"text": "6.5",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -198,6 +198,14 @@
 {
 "tabname":"Nhật ký thay đổi",
 "views":[
+{
+"markdown": "#### Phiên bản 6.5\n- Sửa lỗi ẩn nền Dock không hoạt động khi bật chung tính nămg FloatingDock nổi\n- Sửa lỗi tình trạng crash ngầm safemode khi vuốt xuống đa nhiệm để đóng nhanh các ứng dụng.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
 {
 "markdown": "#### Phiên bản 6.4\n- Thêm tự động mở bàn phím khi nhấn tab mới trên Safari\n- Thêm tự động mở bàn phím nhập mật mã (Passcode) ngay sau khi Touch ID hoặc Face ID thất bại trên Màn hình khoá.",
 "useSpacing": true,
