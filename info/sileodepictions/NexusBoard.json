@@ -8,6 +8,11 @@
 "tabname":"Giới thiệu",
 "views":[
 {
+"markdown":"### NexusBoard\n\n- Tinh chỉnh \"All-in-One\" giúp bạn trải nghiệm tùy biến giao diện SpringBoard với hàng loạt tính năng hữu ích cho iOS.",
+"useSpacing": false,
+"class": "DepictionMarkdownView"
+},
+{
 "class":"DepictionScreenshotsView",
 "screenshots":[
 {
@@ -67,7 +72,7 @@
 "itemSize":"{185,400}"
 },
 {
-"markdown":"### NexusBoard\n\n- Tinh chỉnh \"All-in-One\" giúp bạn trải nghiệm tùy biến giao diện SpringBoa với hàng loạt tính năng hữu ích cho iOS.\n\n- Các tính năng nổi bật:\n\n+ **Màn hình chính:** Ẩn tên ứng dụng/thư mục, ẩn thanh Home Bar, ẩn dấu chấm trang, ẩn Thư viện ứng dụng, ẩn nền Dock, ẩn nút quay lại ứng dụng, xoay mọi hướng biểu tượng, xóa cảnh báo pin yếu, hiển thị chi tiết pin, giả lập cử chỉ iPhone X, đổ bóng Dock, Dock nhiều biểu tượng, tuỳ chỉnh bố cục thư mục,...\n\n+ **Màn hình khóa:** Tự động mở khóa, Nhấn 2 lần để tắt màn hình, Hiển thị ngày Âm/Dương, Ẩn nút Camera/Đèn pin, Trong suốt thông báo.\n\n+ **Thanh Dock:** Hỗ trợ Dock iPad (Floating Dock), ẩn phân cách & tắt cử chỉ Dock, Dock 5 biểu tượng, hiển thị tên ứng dụng dưới Dock.\n\n+ **Trình đa nhiệm:** Đóng tất cả ứng dụng nhanh bằng vuốt xuống hoặc nút bấm X, da nhiệm lưới kiểu iPad,...\n\n+ **Bảo mật & Tiện ích:** Khóa ứng dụng bằng FaceID/Mật khẩu, Hiệu ứng sạc MagSafe, Dự báo thời gian sạc đầy pin và hơn thế nữa.\n\n+ **Trung tâm điều khiển:** Hiển thị số % thanh trượt Độ sáng & Âm lượng, trong suốt nền, tắt hoàn toàn WiFi & Bluetooth, bo tròn các Mô-đun...\n\n+ **Ảnh & Camera:** Xóa vĩnh viễn, bỏ qua xác nhận xoá, phóng to vô hạn, ẩn thanh trượt, luôn bật tiếng video, tắt âm thanh chụp ảnh, tắt bản xem trước ảnh chụp màn hình...\n\n+ **Ứng dụng cài đặt:** Bo tròn biểu tượng và các ô mục trong cài đặt, Ẩn linh kiện không xác định, giả mạo thông tim thiết bị và dung lượng pin...\n\n- Và còn nhiều hơn thế nữa...",
+"markdown":"**Các tính năng nổi bật:**\n\n+ **Màn hình chính:** Ẩn tên ứng dụng/thư mục, ẩn thanh Home Bar, ẩn dấu chấm trang, ẩn Thư viện ứng dụng, ẩn nền Dock, ẩn nút quay lại ứng dụng, xoay mọi hướng biểu tượng, xóa cảnh báo pin yếu, hiển thị chi tiết pin, giả lập cử chỉ iPhone X, đổ bóng Dock, Dock nhiều biểu tượng, tuỳ chỉnh bố cục thư mục,...\n\n+ **Màn hình khóa:** Tự động mở khóa, Nhấn 2 lần để tắt màn hình, Hiển thị ngày Âm/Dương, Ẩn nút Camera/Đèn pin, Trong suốt thông báo.\n\n+ **Thanh Dock:** Hỗ trợ Dock iPad (Floating Dock), ẩn phân cách & tắt cử chỉ Dock, Dock 5 biểu tượng, hiển thị tên ứng dụng dưới Dock.\n\n+ **Trình đa nhiệm:** Đóng tất cả ứng dụng nhanh bằng vuốt xuống hoặc nút bấm X, đa nhiệm lưới kiểu iPad,...\n\n+ **Bảo mật & Tiện ích:** Khóa ứng dụng bằng FaceID/Mật khẩu, Hiệu ứng sạc MagSafe, Dự báo thời gian sạc đầy pin và hơn thế nữa.\n\n+ **Trung tâm điều khiển:** Hiển thị số % thanh trượt Độ sáng & Âm lượng, trong suốt nền, tắt hoàn toàn WiFi & Bluetooth, bo tròn các Mô-đun...\n\n+ **Ảnh & Camera:** Xóa vĩnh viễn, bỏ qua xác nhận xoá, phóng to vô hạn, ẩn thanh trượt, luôn bật tiếng video, tắt âm thanh chụp ảnh, tắt bản xem trước ảnh chụp màn hình...\n\n+ **Ứng dụng cài đặt:** Bo tròn biểu tượng và các ô mục trong cài đặt, Ẩn linh kiện không xác định, giả mạo thông tin thiết bị và dung lượng pin...\n\n- Và còn nhiều hơn thế nữa...",
 "useSpacing": false,
 "class": "DepictionMarkdownView"
 },
@@ -196,10 +201,10 @@
 "class":"DepictionStackView"
 },
 {
-"tabname":"Nhật ký thay đổi",
+"tabname":"Nhật ký cập nhật",
 "views":[
 {
-"markdown": "#### Phiên bản 6.5\n- Sửa lỗi ẩn nền Dock không hoạt động khi bật chung tính nămg FloatingDock nổi\n- Sửa lỗi tình trạng crash ngầm safemode khi vuốt xuống đa nhiệm để đóng nhanh các ứng dụng.",
+"markdown": "#### Phiên bản 6.5\n- Sửa lỗi ẩn nền Dock không hoạt động khi bật chung tính năng FloatingDock nổi.\n- Sửa lỗi tình trạng crash ngầm safemode khi vuốt xuống đa nhiệm để đóng nhanh các ứng dụng.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
@@ -207,7 +212,7 @@
 "class": "DepictionSeparatorView"
 },
 {
-"markdown": "#### Phiên bản 6.4\n- Thêm tự động mở bàn phím khi nhấn tab mới trên Safari\n- Thêm tự động mở bàn phím nhập mật mã (Passcode) ngay sau khi Touch ID hoặc Face ID thất bại trên Màn hình khoá.",
+"markdown": "#### Phiên bản 6.4\n- Thêm tự động mở bàn phím khi nhấn tab mới trên Safari.\n- Thêm tự động mở bàn phím nhập mật mã (Passcode) ngay sau khi Touch ID hoặc Face ID thất bại trên Màn hình khoá.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
@@ -215,7 +220,7 @@
 "class": "DepictionSeparatorView"
 },
 {
-"markdown": "#### Phiên bản 6.3\n- Thêm thời gian hoạt động trên mô đun Trung tâm điều khiển\n- Thêm tuỳ chỉnh màu biểu tương thanh trượt Độ sáng và Âm lượng.",
+"markdown": "#### Phiên bản 6.3\n- Thêm thời gian hoạt động trên mô đun Trung tâm điều khiển.\n- Thêm tuỳ chỉnh màu biểu tượng thanh trượt Độ sáng và Âm lượng.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
@@ -231,7 +236,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 6.2\n- Thêm ẩn đường phân cách các mục trong cài đặt\n- Thêm tuỷ chỉnh viền và màu viền Dock\n- Thêm Dock hai hàng\n- Thêm mục thanh Dock mới.",
+"markdown":"### Phiên bản 6.2\n- Thêm ẩn đường phân cách các mục trong cài đặt.\n- Thêm tuỳ chỉnh viền và màu viền Dock.\n- Thêm Dock hai hàng.\n- Thêm mục thanh Dock mới.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -239,7 +244,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 6.1\n- Sửa lỗi và tối ưu điều chỉnh nhỏ khác\n- Thêm bàn phím Oled đen truyền chế độ tối\n- Thêm bật tắt bỏ qua ứng dụng đang phát\n- Thêm đóng nhanh mọi ứng dung bằng cách vuốt xuống trong Đa nhiệm\n- Thêm hơn 30 phông chữ Đồng hồ trong mục cài đặt Màn hình khoá.",
+"markdown":"### Phiên bản 6.1\n- Sửa lỗi và tối ưu điều chỉnh nhỏ khác.\n- Thêm bàn phím OLED đen thuần chế độ tối.\n- Thêm bật tắt bỏ qua ứng dụng đang phát.\n- Thêm đóng nhanh mọi ứng dụng bằng cách vuốt xuống trong Đa nhiệm.\n- Thêm hơn 30 phông chữ Đồng hồ trong mục cài đặt Màn hình khoá.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -247,7 +252,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 6.0\n- Thêm công tắv chính cho từng mục để bật hoặc tắt toàn bộ tính năng của mỗi mục\n- Thêm đầy đủ ngôn ngữ Tiếng Anh\n- Cải thiện định vị thời tiết trên thanh trạng thái.",
+"markdown":"### Phiên bản 6.0\n- Thêm công tắc chính cho từng mục để bật hoặc tắt toàn bộ tính năng của mỗi mục.\n- Thêm đầy đủ ngôn ngữ Tiếng Anh.\n- Cải thiện định vị thời tiết trên thanh trạng thái.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -255,7 +260,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.9\n- Thêm hiển thị thời tiết trên thanh trạng thái\n- Thêm Làm mở thư mục kiều iOS 9\n- Thêm in đậm tiêu đề thư mục\n- Thêm tuỳ chỉnh vị trí và kích thước tiêu đề thư mục.",
+"markdown":"### Phiên bản 5.9\n- Thêm hiển thị thời tiết trên thanh trạng thái.\n- Thêm Làm mờ thư mục kiểu iOS 9.\n- Thêm in đậm tiêu đề thư mục.\n- Thêm tuỳ chỉnh vị trí và kích thước tiêu đề thư mục.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -263,7 +268,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.8\n- Thêm Add phông chữ đồng hồ mới từ Tệp định dạng .tff\n- Sửa lỗi tuỳ chỉnh cỡ chữ k hoạt động trên Màn hình khoá.",
+"markdown":"### Phiên bản 5.8\n- Thêm nạp phông chữ đồng hồ mới từ Tệp định dạng .ttf.\n- Sửa lỗi tuỳ chỉnh cỡ chữ không hoạt động trên Màn hình khoá.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -271,7 +276,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.7\n- Thêm tuỳ chọn & thay đổi cỡ chũ đồng hồ và ngày tháng trên Màn hình khoá\n- Thêm hiển thị số giây trên đồng hồ Màn hình khoá.",
+"markdown":"### Phiên bản 5.7\n- Thêm tuỳ chọn & thay đổi cỡ chữ đồng hồ và ngày tháng trên Màn hình khoá.\n- Thêm hiển thị số giây trên đồng hồ Màn hình khoá.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -279,7 +284,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.6\n- Thêm nút tải xuống video trình phát trên Safari\n- Thêm bỏ qua tuỳ chọn menu & hiển thị thông báo tiến trình tải video\n- Sửa lỗi cài đặt Thư mục không hiển thị.",
+"markdown":"### Phiên bản 5.6\n- Thêm nút tải xuống video trình phát trên Safari.\n- Thêm bỏ qua tuỳ chọn menu & hiển thị thông báo tiến trình tải video.\n- Sửa lỗi cài đặt Thư mục không hiển thị.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -287,7 +292,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.5\n- Thêm lọc cuộc gọi trong tab gần đây\n- Thêm tuỳ chọn màu thanh trang chủ (HomeBar)\n- Thêm tuỳ chỉnh văn bản dưới đáy trên Màn hình khoá.",
+"markdown":"### Phiên bản 5.5\n- Thêm lọc cuộc gọi trong tab gần đây.\n- Thêm tuỳ chọn màu thanh trang chủ (HomeBar).\n- Thêm tuỳ chỉnh văn bản dưới đáy trên Màn hình khoá.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -295,7 +300,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.4\n- Thêm tuỳ chỉnh chữ Nhập mặt mã trên Màn hình khoá\n- Thêm tuỳ chọn kích thước thẻ đa nhiệm iPad\n- Thêm tuỳ chỉnh bo góc thẻ trong Đa nhiệm\n- Sửa lỗi hiển thị 1 ứng dụng trên thư mục.",
+"markdown":"### Phiên bản 5.4\n- Thêm tuỳ chỉnh chữ Nhập mật mã trên Màn hình khoá.\n- Thêm tuỳ chọn kích thước thẻ đa nhiệm iPad.\n- Thêm tuỳ chỉnh bo góc thẻ trong Đa nhiệm.\n- Sửa lỗi hiển thị 1 ứng dụng trên thư mục.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -303,7 +308,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.3\n- Thêm hiển thị viền và màu viền cho thư mục\n- Thêm chạm để đóng nhanh thư mục\n- Thêm thu nhỏ thanh trang chủ\n- Thêm menu mới: tuỳ chỉnh thư mục\n- Thay đổi mục thông tin hiện thị tên máy & hệ điều hành iOS\n- Sửa lỗi tràn Ram cho 1 số thiết bị.",
+"markdown":"### Phiên bản 5.3\n- Thêm hiển thị viền và màu viền cho thư mục.\n- Thêm chạm để đóng nhanh thư mục.\n- Thêm thu nhỏ thanh trang chủ.\n- Thêm menu mới: tuỳ chỉnh thư mục.\n- Thay đổi mục thông tin hiển thị tên máy & hệ điều hành iOS.\n- Sửa lỗi tràn RAM cho một số thiết bị.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -311,7 +316,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.2\n- Thêm lại tính năng hiện nút từ chối cuộc gọi đến (mấy phiên bản lần trước bị lỗi nên giờ đã fix rồi nha)\n- Sửa lỗi bo góc thanh volume khi nhấn phím cứng tăng giảm âm lượng.",
+"markdown":"### Phiên bản 5.2\n- Thêm lại tính năng hiện nút từ chối cuộc gọi đến.\n- Sửa lỗi bo góc thanh Volume khi nhấn phím cứng tăng giảm âm lượng.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -319,7 +324,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.1\n- Thêm tuỳ chọn màu viền các mô đun Trung tâm điều khiển\n- Thêm tuy chọn màu cuộc gọi đến, gọi đi và gọi nhỡ trong tab gần đây\n- Sửa lỗi tính năng hiển thị tên dưới biểu tượng thanh Dock k hoạt động\n- Sửa lỗi đen màn cài đặt.",
+"markdown":"### Phiên bản 5.1\n- Thêm tuỳ chọn màu viền các mô đun Trung tâm điều khiển.\n- Thêm tuỳ chọn màu cuộc gọi đến, gọi đi và gọi nhỡ trong tab gần đây.\n- Sửa lỗi tính năng hiển thị tên dưới biểu tượng thanh Dock không hoạt động.\n- Sửa lỗi đen màn cài đặt.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -327,7 +332,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 5.0\n- Thêm thời gian chính xác cuộc gọi gần đây\n- Thêm bỏ qua xác nhận xoá ảnh & video\n- Sửa lỗi bị đè biểu tượng chọn tuỳ chỉnh thư mục 5x5 6x6\n- Sửa lại tách riêng ẩn tên ứng dụng MHC và trong thư mục",
+"markdown":"### Phiên bản 5.0\n- Thêm thời gian chính xác cuộc gọi gần đây.\n- Thêm bỏ qua xác nhận xoá ảnh & video.\n- Sửa lỗi bị đè biểu tượng chọn tuỳ chỉnh thư mục 5x5, 6x6.\n- Sửa lại tách riêng ẩn tên ứng dụng Màn hình chính và trong thư mục.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -335,7 +340,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.9\n- Thêm tuỳ chỉnh video hiển thị trên Trung tâm điều khiển\n- Thêm tuỳ chọn vị trí nút X trong Đa nhiệm\n- Sửa lỗi lệch tỉ lệ Trung tâm điều khiển khi bật tính năng đa nhiệm iPad.",
+"markdown":"### Phiên bản 4.9\n- Thêm tuỳ chỉnh video hiển thị trên Trung tâm điều khiển.\n- Thêm tuỳ chọn vị trí nút X trong Đa nhiệm.\n- Sửa lỗi lệch tỉ lệ Trung tâm điều khiển khi bật tính năng đa nhiệm iPad.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -343,7 +348,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.8\n- Thêm xoá tiền tố URL trong Safari\n- Thêm hiển thị đầy đủ URL trong Safari\n- Thêm hiển thị thanh trạng thái trong đa nhiệm\n- Sửa lỗi.",
+"markdown":"### Phiên bản 4.8\n- Thêm xoá tiền tố URL trong Safari.\n- Thêm hiển thị đầy đủ URL trong Safari.\n- Thêm hiển thị thanh trạng thái trong đa nhiệm.\n- Sửa lỗi hiệu năng nhỏ.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -351,7 +356,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.7\n- Thêm tự động bật/tắt chế độ nguồn điện thấp khi không sạc hoặc đang sạc\n- Thêm ẩn nền biểu tượng thư mục Màn hình chính\n- Sửa lỗi Safemode trên 1 số thiết bị.",
+"markdown":"### Phiên bản 4.7\n- Thêm tự động bật/tắt chế độ nguồn điện thấp khi không sạc hoặc đang sạc.\n- Thêm ẩn nền biểu tượng thư mục Màn hình chính.\n- Sửa lỗi Safemode trên một số thiết bị.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -359,7 +364,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.6\n- Thêm tự động cuộn video tiếp thro sau khi xem hết video hiện tại\n- Thêm ẩn logo phần thưởng sự kiện ứng dụng TikTok.",
+"markdown":"### Phiên bản 4.6\n- Thêm tự động cuộn video tiếp theo sau khi xem hết video hiện tại.\n- Thêm ẩn logo phần thưởng sự kiện ứng dụng TikTok.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -367,7 +372,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.5\n- Thêm mục thông tin, liên hệ báo cáo lỗi & yêu cầu tính năng\n- Thêm video bìa trên mục iCloud trong cài đặt\n- Thay đổi & sửa một số lỗi.",
+"markdown":"### Phiên bản 4.5\n- Thêm mục thông tin, liên hệ báo cáo lỗi & yêu cầu tính năng.\n- Thêm video bìa trên mục iCloud trong Cài đặt.\n- Thay đổi & sửa một số lỗi.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -375,7 +380,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.4\n- Thêm ảnh nền chế độ sáng/tối bản phím số ứng dụng Điện thoại\n- Thẻm hiện xác nhận gọi từ mục yêu thích & gần đây\n- Thêm rung 1 lần khi kết nối và kết thúc cuộc gọi.",
+"markdown":"### Phiên bản 4.4\n- Thêm ảnh nền chế độ sáng/tối bàn phím số ứng dụng Điện thoại.\n- Thêm hiện xác nhận gọi từ mục Yêu thích & Gần đây.\n- Thêm rung 1 lần khi kết nối và kết thúc cuộc gọi.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -383,7 +388,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.3\n- Thêm nhập cấu hình cài đặt\n- Thêm xuất cấu hình cài đặt.",
+"markdown":"### Phiên bản 4.3\n- Thêm nhập cấu hình cài đặt.\n- Thêm xuất cấu hình cài đặt.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -391,7 +396,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.2\n- Thêm chia sẻ Wi-Fi đã kết nối bằng mã QR\n- Thêm hiển thị mặt khẩu Wi-Fi & sao chép\n- Thẻm chế độ PIP video trong ứng dụng Ảnh\n- Thêm xáo trộn ngẫu nhiên bàn phím mật mã\n- Thêm ẩn chữ \"Vuốt lên để mở\" dưới đáy Màn hình khoá.\n- Sửa lỗi safemode trên 1 số thiết bị A11 trở xuống",
+"markdown":"### Phiên bản 4.2\n- Thêm chia sẻ Wi-Fi đã kết nối bằng mã QR.\n- Thêm hiển thị mật khẩu Wi-Fi & sao chép.\n- Thêm chế độ PIP video trong ứng dụng Ảnh.\n- Thêm xáo trộn ngẫu nhiên bàn phím mật mã.\n- Thêm ẩn chữ \"Vuốt lên để mở\" dưới đáy Màn hình khoá.\n- Sửa lỗi Safemode trên một số thiết bị A11 trở xuống.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -399,7 +404,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.1\n- Them tuỳ chọn tắt mở khoá tự động:\n- Tắt khi có thông báo\n- Tắt khi đang sạc\n- Tắt khi đang phát nhạc\n- Tắt khi đang bật đèn pin\n- Thêm video nền động cho Cài đặt.",
+"markdown":"### Phiên bản 4.1\n- Thêm tuỳ chọn tắt mở khoá tự động:\n  + Tắt khi có thông báo\n  + Tắt khi đang sạc\n  + Tắt khi đang phát nhạc\n  + Tắt khi đang bật đèn pin\n- Thêm video nền động cho Cài đặt.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -407,7 +412,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 4.0\n- Thêm tuỳ chỉnh tỉ lệ biểu tượng trên màn hình chính\n- Thêm tuỳ chỉnh vị trí dự báo thời gian sạc\n- Sửa đổi tuỳ chỉnh độ trong suốt các mục\n- Sửa lỗi nền cài đặt xung đột mất màu với 1 số tweak.",
+"markdown":"### Phiên bản 4.0\n- Thêm tuỳ chỉnh tỉ lệ biểu tượng trên Màn hình chính.\n- Thêm tuỳ chỉnh vị trí dự báo thời gian sạc.\n- Sửa đổi tuỳ chỉnh độ trong suốt các mục.\n- Sửa lỗi nền Cài đặt xung đột mất màu với một số tweak.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -415,7 +420,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 3.9\n- Thêm tuỳ chỉnh độ mờ nền & trong suốt các mục trong cài đặt\n- Thêm tuỳ chọn hình nền sáng tối trong cài đặt\n- Thêm tuỳ chọn ảnh cho mục trên nhóm iCloud trong cài đặt\n- Thêm nhóm sắp xếp cài đặt 3 thành phần riêng.",
+"markdown":"### Phiên bản 3.9\n- Thêm tuỳ chỉnh độ mờ nền & trong suốt các mục trong Cài đặt.\n- Thêm tuỳ chọn hình nền sáng/tối trong Cài đặt.\n- Thêm tuỳ chọn ảnh cho mục trên nhóm iCloud trong Cài đặt.\n- Thêm nhóm sắp xếp Cài đặt 3 thành phần riêng.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -423,7 +428,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 3.8\n- Thêm ẩn thông báo cập nhật iOS trong trang cài đặt\n- Thêm ẩn cảnh báo bảo trì pin thong mục Tình trạng pin & sạc.",
+"markdown":"### Phiên bản 3.8\n- Thêm ẩn thông báo cập nhật iOS trong trang Cài đặt.\n- Thêm ẩn cảnh báo bảo trì pin trong mục Tình trạng pin & sạc.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -431,7 +436,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 3.7\n- Thêm đổ bóng biểu tượng thanh Dock\n- Thêm định dạng Thứ, ngày/tháng\n- Sửa đổi thanh trượt kéo lịch âm dương lên trên đồng hồ thanh trạng thái\n- Sửa lỗi bị tắt máy khi chạm 2 lần nhập mặt khẩu trên màn hình khoá.",
+"markdown":"### Phiên bản 3.7\n- Thêm đổ bóng biểu tượng thanh Dock.\n- Thêm định dạng Thứ, ngày/tháng.\n- Sửa đổi thanh trượt kéo lịch âm dương lên trên đồng hồ thanh trạng thái.\n- Sửa lỗi bị tắt máy khi chạm 2 lần nhập mật khẩu trên Màn hình khoá.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -439,7 +444,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 3.6\n- Thêm tuỳ chỉnh tiêu đề Tập trung trên Trung tâm điều khiển\n- Thêm chạm để mở rộng mô đun\n- Sửa đổi chức năng tắt hoàn toàn Wifi và Bluetooth tách riêng.",
+"markdown":"### Phiên bản 3.6\n- Thêm tuỳ chỉnh tiêu đề Tập trung trên Trung tâm điều khiển.\n- Thêm chạm để mở rộng mô đun.\n- Sửa đổi chức năng tắt hoàn toàn Wi-Fi và Bluetooth tách riêng.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -447,7 +452,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 3.5\n- Thêm tuỳ chọn ảnh nền sáng tối trên Trung tâm điều khiển\n\n- Thêm tuỳ chỉnh sắp xếp mô đun kết nố\n- Thêm tuỳ chỉnh bố cục mô đun kết nối\n- Thêm xoa ngang thanh trượt Độ sáng & Âm lượng.",
+"markdown":"### Phiên bản 3.5\n- Thêm tuỳ chọn ảnh nền sáng/tối trên Trung tâm điều khiển.\n- Thêm tuỳ chỉnh sắp xếp mô đun kết nối.\n- Thêm tuỳ chỉnh bố cục mô đun kết nối.\n- Thêm xoay ngang thanh trượt Độ sáng & Âm lượng.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -463,7 +468,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 3.3\n- Thêm thay đổi nhãn theo màu biểu tượng\n- Thẻm Tuỳ chỉnh bố cục biểu tượng thư mục.",
+"markdown":"### Phiên bản 3.3\n- Thêm thay đổi nhãn theo màu biểu tượng.\n- Thêm tuỳ chỉnh bố cục biểu tượng thư mục.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -479,7 +484,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 3.1\n- Thêm 5 kiểu tuỳ chọn sắp xếp biểu tượng\n- Thêm ẩn biểu tượng VPN & Vị trí trên thanh trạng thái\n- Sửa lỗi giật khựng đa nhiệm iPad",
+"markdown":"### Phiên bản 3.1\n- Thêm 5 kiểu tuỳ chọn sắp xếp biểu tượng.\n- Thêm ẩn biểu tượng VPN & Vị trí trên thanh trạng thái.\n- Sửa lỗi giật khựng đa nhiệm iPad.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -487,7 +492,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 3.0\n- Sửa lỗi k hiển thị dự báo sạc trên màn hình khoá\n- Thêm ẩn chỉ báo đấu chấm camera & micro",
+"markdown":"### Phiên bản 3.0\n- Sửa lỗi không hiển thị dự báo sạc trên Màn hình khoá.\n- Thêm ẩn chỉ báo dấu chấm Camera & Micro.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -495,7 +500,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.9\n- Thêm tuỳ chỉnh vị trí hiển thị thời gian & ngày tháng trên màn hình khoá\n- Thêm ẩn nhãn thời gian trên màn hình khoá\n- Thêm ẩn ngày tháng trên màn hình khoá\n- Thêm ẩn chỉ báo pin khi sạc trên màn hình khoá",
+"markdown":"### Phiên bản 1.9\n- Thêm tuỳ chỉnh vị trí hiển thị thời gian & ngày tháng trên Màn hình khoá.\n- Thêm ẩn nhãn thời gian trên Màn hình khoá.\n- Thêm ẩn ngày tháng trên Màn hình khoá.\n- Thêm ẩn chỉ báo pin khi sạc trên Màn hình khoá.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -503,7 +508,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 2.8\n- Thêm trở về đảo động (Thoát ứng dụng ra màn hình chính bay vào Dynamic island)\n- Thêm giả lập cử chỉ iPhone X lên các thiết bị nút Home\n- Thêm tuỳ chọn số lượng biểu tượng ở Dock\n- Thêm tuỳ chỉnh độ mờ nền thông báo",
+"markdown":"### Phiên bản 2.8\n- Thêm trở về Đảo động (Thoát ứng dụng bay vào Dynamic Island).\n- Thêm giả lập cử chỉ iPhone X lên các thiết bị nút Home.\n- Thêm tuỳ chọn số lượng biểu tượng ở Dock.\n- Thêm tuỳ chỉnh độ mờ nền thông báo.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -511,7 +516,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 2.7\n- Sủa lỗi và cải thiện",
+"markdown":"### Phiên bản 2.7\n- Sửa lỗi và cải thiện hiệu năng.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -519,7 +524,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 2.6\n- Thêm gom nhóm thông báo trên Màn hình khoá\n- Thêm hiển thị thông số pin trên thanh trạng thái\n- Thêm giả mạo % dung lượng pin",
+"markdown":"### Phiên bản 2.6\n- Thêm gom nhóm thông báo trên Màn hình khoá.\n- Thêm hiển thị thông số pin trên thanh trạng thái.\n- Thêm giả mạo % dung lượng pin.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -527,7 +532,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 2.5\n- Thêm đổi màu badge theo màu ứng dụng trên Màn hình chính\n- Thêm tuỳ chọn 3 kiểu lịch Âm-Dương\n- Thêm lưu bố cục ứng dụng\n- Sửa lỗi bo tròn thanh trượt độ sáng",
+"markdown":"### Phiên bản 2.5\n- Thêm đổi màu badge theo màu ứng dụng trên Màn hình chính.\n- Thêm tuỳ chọn 3 kiểu lịch Âm-Dương.\n- Thêm lưu bố cục ứng dụng.\n- Sửa lỗi bo tròn thanh trượt độ sáng.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -535,7 +540,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 2.4\n- Sửa lỗi % âm lượng & tiến trình tải xuống\n- Thêm tự động đóng thư mục\n- Thêm tắt thông báo nhắc dán iOS 16",
+"markdown":"### Phiên bản 2.4\n- Sửa lỗi % âm lượng & tiến trình tải xuống.\n- Thêm tự động đóng thư mục.\n- Thêm tắt thông báo nhắc dán iOS 16.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -543,7 +548,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 2.3\n- Thêm tuỳ chỉnh màu công tắc\n- Thêm ẩn ứng dụng khỏi màn hình chính\n- Thêm hiển thị 1 ứng dụng trên thư mục\n- Thêm tắt nhấn giữ sửa nền Màn hình khoá\n- Thêm tắt cử chỉ vuốt xuống Spotlight",
+"markdown":"### Phiên bản 2.3\n- Thêm tuỳ chỉnh màu công tắc.\n- Thêm ẩn ứng dụng khỏi Màn hình chính.\n- Thêm hiển thị 1 ứng dụng trên thư mục.\n- Thêm tắt nhấn giữ sửa nền Màn hình khoá.\n- Thêm tắt cử chỉ vuốt xuống Spotlight.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -551,7 +556,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 2.2\n- Thẻm hiển thị giây trên thanh trạng thái\n- Thêm tốc độ mạng trên thanh trạng thái\n- Thêm đổi biểu tượng dữ liệu\n- Thêm đổi tên nhà mạng",
+"markdown":"### Phiên bản 2.2\n- Thêm hiển thị giây trên thanh trạng thái.\n- Thêm tốc độ mạng trên thanh trạng thái.\n- Thêm đổi biểu tượng dữ liệu.\n- Thêm đổi tên nhà mạng.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -559,7 +564,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 2.1\n- Thêm nút từ chối cuộc gọi đến trên màn hình khoá\n- Thêm hiện biểu tượng tắt tiếng trên thanh trạng thái\n- Thêm ẩn số seri trong mục Giới thiệu\n- Thêm ẩn mục thông báo tiếp xúc",
+"markdown":"### Phiên bản 2.1\n- Thêm nút từ chối cuộc gọi đến trên Màn hình khoá.\n- Thêm hiện biểu tượng tắt tiếng trên thanh trạng thái.\n- Thêm ẩn số seri trong mục Giới thiệu.\n- Thêm ẩn mục thông báo tiếp xúc.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -567,7 +572,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 2.0\n- Thêm nút bấm đóng tất cả ứng dụng trong Đa nhiệm\n- Thêm ẩn mục tab trong Điện thoại\n- Thêm nút mở và đóng tab nhanh trong Safari\n- Thêm hiện tiến trình tải xuống ứng dụng\n- Thêm úp xuống điện thoại để tắt màn hình",
+"markdown":"### Phiên bản 2.0\n- Thêm nút bấm đóng tất cả ứng dụng trong Đa nhiệm.\n- Thêm ẩn mục tab trong Điện thoại.\n- Thêm nút mở và đóng tab nhanh trong Safari.\n- Thêm hiện tiến trình tải xuống ứng dụng.\n- Thêm úp xuống điện thoại để tắt màn hình.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -575,7 +580,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.9\n- Thêm gỡ bỏ GSSI Wifi & hiện địa chỉ MAC\n- Thêm tắt làm mở nền trong Đa nhiệm\n- Thêm ẩn biểu tượng & tên thẻ trong Đa nhiệm\n- Thêm chạm 2 lần để lật Camera",
+"markdown":"### Phiên bản 1.9\n- Thêm gỡ bỏ BSSID Wi-Fi & hiện địa chỉ MAC.\n- Thêm tắt làm mờ nền trong Đa nhiệm.\n- Thêm ẩn biểu tượng & tên thẻ trong Đa nhiệm.\n- Thêm chạm 2 lần để lật Camera.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -583,7 +588,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.8\n- Thêm giả mạo thông tin thiết bị trong mục Giới thiệu\n- Thêm ẩn linh kiện ko xác định trong mục Giới thiệu\n- Thêm hiệu ứng nảy và tốc độ đóng/mớ ứng dụng\n- Thêm chế độ xoay ngược màn hình",
+"markdown":"### Phiên bản 1.8\n- Thêm giả mạo thông tin thiết bị trong mục Giới thiệu.\n- Thêm ẩn linh kiện không xác định trong mục Giới thiệu.\n- Thêm hiệu ứng nảy và tốc độ đóng/mở ứng dụng.\n- Thêm chế độ xoay ngược màn hình.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -591,7 +596,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.7\n- Thêm căn giữa văn bản & Avatar iCloud Cài đặt\n- Thêm ẩn mũi tên điều hướng\n- Thêm bo tròn các mục cài đặt\n- Thêm bo tròn biểu tượng trong cài đặt\n- Thêm ẩn thanh tìm kiếm trong Cài đặt\n- Thêm ẩn thanh trạng thái trên CC\n- Sửa đổi tên UnlockBoard thành NexusBoard",
+"markdown":"### Phiên bản 1.7\n- Thêm căn giữa văn bản & Avatar iCloud Cài đặt.\n- Thêm ẩn mũi tên điều hướng.\n- Thêm bo tròn các mục Cài đặt.\n- Thêm bo tròn biểu tượng trong Cài đặt.\n- Thêm ẩn thanh tìm kiếm trong Cài đặt.\n- Thêm ẩn thanh trạng thái trên CC.\n- Sửa đổi tên UnlockBoard thành NexusBoard.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -599,7 +604,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.6\n- Thêm ẩn thanh cuộn thông báo trên màn hình khoá\n- Thêm nhấn nhanh 2 lần vào nút giảm âm lượng để bật đèn pin\n- Thêm bo tròn mô-đun Trung tâm điều khiển\n- Thêm xoá cảnh báo pin yếu\n- Thêm tắt tiếng chụp ảnh màn hình",
+"markdown":"### Phiên bản 1.6\n- Thêm ẩn thanh cuộn thông báo trên Màn hình khoá.\n- Thêm nhấn nhanh 2 lần vào nút giảm âm lượng để bật đèn pin.\n- Thêm bo tròn mô-đun Trung tâm điều khiển.\n- Thêm xoá cảnh báo pin yếu.\n- Thêm tắt tiếng chụp ảnh màn hình.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -607,7 +612,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.5\n- Thêm hiển thị tên ứng dụng dưới Dock\n- Thêm tắt xem trước ảnh chụp màn hình\n- Thêm tắt hoàn toàn WiFi & Bluetooth\n- Thay đổi giao diện cài đặt",
+"markdown":"### Phiên bản 1.5\n- Thêm hiển thị tên ứng dụng dưới Dock.\n- Thêm tắt xem trước ảnh chụp màn hình.\n- Thêm tắt hoàn toàn Wi-Fi & Bluetooth.\n- Thay đổi giao diện cài đặt.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -615,7 +620,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.4\n- Thêm xem chi tiết pin (chạm 2 lần vào thanh trạng thái)\n- Thêm tắt tiếng thông báo khi phát nhạc\n- Thêm tô màu thông báo theo màu biểu tượng\n- Thêm trong suốt thông báo trên màn hình khoá",
+"markdown":"### Phiên bản 1.4\n- Thêm xem chi tiết pin (chạm 2 lần vào thanh trạng thái).\n- Thêm tắt tiếng thông báo khi phát nhạc.\n- Thêm tô màu thông báo theo màu biểu tượng.\n- Thêm trong suốt thông báo trên Màn hình khoá.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -623,7 +628,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.3\n- Thêm vuốt xuống đa nhiệm tuỳ chọn đóng tất cả ứng dụng\n- Thêm ẩn vạch thanh kéo CC trên màn hình khoá\n- Thêm tắt cử chỉ vuốt xuống Spotlight\n- Thêm đa nhiệm dạng lưới iPad",
+"markdown":"### Phiên bản 1.3\n- Thêm vuốt xuống đa nhiệm tuỳ chọn đóng tất cả ứng dụng.\n- Thêm ẩn vạch thanh kéo CC trên Màn hình khoá.\n- Thêm tắt cử chỉ vuốt xuống Spotlight.\n- Thêm đa nhiệm dạng lưới iPad.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -631,7 +636,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.2\n- Thêm trong suốt nền Trung tâm điều khiển\n- Thêm hiện % trên thanh trượt Độ sáng & Âm lượng\n- Thêm chế độ xoay mọi hướng biểu tượng\n- Thêm hiển thị lịch Âm/Dương trên thanh trạng thái\n- Thêm chụp ảnh màn hình bằng 2 ngón vuốt xuống",
+"markdown":"### Phiên bản 1.2\n- Thêm trong suốt nền Trung tâm điều khiển.\n- Thêm hiện % trên thanh trượt Độ sáng & Âm lượng.\n- Thêm chế độ xoay mọi hướng biểu tượng.\n- Thêm hiển thị lịch Âm/Dương trên thanh trạng thái.\n- Thêm chụp ảnh màn hình bằng 2 ngón vuốt xuống.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -639,7 +644,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.1\n- Thêm ẩn dấu chấm beta & cập nhật\n- Thêm ẩn thanh homebar\n- Thêm ẩn nền dock\n- Thêm ẩn chế độ xem hôm nay\n- Thêm ẩn pin & camera trên màn hình khoá\n- Thêm ẩn biểu tượng ổ khoá trên màn hình khoá\n- Thêm ẩn huy hiệu thông báo\n- Thêm ẩn nền thư mục\n- Thêm ẩn thư viện ứng dụng\n- Thêm ẩn dấu chấm trang",
+"markdown":"### Phiên bản 1.1\n- Thêm ẩn dấu chấm beta & cập nhật.\n- Thêm ẩn thanh HomeBar.\n- Thêm ẩn nền Dock.\n- Thêm ẩn chế độ xem Hôm nay.\n- Thêm ẩn pin & camera trên Màn hình khoá.\n- Thêm ẩn biểu tượng ổ khoá trên Màn hình khoá.\n- Thêm ẩn huy hiệu thông báo.\n- Thêm ẩn nền thư mục.\n- Thêm ẩn Thư viện ứng dụng.\n- Thêm ẩn dấu chấm trang.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -647,7 +652,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.0.1\n- Thêm tích hợp tweak InfiniteMedia gồm tính năng xoá ảnh vĩnh viễn, phóng to vô hạn, ẩn thanh trượt, lặp lại video, tắt tiếng chụp ảnh...\n- Thêm khoá bảo vệ ứng dụng\n- Thêm chạm 2 lần vào MHK để tắt thiết bị\n- Thêm ẩn phân cách khi bật Dock nổi\n- Thêm tắt cử chỉ Dock\n- Thêm Dock nổi iPad\n- Thêm hoạt ảnh MagSafe.",
+"markdown":"### Phiên bản 1.0.1\n- Thêm tích hợp tweak InfiniteMedia gồm tính năng xoá ảnh vĩnh viễn, phóng to vô hạn, ẩn thanh trượt, lặp lại video, tắt tiếng chụp ảnh...\n- Thêm khoá bảo vệ ứng dụng.\n- Thêm chạm 2 lần vào MHK để tắt thiết bị.\n- Thêm ẩn phân cách khi bật Dock nổi.\n- Thêm tắt cử chỉ Dock.\n- Thêm Dock nổi iPad.\n- Thêm hoạt ảnh MagSafe.",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
@@ -693,7 +698,7 @@
 },
 {
 "class":"DepictionLabelView",
-"text":"Copyright © 2030 k37 Repo",
+"text":"Copyright © 2030 K37 Repo",
 "textColor":"#999999",
 "fontSize":"10.0",
 "alignment":1
