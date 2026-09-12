@@ -711,15 +711,22 @@
 "action": "https://k37ios.pages.dev/info/depictions/donate"
 },
 {
-"class":"DepictionLabelView",
-"text":"Specializing in developing, curating, and optimizing high-quality iOS tweaks—committed to delivering a smooth, safe, and stable user experience.",
-"textColor":"#999999",
-"fontSize":"10.0",
-"alignment":1
+"class": "DepictionLabelView",
+"text": "Specializing in developing, curating, and optimizing high-quality iOS tweaks—",
+"textColor": "#999999",
+"fontSize": "10.0",
+"alignment": 1
+},
+{
+"class": "DepictionLabelView",
+"text": "committed to delivering a smooth, safe, and stable user experience.",
+"textColor": "#999999",
+"fontSize": "10.0",
+"alignment": 1
 }
 ],
-"class":"DepictionStackView"
+"class": "DepictionStackView"
 }
 ],
-"class":"DepictionTabView"
+"class": "DepictionTabView"
 }
