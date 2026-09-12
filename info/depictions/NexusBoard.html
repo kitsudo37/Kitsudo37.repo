@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>K37 Repo - Depiction</title>
+    <title>Depiction</title>
     <style>
         :root { --tint: #4facfe; --bg: #f2f2f7; --card: #ffffff; --text: #000000; --sub: #8e8e93; --sep: #c6c6c8; }
         @media (prefers-color-scheme: dark) {
             :root { --bg: #000000; --card: #1c1c1e; --text: #ffffff; --sub: #8e8e93; --sep: #38383a; }
         }
         body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding-bottom: 30px; color: var(--text); -webkit-tap-highlight-color: transparent; }
-        .banner { width: 100%; display: block; }
+        .banner { width: 100%; display: block; max-height: 220px; object-fit: cover; }
         .tabs { display: flex; background: var(--card); border-bottom: 1px solid var(--sep); position: sticky; top: 0; z-index: 10; }
-        .tab { flex: 1; padding: 12px; border: none; background: none; font-weight: 600; color: var(--sub); font-size: 14px; }
+        .tab { flex: 1; padding: 12px 5px; border: none; background: none; font-weight: 600; color: var(--sub); font-size: 14px; text-align: center; cursor: pointer; }
         .tab.active { color: var(--tint); border-bottom: 2px solid var(--tint); }
         .content { padding: 16px; display: none; }
         .content.active { display: block; }
-        .box { background: var(--card); padding: 15px; border-radius: 12px; margin-bottom: 15px; font-size: 15px; }
-        .title { font-size: 20px; font-weight: 800; margin: 15px 0 10px 0; }
+        .box { background: var(--card); padding: 15px; border-radius: 12px; margin-bottom: 12px; font-size: 15px; line-height: 1.5; }
         .screenshots { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
         .screenshots img { width: 185px; height: 400px; border-radius: 8px; border: 1px solid var(--sep); flex-shrink: 0; object-fit: cover; scroll-snap-align: start; cursor: pointer; }
-        .row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 0.5px solid var(--sep); }
-        .row:last-child { border-bottom: none; }
-        .btn-table { display: flex; align-items: center; padding: 12px 0; color: var(--tint); text-decoration: none; font-weight: 500; border-bottom: 0.5px solid var(--sep); }
-        .btn-table:last-child { border-bottom: none; }
-        .btn-table img { width: 20px; height: 20px; margin-right: 10px; filter: brightness(1); }
-        .separator { height: 0.5px; background-color: var(--sep); margin: 15px 0; }
-        .footer { text-align: center; margin-top: 20px; color: var(--sub); font-size: 12px; }
-        .log-v { font-weight: 700; margin-top: 15px; margin-bottom: 5px; }
+        .btn-action { display: block; width: 100%; background: var(--tint); color: #fff; text-align: center; padding: 12px 0; border-radius: 10px; font-weight: 600; text-decoration: none; box-sizing: border-box; }
+        .btn-table { display: flex; align-items: center; padding: 12px 15px; background: var(--card); color: var(--tint); text-decoration: none; font-weight: 500; border-bottom: 0.5px solid var(--sep); }
+        .btn-table:first-child { border-top-left-radius: 12px; border-top-right-radius: 12px; }
+        .btn-table:last-child { border-bottom: none; border-bottom-left-radius: 12px; border-bottom-right-radius: 12px; }
+        .btn-table img { width: 20px; height: 20px; margin-right: 10px; }
+        .separator { height: 0.5px; background-color: var(--sep); margin: 12px 0; }
 
-        /* Lightbox phóng to ảnh & vuốt */
         #lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 9999; display: none; align-items: center; justify-content: center; touch-action: none; }
         #lightbox.active { display: flex; }
         #lightbox img { max-width: 90%; max-height: 85vh; border-radius: 8px; object-fit: contain; user-select: none; }
@@ -40,38 +36,10 @@
     </style>
 </head>
 <body>
-    <img id="headerImage" class="banner">
-    <div class="tabs">
-        <button class="tab" onclick="showTab('tab0', event)">Giới Thiệu</button>
-        <button class="tab" onclick="showTab('tab1', event)">Nhật Ký Cập Nhật</button>
-    </div>
-    
-    <div id="tab0" class="content">
-        <div id="tweakTitle" class="title" style="margin-top:0;"></div>
-        
-        <!-- ĐÃ ĐƯA ẢNH MÀN HÌNH LÊN TRÊN MÔ TẢ -->
-        <div class="title" style="margin-top:0;">Ảnh màn hình</div>
-        <div id="screenshots" class="screenshots"></div>
+    <img id="headerImage" class="banner" style="display:none;">
+    <div id="tabs-header" class="tabs"></div>
+    <div id="tabs-content"></div>
 
-        <div class="title">Giới thiệu</div>
-        <div id="description" class="box"></div>
-
-        <div class="title">Thông Tin</div>
-        <div id="infoTable" class="box"></div>
-        <div class="separator"></div>
-        <div id="links" class="box" style="padding: 0 15px;"></div>
-    </div>
-
-    <div id="tab1" class="content">
-        <div id="changelog"></div>
-    </div>
-
-    <div class="footer">
-        <img src="https://k37ios.pages.dev/CydiaIcon.png" width="40" height="40" style="border-radius:8px; margin-bottom:5px;"><br>
-        Được tạo bởi ❤️ K37 Repo 
-    </div>
-
-    <!-- Khung Lightbox Xem Ảnh Phóng To -->
     <div id="lightbox">
         <button id="lb-close" onclick="closeLightbox()">&times;</button>
         <button id="lb-prev" class="lb-btn" onclick="changeSlide(-1)">&#10094;</button>
@@ -83,15 +51,15 @@
         function parseMD(str) {
             if (!str) return "";
             return str
-                .replace(/^##\s+(.*)/gm, '<span style="font-size: 18px; font-weight: 800; color: var(--text); display: block; margin-bottom: 8px;">$1</span>')
-                .replace(/^#{3,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>')
+                .replace(/^###\s+(.*)/gm, '<span style="font-size: 18px; font-weight: 800; color: var(--text); display: block; margin-bottom: 8px;">$1</span>')
+                .replace(/^####\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text); display: block; margin-bottom: 6px;">$1</span>')
+                .replace(/\*\*(.*?)\*\*/g, '<b>$1</b>')
                 .replace(/\n/g, '<br>');
         }
 
-        // Tự động nhận diện file JSON cùng tên hoặc mặc định
         const pathSegments = window.location.pathname.split('/');
         const fileName = pathSegments[pathSegments.length - 1].replace('.html', '.json');
-        const jsonUrl = fileName && fileName !== '' ? `../sileodepictions/${fileName}` : '../sileodepictions/NexusBoard.json';
+        const jsonUrl = fileName && fileName !== '' && fileName !== '/' ? `../sileodepictions/${fileName}` : '../sileodepictions/NexusBoard.json';
 
         let screenshotList = [];
         let currentIndex = 0;
@@ -102,93 +70,115 @@
             }
 
             if (data.headerImage) {
-                document.getElementById('headerImage').src = data.headerImage;
+                const header = document.getElementById('headerImage');
+                header.src = data.headerImage;
+                header.style.display = 'block';
             }
 
-            const views = data.tabs[0].views;
-            
-            // Xử lý bắt tên Tweak từ Markdown hoặc HeaderView
-            let mdView = views.find(v => v.class === "DepictionMarkdownView");
-            let mdContent = mdView ? mdView.markdown : "";
-            let tweakName = "";
+            if (data.tabs && data.tabs.length > 0) {
+                const tabsHeader = document.getElementById('tabs-header');
+                const tabsContent = document.getElementById('tabs-content');
 
-            let titleMatch = mdContent.match(/^##\s+(.*)/m);
-            if (titleMatch) {
-                tweakName = titleMatch[1];
-                mdContent = mdContent.replace(/^##\s+.*\n?/, '');
-            } else {
-                let headerView = views.find(v => v.class === "DepictionHeaderView" && v.title !== "Ảnh màn hình");
-                tweakName = headerView ? headerView.title : "";
-            }
+                data.tabs.forEach((tab, idx) => {
+                    const btn = document.createElement('button');
+                    btn.className = `tab ${idx === 0 ? 'active' : ''}`;
+                    btn.innerText = tab.tabname;
+                    btn.onclick = () => switchTab(idx);
+                    tabsHeader.appendChild(btn);
 
-            document.getElementById('tweakTitle').innerText = tweakName;
-            document.getElementById('description').innerHTML = parseMD(mdContent);
-            
-            // Xử lý Ảnh màn hình
-            const ssData = views.find(v => v.class === "DepictionScreenshotsView");
-            if(ssData && ssData.screenshots) {
-                const ssContainer = document.getElementById('screenshots');
-                screenshotList = ssData.screenshots.map(s => s.url);
-
-                if(screenshotList.length === 1) {
-                    ssContainer.style.justifyContent = 'center';
-                }
-
-                screenshotList.forEach((url, idx) => {
-                    const img = document.createElement('img'); 
-                    img.src = url; 
-                    img.onclick = () => openLightbox(idx);
-                    ssContainer.appendChild(img);
+                    const content = document.createElement('div');
+                    content.id = `tab-${idx}`;
+                    content.className = `content ${idx === 0 ? 'active' : ''}`;
+                    content.innerHTML = renderViews(tab.views);
+                    tabsContent.appendChild(content);
                 });
             }
-
-            // Xử lý Bảng thông tin và Nút bấm (Sửa lỗi không hiển thị thông tin)
-            let infoTableHtml = "";
-            let linksHtml = "";
-            
-            views.forEach(v => {
-                if(v.class === "DepictionTableTextView") {
-                    infoTableHtml += `<div class="row"><span style="color:var(--sub)">${v.title}</span><b>${v.text}</b></div>`;
-                }
-                if(v.class === "DepictionTableButtonView") {
-                    const iconTag = v.icon ? `<img src="${v.icon}">` : "";
-                    linksHtml += `<a href="${v.action}" class="btn-table"${v.openExternal ? ' target="_blank"' : ''}>${iconTag}${v.title}</a>`;
-                }
-            });
-
-            document.getElementById('infoTable').innerHTML = infoTableHtml;
-            document.getElementById('links').innerHTML = linksHtml;
-
-            // Xử lý Nhật ký cập nhật
-            if(data.tabs[1] && data.tabs[1].views) {
-                const logs = data.tabs[1].views;
-                let logHtml = "";
-                logs.forEach(l => {
-                    if(l.class === "DepictionSeparatorView") logHtml += `<div class="separator"></div>`;
-                    else {
-                        if(l.title) logHtml += `<div class="log-v">${l.title}</div>`;
-                        if(l.markdown) logHtml += `<div class="box">${parseMD(l.markdown)}</div>`;
-                    }
-                });
-                document.getElementById('changelog').innerHTML = logHtml;
-            }
-
-            // Mặc định kích hoạt tab đầu tiên chuẩn xác
-            showTab('tab0');
         }).catch(err => console.error("Lỗi tải JSON depiction:", err));
 
-        function showTab(id, evt) {
-            document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
-            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-            if(evt) {
-                evt.currentTarget.classList.add('active');
-            } else {
-                document.querySelector('.tab').classList.add('active');
+        function renderViews(views) {
+            if (!views || !Array.isArray(views)) return "";
+            let html = "";
+            views.forEach(v => {
+                html += renderView(v);
+            });
+            return html;
+        }
+
+        function renderView(v) {
+            if (!v || !v.class) return "";
+
+            switch (v.class) {
+                case "DepictionSpacerView":
+                    return `<div style="height: ${v.spacing || 10}px;"></div>`;
+
+                case "DepictionSeparatorView":
+                    return `<div class="separator"></div>`;
+
+                case "DepictionMarkdownView":
+                    if (v.useRawFormat) {
+                        return v.markdown || "";
+                    }
+                    return `<div class="box">${parseMD(v.markdown)}</div>`;
+
+                case "DepictionButtonView":
+                    return `<a href="${v.action}" class="btn-action"${v.openExternal ? ' target="_blank"' : ''}>${v.text}</a>`;
+
+                case "DepictionTableButtonView":
+                    const iconTag = v.icon ? `<img src="${v.icon}">` : "";
+                    return `<a href="${v.action}" class="btn-table"${v.openExternal ? ' target="_blank"' : ''}>${iconTag}${v.title}</a>`;
+
+                case "DepictionLabelView":
+                    let align = "left";
+                    if (v.alignment === 1) align = "center";
+                    if (v.alignment === 2) align = "right";
+                    
+                    let margin = "0";
+                    if (v.margins) {
+                        let m = v.margins.replace(/[{}]/g, '').split(',');
+                        if (m.length === 4) margin = `${m[0]}px ${m[1]}px ${m[2]}px ${m[3]}px`;
+                    }
+                    
+                    let style = `color: ${v.textColor || 'var(--text)'}; font-size: ${v.fontSize || 14}px; font-weight: ${v.fontWeight || 'normal'}; text-align: ${align}; margin: ${margin};`;
+                    return `<div style="${style}">${v.text || ''}</div>`;
+
+                case "DepictionScreenshotsView":
+                    if (!v.screenshots || v.screenshots.length === 0) return "";
+                    let ssHtml = `<div class="screenshots"${v.screenshots.length === 1 ? ' style="justify-content:center;"' : ''}>`;
+                    v.screenshots.forEach(s => {
+                        let idx = screenshotList.length;
+                        screenshotList.push(s.url);
+                        ssHtml += `<img src="${s.url}" onclick="openLightbox(${idx})">`;
+                    });
+                    ssHtml += `</div>`;
+                    return ssHtml;
+
+                case "DepictionStackView":
+                    let isLandscape = v.orientation === "landscape";
+                    let flexStyle = isLandscape 
+                        ? 'display: flex; gap: 15px; justify-content: space-between;' 
+                        : 'display: flex; flex-direction: column;';
+                    
+                    let childHtml = "";
+                    if (v.views) {
+                        v.views.forEach(child => {
+                            childHtml += isLandscape ? `<div style="flex: 1;">${renderView(child)}</div>` : renderView(child);
+                        });
+                    }
+                    return `<div style="${flexStyle}">${childHtml}</div>`;
+
+                case "DepictionTabView":
+                    return renderViews(v.tabs);
+
+                default:
+                    return "";
             }
         }
 
-        // Logic Lightbox & Vuốt cảm ứng (Swipe)
+        function switchTab(index) {
+            document.querySelectorAll('.tab').forEach((t, i) => t.classList.toggle('active', i === index));
+            document.querySelectorAll('.content').forEach((c, i) => c.classList.toggle('active', i === index));
+        }
+
         const lb = document.getElementById('lightbox');
         const lbImg = document.getElementById('lb-img');
 
@@ -209,7 +199,6 @@
             lbImg.src = screenshotList[currentIndex];
         }
 
-        // Bắt sự kiện vuốt tay (Swipe left/right) trên điện thoại
         let touchStartX = 0;
         let touchEndX = 0;
 
@@ -219,17 +208,9 @@
 
         lb.addEventListener('touchend', e => {
             touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
+            if (touchEndX < touchStartX - 50) changeSlide(1);
+            if (touchEndX > touchStartX + 50) changeSlide(-1);
         }, false);
-
-        function handleSwipe() {
-            if (touchEndX < touchStartX - 50) {
-                changeSlide(1); // Vuốt sang trái -> Ảnh tiếp theo
-            }
-            if (touchEndX > touchStartX + 50) {
-                changeSlide(-1); // Vuốt sang phải -> Ảnh trước đó
-            }
-        }
     </script>
 </body>
 </html>
