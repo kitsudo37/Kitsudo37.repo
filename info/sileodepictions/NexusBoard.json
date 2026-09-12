@@ -218,7 +218,7 @@
 "tabname":"Nhật ký cập nhật",
 "views":[
 {
-"markdown": "#### Phiên bản 6.5\n- Sửa lỗi ẩn nền Dock không hoạt động khi bật chung tính năng FloatingDock nổi.\n- Sửa lỗi tình trạng crash ngầm safemode khi vuốt xuống đa nhiệm để đóng nhanh các ứng dụng.",
+"markdown": "#### Phiên bản 6.5\n- Thay dổi giao diện bang thông số Info Panel\n- Sửa lỗi ẩn nền Dock không hoạt động khi bật chung tính năng FloatingDock nổi.\n- Sửa lỗi tình trạng crash ngầm safemode khi vuốt xuống đa nhiệm để đóng nhanh các ứng dụng.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
@@ -712,7 +712,7 @@
 },
 {
 "class":"DepictionLabelView",
-"text":"Copyright © 2030 K37 Repo",
+"text":"Specializing in developing, curating, and optimizing high-quality iOS tweaks—committed to delivering a smooth, safe, and stable user experience.",
 "textColor":"#999999",
 "fontSize":"10.0",
 "alignment":1
