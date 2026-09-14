@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "6.5",
+"version": "6.6",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -147,7 +147,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "11/09/2026",
+"text": "14/09/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -165,7 +165,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "6.5",
+"text": "6.6",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -191,7 +191,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "14.0 - 16.8",
+"text": "14.0 - 17.0",
 "fontWeight": "semibold",
 "fontSize": 17,
 "usePadding": false
@@ -217,6 +217,14 @@
 {
 "tabname":"Nhật ký cập nhật",
 "views":[
+{
+"markdown": "#### Phiên bản 6.6\n- Thêm tụ đông đổi mau Trình phát nhạc trên Màn hình khoá và Trung tâm đièu khiẻn theo màu của Ảnh bìa Album đang phát\n- Thêm tụ động bật Chế độ tiết kiệm Pin khi tắt máy hoặc tắt vai giây sau khi mở khoá vào Màn hình chính",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
 {
 "markdown": "#### Phiên bản 6.5\n- Thay dổi giao diện bang thông số Info Panel\n- Sửa lỗi ẩn nền Dock không hoạt động khi bật chung tính năng FloatingDock nổi.\n- Sửa lỗi tình trạng crash ngầm safemode khi vuốt xuống đa nhiệm để đóng nhanh các ứng dụng.",
 "useSpacing": true,
