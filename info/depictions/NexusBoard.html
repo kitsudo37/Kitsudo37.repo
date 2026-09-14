@@ -12,7 +12,7 @@
         body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding-bottom: 30px; color: var(--text); -webkit-tap-highlight-color: transparent; }
         .banner { width: 100%; display: block; }
         .tabs { display: flex; background: var(--card); border-bottom: 1px solid var(--sep); position: sticky; top: 0; z-index: 10; }
-        .tab { flex: 1; padding: 12px; border: none; background: none; font-weight: 600; color: var(--sub); font-size: 14px; cursor: pointer; }
+        .tab { flex: 1; padding: 12px; border: none; background: none; font-weight: 600; color: var(--sub); font-size: 14px; }
         .tab.active { color: var(--tint); border-bottom: 2px solid var(--tint); }
         .content { padding: 16px; display: none; }
         .content.active { display: block; }
@@ -45,30 +45,22 @@
 <body>
     <img id="headerImage" class="banner">
     <div class="tabs">
-        <button class="tab active" onclick="showTab('tab0', event)">Giới Thiệu</button>
-        <button class="tab" onclick="showTab('tab1', event)">Nhật Ký Cập Nhật</button>
+        <button class="tab active" onclick="showTab('tab0')">Giới Thiệu</button>
+        <button class="tab" onclick="showTab('tab1')">Nhật Ký Cập Nhật</button>
     </div>
-    
     <div id="tab0" class="content active">
         <div id="tweakTitle" class="title"></div>
-
-        <!-- ĐÃ ĐỔI VỊ TRÍ: ẢNH MÀN HÌNH NẰM TRÊN MÔ TẢ -->
-        <div class="title" style="margin-top: 0;">Ảnh màn hình</div>
-        <div id="screenshots" class="screenshots"></div>
-
-        <div class="title">Giới thiệu</div>
         <div id="description" class="box"></div>
-
+        <div class="title">Ảnh màn hình</div>
+        <div id="screenshots" class="screenshots"></div>
         <div class="title">Thông Tin</div>
         <div id="infoTable" class="box"></div>
         <div class="separator"></div>
         <div id="links" class="box" style="padding: 0 15px;"></div>
     </div>
-
     <div id="tab1" class="content">
         <div id="changelog"></div>
     </div>
-
     <div class="footer">
         <img src="https://k37ios.pages.dev/CydiaIcon.png" width="40" height="40" style="border-radius:8px; margin-bottom:5px;"><br>
         Được tạo bởi ❤️ K37 Repo 
@@ -117,127 +109,80 @@
             slider.scrollLeft = scrollLeftPos - walk;
         });
 
-        // Tự động lấy tên file JSON tương ứng tên HTML hoặc mặc định NexusBoard.json
-        const pathSegments = window.location.pathname.split('/');
-        const fileName = pathSegments[pathSegments.length - 1].replace('.html', '.json');
-        const jsonUrl = fileName && fileName !== '' && fileName !== '/' ? `../sileodepictions/${fileName}` : '../sileodepictions/NexusBoard.json';
+        const jsonUrl = '../sileodepictions/NexusBoard.json';
+        fetch(jsonUrl).then(res => res.json()).then(data => {
+            if (data.tintColor) {
+                document.documentElement.style.setProperty('--tint', data.tintColor);
+            }
 
-        fetch(jsonUrl)
-            .then(res => {
-                if (!res.ok) {
-                    throw new Error(`Không tìm thấy file hoặc kết nối bị chặn (HTTP ${res.status})`);
-                }
-                return res.json();
-            })
-            .then(data => {
-                if (data.tintColor) {
-                    document.documentElement.style.setProperty('--tint', data.tintColor);
-                }
+            document.getElementById('headerImage').src = data.headerImage;
+            const views = data.tabs[0].views;
+            
+            let mdView = views.find(v => v.class === "DepictionMarkdownView");
+            let mdContent = mdView ? mdView.markdown : "";
+            let tweakName = "";
 
-                if (data.headerImage) {
-                    document.getElementById('headerImage').src = data.headerImage;
-                }
+            let titleMatch = mdContent.match(/^##\s+(.*)/m);
+            if (titleMatch) {
+                tweakName = titleMatch[1];
+                mdContent = mdContent.replace(/^##\s+.*\n?/, '');
+            } else {
+                let headerView = views.find(v => v.class === "DepictionHeaderView" && v.title !== "Ảnh màn hình");
+                tweakName = headerView ? headerView.title : "";
+            }
 
-                const views = data.tabs[0].views || [];
-                
-                let mdView = views.find(v => v.class === "DepictionMarkdownView");
-                let mdContent = mdView ? mdView.markdown : "";
-                let tweakName = "";
-
-                let titleMatch = mdContent ? mdContent.match(/^##\s+(.*)/m) : null;
-                if (titleMatch) {
-                    tweakName = titleMatch[1];
-                    mdContent = mdContent.replace(/^##\s+.*\n?/, '');
-                } else {
-                    let headerView = views.find(v => v.class === "DepictionHeaderView" && v.title !== "Ảnh màn hình");
-                    tweakName = headerView ? headerView.title : "";
+            document.getElementById('tweakTitle').innerText = tweakName;
+            document.getElementById('description').innerHTML = parseMD(mdContent);
+            
+            const ssData = views.find(v => v.class === "DepictionScreenshotsView");
+            if(ssData) {
+                const ssContainer = document.getElementById('screenshots');
+                if(ssData.screenshots.length === 1) {
+                    ssContainer.style.justifyContent = 'center';
                 }
 
-                document.getElementById('tweakTitle').innerText = tweakName;
-                document.getElementById('description').innerHTML = parseMD(mdContent);
-                
-                // Hiển thị Ảnh màn hình
-                const ssData = views.find(v => v.class === "DepictionScreenshotsView");
-                if (ssData && ssData.screenshots) {
-                    const ssContainer = document.getElementById('screenshots');
-                    if (ssData.screenshots.length === 1) {
-                        ssContainer.style.justifyContent = 'center';
-                    }
-
-                    screenshotList = ssData.screenshots.map(s => s.url);
-                    ssData.screenshots.forEach((s, idx) => {
-                        const img = document.createElement('img');
-                        img.src = s.url;
-                        img.addEventListener('click', (e) => {
-                            if (isDragging) {
-                                e.preventDefault();
-                                return;
-                            }
-                            openModal(idx);
-                        });
-                        ssContainer.appendChild(img);
-                    });
-                }
-
-                // Hiển thị Thông tin & Links
-                let infoHtml = "";
-                let linksHtml = "";
-                views.forEach(v => {
-                    if (v.class === "DepictionTableTextView") {
-                        infoHtml += `<div class="row"><span style="color:var(--sub)">${v.title}</span><b>${v.text}</b></div>`;
-                    }
-                    if (v.class === "DepictionTableButtonView") {
-                        const iconTag = v.icon ? `<img src="${v.icon}">` : "";
-                        linksHtml += `<a href="${v.action}" class="btn-table"${v.openExternal ? ' target="_blank"' : ''}>${iconTag}${v.title}</a>`;
-                    }
-                });
-
-                document.getElementById('infoTable').innerHTML = infoHtml;
-                document.getElementById('links').innerHTML = linksHtml;
-
-                // Nhật ký cập nhật (Tab 1)
-                if (data.tabs[1] && data.tabs[1].views) {
-                    const logs = data.tabs[1].views;
-                    let logHtml = "";
-                    logs.forEach(l => {
-                        if (l.class === "DepictionSeparatorView") logHtml += `<div class="separator"></div>`;
-                        else {
-                            if (l.title) logHtml += `<div class="log-v">${l.title}</div>`;
-                            if (l.markdown) logHtml += `<div class="box">${parseMD(l.markdown)}</div>`;
+                screenshotList = ssData.screenshots.map(s => s.url);
+                ssData.screenshots.forEach((s, idx) => {
+                    const img = document.createElement('img');
+                    img.src = s.url;
+                    img.addEventListener('click', (e) => {
+                        if (isDragging) {
+                            e.preventDefault();
+                            return;
                         }
+                        openModal(idx);
                     });
-                    document.getElementById('changelog').innerHTML = logHtml;
+                    ssContainer.appendChild(img);
+                });
+            }
+
+            views.forEach(v => {
+                if(v.class === "DepictionTableTextView") {
+                    document.getElementById('infoTable').innerHTML += `<div class="row"><span style="color:var(--sub)">${v.title}</span><b>${v.text}</b></div>`;
                 }
-            })
-            .catch(err => {
-                console.error("Lỗi tải JSON depiction:", err);
-                const tab0 = document.getElementById('tab0');
-                if (tab0) {
-                    tab0.innerHTML = `
-                        <div class="box" style="border: 1px solid #ff453a; background: rgba(255, 69, 58, 0.12); margin-top: 10px;">
-                            <div style="color: #ff453a; font-weight: 800; font-size: 16px; margin-bottom: 8px;">⚠️ Lỗi Tải Dữ Liệu Depiction</div>
-                            <div style="font-size: 14px; line-height: 1.5; word-break: break-all;">
-                                <b>Đường dẫn JSON:</b> <code>${jsonUrl}</code><br>
-                                <b>Chi tiết:</b> ${err.message}
-                            </div>
-                            <div class="separator"></div>
-                            <div style="font-size: 13px; color: var(--sub); line-height: 1.5;">
-                                <b>Cách khắc phục:</b><br>
-                                • Nếu mở file trực tiếp dạng <code>file:///</code>, trình duyệt sẽ chặn Fetch API (CORS). Hãy chạy bằng <b>Live Server</b> hoặc đưa lên host.<br>
-                                • Kiểm tra lại xem file <code>${fileName}</code> đã nằm đúng thư mục <code>sileodepictions/</code> chưa.
-                            </div>
-                        </div>
-                    `;
+                if(v.class === "DepictionTableButtonView") {
+                    const iconTag = v.icon ? `<img src="${v.icon}">` : "";
+                    document.getElementById('links').innerHTML += `<a href="${v.action}" class="btn-table">${iconTag}${v.title}</a>`;
                 }
             });
 
-        function showTab(id, evt) {
+            const logs = data.tabs[1].views;
+            let logHtml = "";
+            logs.forEach(l => {
+                if(l.class === "DepictionSeparatorView") logHtml += `<div class="separator"></div>`;
+                else {
+                    if(l.title) logHtml += `<div class="log-v">${l.title}</div>`;
+                    if(l.markdown) logHtml += `<div class="box">${parseMD(l.markdown)}</div>`;
+                }
+            });
+            document.getElementById('changelog').innerHTML = logHtml;
+        }).catch(err => console.error(err));
+
+        function showTab(id) {
             document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
             document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
             document.getElementById(id).classList.add('active');
-            if (evt && evt.currentTarget) {
-                evt.currentTarget.classList.add('active');
-            }
+            event.currentTarget.classList.add('active');
         }
 
         const modal = document.getElementById("imageModal");
