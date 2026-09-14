@@ -90,7 +90,7 @@
 {
 "class": "DepictionTableTextView",
 "title": "Phiên bản",
-"text": "1.0"
+"text": "1.0.0"
 },
 {
 "class": "DepictionTableTextView",
@@ -171,7 +171,7 @@
 "class": "DepictionStackView",
 "views": [
 {
-"markdown": "#### Phiên bản: 1.0\n- Phát hành lần đầu.",
+"markdown": "#### Phiên bản: 1.0.0\n- Phát hành lần đầu.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 }

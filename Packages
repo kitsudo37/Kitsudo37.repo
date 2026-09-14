@@ -479,6 +479,47 @@ Icon: https://k37ios.pages.dev/assets/BackgroundCaller.png
 Name: BackgroundCaller
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/BackgroundCaller.json
 
+Package: com.kitsudo.chromaflow
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: Kitsudo
+Installed-Size: 172
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: ./debs/com.kitsudo.chromaflow_1.0.0_iphoneos-arm64.deb
+Size: 8016
+MD5sum: 73c17b6c3986f428752180ce567e9225
+SHA1: 24a9bfb8b0f0d99b7920036ea66baabe19efe6af
+SHA256: cf47d41a2ae999e2014cabf92ac87d716a42a04c4b6408fd8d96b44c3412f69c
+Section: Tweaks
+Homepage: https://k37ios.pages.dev
+Description: Change the media player background color based on the artwork color.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/ChromaFlow.html
+Icon: https://k37ios.pages.dev/assets/ChromaFlow.png
+Name: ChromaFlow
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/ChromaFlow.json
+
+Package: com.kitsudo.chromaflow
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: Kitsudo
+Installed-Size: 172
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: firmware (>= 15.0), mobilesubstrate
+Filename: ./debs/com.kitsudo.chromaflow_1.0.0_iphoneos-arm64e.deb
+Size: 7836
+MD5sum: 050a7a97a33eb2480edfdf1d9826901b
+SHA1: 2a858e1d22e3fdce9a0d1cef6f9e009b7dda5436
+SHA256: ff83b04355e3294a7be19bbb4e125236b30b26fdc9bfe68e9705221cd6d3e2a7
+Section: Tweaks
+Homepage: https://k37ios.pages.dev
+Description: Change the media player background color based on the artwork color.
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/ChromaFlow.html
+Icon: https://k37ios.pages.dev/assets/ChromaFlow.png
+Name: ChromaFlow
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/ChromaFlow.json
+
 Package: com.kitsudo.lockbuttoncall
 Version: 0.0.1
 Architecture: iphoneos-arm64
