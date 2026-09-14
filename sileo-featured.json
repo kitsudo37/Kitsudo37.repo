@@ -5,7 +5,7 @@
     "banners": [
         {
             "title": "K37 Repository",
-            "package": "com.k37.lunartimebar",
+            "package": "com.kitsudo.nexusboard",
             "url": "https://k37ios.pages.dev/banner/banner.png"
         }
     ]
