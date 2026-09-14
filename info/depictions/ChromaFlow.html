@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>K37 Repo - Depiction</title>
+    <style>
+        :root { --tint: #4facfe; --bg: #f2f2f7; --card: #ffffff; --text: #000000; --sub: #8e8e93; --sep: #c6c6c8; }
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #000000; --card: #1c1c1e; --text: #ffffff; --sub: #8e8e93; --sep: #38383a; }
+        }
+        body { font-family: -apple-system, sans-serif; background: var(--bg); margin: 0; padding-bottom: 30px; color: var(--text); -webkit-tap-highlight-color: transparent; }
+        .banner { width: 100%; display: block; }
+        .tabs { display: flex; background: var(--card); border-bottom: 1px solid var(--sep); position: sticky; top: 0; z-index: 10; }
+        .tab { flex: 1; padding: 12px; border: none; background: none; font-weight: 600; color: var(--sub); font-size: 14px; }
+        .tab.active { color: var(--tint); border-bottom: 2px solid var(--tint); }
+        .content { padding: 16px; display: none; }
+        .content.active { display: block; }
+        .box { background: var(--card); padding: 15px; border-radius: 12px; margin-bottom: 15px; font-size: 15px; }
+        .title { font-size: 20px; font-weight: 800; margin: 10px 0; }
+        .screenshots { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px; cursor: grab; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+        .screenshots::-webkit-scrollbar { display: none; }
+        .screenshots:active { cursor: grabbing; }
+        .screenshots img { width: 185px; height: 400px; border-radius: 8px; border: 1px solid var(--sep); flex-shrink: 0; object-fit: cover; user-select: none; -webkit-user-drag: none; cursor: pointer; }
+        .row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 0.5px solid var(--sep); }
+        .row:last-child { border-bottom: none; }
+        .btn-table { display: flex; align-items: center; padding: 12px 0; color: var(--tint); text-decoration: none; font-weight: 500; border-bottom: 0.5px solid var(--sep); }
+        .btn-table:last-child { border-bottom: none; }
+        .btn-table img { width: 20px; height: 20px; margin-right: 10px; filter: brightness(1); }
+        .separator { height: 0.5px; background-color: var(--sep); margin: 15px 0; }
+        .footer { text-align: center; margin-top: 20px; color: var(--sub); font-size: 12px; }
+        .log-v { font-weight: 700; margin-top: 15px; margin-bottom: 5px; }
+
+        .modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); backdrop-filter: blur(5px); }
+        .modal-content-container { position: relative; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+        .modal-content { max-width: 90%; max-height: 85%; border-radius: 12px; object-fit: contain; animation: zoom 0.25s; user-select: none; }
+        @keyframes zoom { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+        .close { position: absolute; top: 20px; right: 20px; color: #fff; font-size: 32px; font-weight: bold; cursor: pointer; z-index: 10001; line-height: 1; }
+        .nav-btn { position: absolute; top: 50%; transform: translateY(-50%); color: rgba(255, 255, 255, 0.8); font-size: 36px; font-weight: bold; cursor: pointer; padding: 15px; user-select: none; z-index: 10000; }
+        .prev-btn { left: 10px; }
+        .next-btn { right: 10px; }
+        @media (max-width: 768px) { .nav-btn { display: none; } }
+    </style>
+</head>
+<body>
+    <img id="headerImage" class="banner">
+    <div class="tabs">
+        <button class="tab active" onclick="showTab('tab0')">Giới Thiệu</button>
+        <button class="tab" onclick="showTab('tab1')">Nhật Ký Cập Nhật</button>
+    </div>
+    <div id="tab0" class="content active">
+        <div id="tweakTitle" class="title"></div>
+        <div id="description" class="box"></div>
+        <div class="title">Ảnh màn hình</div>
+        <div id="screenshots" class="screenshots"></div>
+        <div class="title">Thông Tin</div>
+        <div id="infoTable" class="box"></div>
+        <div class="separator"></div>
+        <div id="links" class="box" style="padding: 0 15px;"></div>
+    </div>
+    <div id="tab1" class="content">
+        <div id="changelog"></div>
+    </div>
+    <div class="footer">
+        <img src="https://k37ios.pages.dev/CydiaIcon.png" width="40" height="40" style="border-radius:8px; margin-bottom:5px;"><br>
+        Được tạo bởi ❤️ K37 Repo 
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <span class="nav-btn prev-btn" onclick="changeImage(-1)">&#10094;</span>
+        <div class="modal-content-container">
+            <img class="modal-content" id="modalImg">
+        </div>
+        <span class="nav-btn next-btn" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <script>
+        function parseMD(str) {
+            if (!str) return "";
+            return str
+                .replace(/^##\s+(.*)/gm, '<span style="font-size: 18px; font-weight: 800; color: var(--text); display: block; margin-bottom: 8px;">$1</span>')
+                .replace(/^#{3,6}\s+(.*)/gm, '<span style="font-size: 16px; font-weight: 800; color: var(--text);">$1</span>')
+                .replace(/\n/g, '<br>');
+        }
+
+        let screenshotList = [];
+        let currentIndex = 0;
+        let isDragging = false;
+        let startX = 0;
+        let scrollLeftPos = 0;
+        let isMouseDown = false;
+
+        const slider = document.getElementById('screenshots');
+        slider.addEventListener('mousedown', (e) => {
+            isMouseDown = true;
+            isDragging = false;
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeftPos = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => { isMouseDown = false; });
+        slider.addEventListener('mouseup', () => { isMouseDown = false; });
+        slider.addEventListener('mousemove', (e) => {
+            if (!isMouseDown) return;
+            e.preventDefault();
+            const x = e.pageX - slider.offsetLeft;
+            const walk = (x - startX) * 1.5;
+            if (Math.abs(walk) > 5) isDragging = true;
+            slider.scrollLeft = scrollLeftPos - walk;
+        });
+
+        const jsonUrl = '../sileodepictions/ChromaFlow.json';
+        fetch(jsonUrl).then(res => res.json()).then(data => {
+            if (data.tintColor) {
+                document.documentElement.style.setProperty('--tint', data.tintColor);
+            }
+
+            document.getElementById('headerImage').src = data.headerImage;
+            const views = data.tabs[0].views;
+            
+            let mdView = views.find(v => v.class === "DepictionMarkdownView");
+            let mdContent = mdView ? mdView.markdown : "";
+            let tweakName = "";
+
+            let titleMatch = mdContent.match(/^##\s+(.*)/m);
+            if (titleMatch) {
+                tweakName = titleMatch[1];
+                mdContent = mdContent.replace(/^##\s+.*\n?/, '');
+            } else {
+                let headerView = views.find(v => v.class === "DepictionHeaderView" && v.title !== "Ảnh màn hình");
+                tweakName = headerView ? headerView.title : "";
+            }
+
+            document.getElementById('tweakTitle').innerText = tweakName;
+            document.getElementById('description').innerHTML = parseMD(mdContent);
+            
+            const ssData = views.find(v => v.class === "DepictionScreenshotsView");
+            if(ssData) {
+                const ssContainer = document.getElementById('screenshots');
+                if(ssData.screenshots.length === 1) {
+                    ssContainer.style.justifyContent = 'center';
+                }
+
+                screenshotList = ssData.screenshots.map(s => s.url);
+                ssData.screenshots.forEach((s, idx) => {
+                    const img = document.createElement('img');
+                    img.src = s.url;
+                    img.addEventListener('click', (e) => {
+                        if (isDragging) {
+                            e.preventDefault();
+                            return;
+                        }
+                        openModal(idx);
+                    });
+                    ssContainer.appendChild(img);
+                });
+            }
+
+            views.forEach(v => {
+                if(v.class === "DepictionTableTextView") {
+                    document.getElementById('infoTable').innerHTML += `<div class="row"><span style="color:var(--sub)">${v.title}</span><b>${v.text}</b></div>`;
+                }
+                if(v.class === "DepictionTableButtonView") {
+                    const iconTag = v.icon ? `<img src="${v.icon}">` : "";
+                    document.getElementById('links').innerHTML += `<a href="${v.action}" class="btn-table">${iconTag}${v.title}</a>`;
+                }
+            });
+
+            const logs = data.tabs[1].views;
+            let logHtml = "";
+            logs.forEach(l => {
+                if(l.class === "DepictionSeparatorView") logHtml += `<div class="separator"></div>`;
+                else {
+                    if(l.title) logHtml += `<div class="log-v">${l.title}</div>`;
+                    if(l.markdown) logHtml += `<div class="box">${parseMD(l.markdown)}</div>`;
+                }
+            });
+            document.getElementById('changelog').innerHTML = logHtml;
+        }).catch(err => console.error(err));
+
+        function showTab(id) {
+            document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+
+        function openModal(idx) {
+            currentIndex = idx;
+            modal.style.display = "block";
+            modalImg.src = screenshotList[currentIndex];
+        }
+
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        function changeImage(dir) {
+            currentIndex += dir;
+            if (currentIndex >= screenshotList.length) currentIndex = 0;
+            if (currentIndex < 0) currentIndex = screenshotList.length - 1;
+            modalImg.src = screenshotList[currentIndex];
+        }
+
+        window.onclick = function(e) {
+            if (e.target === modal || e.target.classList.contains('modal-content-container')) {
+                closeModal();
+            }
+        };
+
+        document.addEventListener('keydown', function(e) {
+            if (modal.style.display === "block") {
+                if (e.key === "ArrowLeft") changeImage(-1);
+                else if (e.key === "ArrowRight") changeImage(1);
+                else if (e.key === "Escape") closeModal();
+            }
+        });
+
+        let touchStartX = 0;
+        let touchEndX = 0;
+        modal.addEventListener('touchstart', function(e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+
+        modal.addEventListener('touchend', function(e) {
+            touchEndX = e.changedTouches[0].screenX;
+            let diff = touchEndX - touchStartX;
+            if (Math.abs(diff) > 40) {
+                if (diff < 0) changeImage(1);
+                else changeImage(-1);
+            }
+        }, false);
+    </script>
+</body>
+</html>

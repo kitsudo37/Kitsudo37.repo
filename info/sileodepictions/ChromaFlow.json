@@ -1,7 +1,7 @@
 {
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/ChromaFlow.png",
-"tintColor": "#4facfe",
+"tintColor": "#33CCFF",
 "class": "DepictionTabView",
 "tabs": [
 {
