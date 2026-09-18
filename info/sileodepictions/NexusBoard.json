@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "6.7",
+"version": "6.8",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -147,7 +147,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "17/09/2026",
+"text": "18/09/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -165,7 +165,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "6.7",
+"text": "6.8",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -178,7 +178,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "3.1 MB",
+"text": "3.2 MB",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -217,6 +217,14 @@
 {
 "tabname":"Nhật ký cập nhật",
 "views":[
+{
+"markdown": "#### Phiên bản 6.8\n- Thêm hiệu ứng ảnh động trên Media Trung tâm điều khiển tương tự như CCMusic\n- Sửa lỗi nhấp nháy ảnh bìa khung phất nhạc khi chuyển bài hát trên Trung tâm điều khiển\n- Sửa lỗi trắng chủ đề chữ, biểu tượng trên stt chế độ sáng khi bật tính năng hiển thị thanh trạng thái ở da nhiệm.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
 {
 "markdown": "#### Phiên bản 6.7\n- Sửa 1 số lỗi và cối ưu hiệu năng\n- Thêm hiển thị ảnh bìa Album đang phát dạng tròn tự động xoay trên Media Trung tâm diều khiển\n- Bổ sung ngôn ngũ Tiếng Anh bị thiếu và hỗ trợ thêm ngôn ngữ Tiếng Trung và Tiếng Ả Rập.",
 "useSpacing": true,
