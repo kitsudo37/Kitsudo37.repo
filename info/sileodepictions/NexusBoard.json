@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "6.8",
+"version": "6.9",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -147,7 +147,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "18/09/2026",
+"text": "20/09/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -165,7 +165,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "6.8",
+"text": "6.9",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -217,6 +217,14 @@
 {
 "tabname":"Nhật ký cập nhật",
 "views":[
+{
+"markdown": "#### Phiên bản 6.9\n- Thêm tuỳ chỉnh chuyển màu chữ thông báo\n- Cập nhật mục thông báo giao diện cài đặt\n- Sửa lỗi tuy chỉnh tiêu đê mô đun Tập tring trên Trung tâm điều khiển.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
 {
 "markdown": "#### Phiên bản 6.8\n- Thêm hiệu ứng ảnh động trên Media Trung tâm điều khiển tương tự như CCMusic\n- Sửa lỗi nhấp nháy ảnh bìa khung phất nhạc khi chuyển bài hát trên Trung tâm điều khiển\n- Sửa lỗi trắng chủ đề chữ, biểu tượng trên stt chế độ sáng khi bật tính năng hiển thị thanh trạng thái ở da nhiệm.",
 "useSpacing": true,
