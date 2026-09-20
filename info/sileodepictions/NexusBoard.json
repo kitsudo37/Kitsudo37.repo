@@ -218,7 +218,7 @@
 "tabname":"Nhật ký cập nhật",
 "views":[
 {
-"markdown": "#### Phiên bản 6.9\n- Thêm tuỳ chỉnh chuyển màu chữ thông báo\n- Cập nhật mục thông báo giao diện cài đặt\n- Sửa lỗi tuy chỉnh tiêu đê mô đun Tập tring trên Trung tâm điều khiển.",
+"markdown": "#### Phiên bản 6.9\n- Thêm tuỳ chỉnh chuyển màu chữ thông báo\n- Cập nhật mục thông báo giao diện cài đặt\n- Sửa lỗi tuy chỉnh tiêu đê mô đun Tập trung trên Trung tâm điều khiển.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
