@@ -604,47 +604,6 @@ Icon: https://k37ios.pages.dev/assets/LockButtonCall.png
 Name: LockButtonCall
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/LockButtonCall.json
 
-Package: com.kitsudo.nexus16
-Version: 1.0.1
-Architecture: iphoneos-arm64
-Maintainer: Kitsudo
-Installed-Size: 488
-Depends: mobilesubstrate, firmware (>= 16.0)
-Filename: ./debs/com.kitsudo.nexus16_1.0.1_iphoneos-arm64.deb
-Size: 50528
-MD5sum: b9c7d4172711e0223877fb83b8a3c16c
-SHA1: a0c4dd0539e366d295854d87c6f8e714f4fd4bce
-SHA256: 251c7974c8aa77a3b198240c45e1330a49dae96b3889e9df55b8705d3ea02068
-Section: Tweaks
-Homepage: https://k37ios.pages.dev
-Description: Next-level lockscreen customisation for iOS 16+
-Author: Kitsudo
-Depiction: https://k37ios.pages.dev/info/depictions/Nexus16.html
-Icon: https://k37ios.pages.dev/assets/Nexus16.png
-Name: Nexus16
-Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Nexus16.json
-
-Package: com.kitsudo.nexus16
-Version: 1.0.1
-Architecture: iphoneos-arm64e
-Maintainer: Kitsudo
-Installed-Size: 488
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate, firmware (>= 16.0)
-Filename: ./debs/com.kitsudo.nexus16_1.0.1_iphoneos-arm64e.deb
-Size: 50636
-MD5sum: 6c3872f3dc2f138934092493c8bf70ae
-SHA1: 833482c916094eb601bb905aec2fa75606697318
-SHA256: 1318ebd3dbc8f83435ccf8fde5cfb280b3f2b09affab616a833da196a0cc6754
-Section: Tweaks
-Homepage: https://k37ios.pages.dev
-Description: Next-level lockscreen customisation for iOS 16+
-Author: Kitsudo
-Depiction: https://k37ios.pages.dev/info/depictions/Nexus16.html
-Icon: https://k37ios.pages.dev/assets/Nexus16.png
-Name: Nexus16
-Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/Nexus16.json
-
 Package: com.kitsudo.nexusboard
 Version: 4.7
 Architecture: iphoneos-arm64e
@@ -1874,24 +1833,6 @@ Depiction: https://k37ios.pages.dev/info/depictions/TikTokAutoSwipe.html
 Icon: https://k37ios.pages.dev/assets/TikTokAutoSwipe.png
 Name: TikTok AutoSwipe
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/TikTokAutoSwipe.json
-
-Package: com.squidforce.copyvault
-Version: 1.9.0
-Architecture: iphoneos-arm64e
-Maintainer: SquidForce
-Installed-Size: 6304
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate, preferenceloader, com.opa334.altlist
-Filename: ./debs/com.squidforce.copyvault_1.9.0_iphoneos-arm64e.deb
-Size: 1668612
-MD5sum: 2fe4d67d5128bb86d0c905998a266b43
-SHA1: 328ae7dd80802d24d8952c50574317ec675b9d71
-SHA256: e1e12254775d92e969f0d973f08190ecb26c8867d1933695d55736335e48628b
-Section: Tweaks
-Description: Your Copy Vault, Your Pasteboard
-Author: SquidForce
-Icon: https://media.havoc.app/66424f2de151fb3d56c76edb
-Name: CopyVault
 
 Package: com.squidforce.squidextender
 Version: 3.7.4
