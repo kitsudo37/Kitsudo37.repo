@@ -2,7 +2,7 @@
 "minVersion": "0.1",
 "headerImage": "https://k37ios.pages.dev/banner/NexusBoard.png",
 "tintColor": "#9F9BFF",
-"version": "6.9",
+"version": "7.0",
 "tabs": [
 {
 "tabname":"Giới thiệu",
@@ -147,7 +147,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "20/09/2026",
+"text": "25/10/2026",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -165,7 +165,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "6.9",
+"text": "7.0",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -178,7 +178,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "3.2 MB",
+"text": "3.5 MB",
 "fontWeight": "semibold",
 "fontSize": 16,
 "usePadding": false
@@ -191,7 +191,7 @@
 },
 {
 "class": "DepictionLabelView",
-"text": "14.0 - 17.0",
+"text": "14.0 - 17.7,10",
 "fontWeight": "semibold",
 "fontSize": 17,
 "usePadding": false
@@ -217,6 +217,11 @@
 {
 "tabname":"Nhật ký cập nhật",
 "views":[
+{
+"markdown": "#### Phiên bản 7.0 thử nghiệm\n- Sửa lỗi ghi đè 2 uptime trên Trung tâm điều khiển.\n- Sửa lỗi thêm ảnh/video nền Trung tâm điều khiển để tương thích chung với ControlCenter18.\n- Sửa lỗi crash SpringBoard trên một số thiết bị.\n- Thêm hiển thị dung lượng tối đa và chu kỳ sạc trong mục Tình trạng pin.\n- Thêm tùy chỉnh vị trí lên xuống cho đồng hồ và ngày tháng trên Màn hình khóa.\n- Thêm tùy chỉnh 3 danh mục sắp xếp trong cài đặt.\n- Thêm thay đổi biểu tượng danh mục Tweaks ở trang chỉnh cài đặt.\n- Thêm hỗ trợ trên iOS 17 trở lên với Dopamine 4 và Relaxin.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
 {
 "markdown": "#### Phiên bản 6.9\n- Thêm tuỳ chỉnh chuyển màu chữ thông báo\n- Cập nhật mục thông báo giao diện cài đặt\n- Sửa lỗi tuy chỉnh tiêu đê mô đun Tập trung trên Trung tâm điều khiển.",
 "useSpacing": true,
