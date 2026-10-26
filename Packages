@@ -1840,6 +1840,45 @@ Icon: https://k37ios.pages.dev/assets/PowerActions.png
 Name: PowerActions
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PowerActions.json
 
+Package: com.kitsudo.prismclock
+Version: 1.1.0
+Architecture: iphoneos-arm64
+Maintainer: Kitsudo
+Installed-Size: 416
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debs/com.kitsudo.prismclock_1.1.0_iphoneos-arm64.deb
+Size: 48064
+MD5sum: a9a66e002cf0e9a15c478d0b46da2f16
+SHA1: 84e1cd309a9382062a23991720a0bba9bd72f476
+SHA256: 7aed44c3b11d5fa9edfd3592f44cc5af1aeb9dba322721065fb2be89449bcbba
+Section: Tweaks
+Description: Gradient 5 màu cho đồng hồ và ngày tháng trên Màn hình khoá, hỗ trợ iOS 15-18
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/PrismClock.html
+Icon: https://k37ios.pages.dev/assets/PrismClock.png
+Name: PrismClock
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PrismClock.json
+
+Package: com.kitsudo.prismclock
+Version: 1.1.0
+Architecture: iphoneos-arm64e
+Maintainer: Kitsudo
+Installed-Size: 416
+Pre-Depends: rootless-compat(>= 0.9)
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debs/com.kitsudo.prismclock_1.1.0_iphoneos-arm64e.deb
+Size: 47052
+MD5sum: 149778e3f1c568d559b4a4564f63611e
+SHA1: 15f8edea578eb0c22078a574f5c92494d1f60f29
+SHA256: 759d1a2f762aac8baf5e6621242808e687f195bcd339e555d052b46fd3122112
+Section: Tweaks
+Description: Gradient 5 màu cho đồng hồ và ngày tháng trên Màn hình khoá, hỗ trợ iOS 15-18
+Author: Kitsudo
+Depiction: https://k37ios.pages.dev/info/depictions/PrismClock.html
+Icon: https://k37ios.pages.dev/assets/PrismClock.png
+Name: PrismClock
+Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/PrismClock.json
+
 Package: com.kitsudo.tiktokautoswipe
 Version: 1.0.0
 Architecture: iphoneos-arm64e
@@ -1878,39 +1917,4 @@ Depiction: https://k37ios.pages.dev/info/depictions/TikTokAutoSwipe.html
 Icon: https://k37ios.pages.dev/assets/TikTokAutoSwipe.png
 Name: TikTok AutoSwipe
 Sileodepiction: https://k37ios.pages.dev/info/sileodepictions/TikTokAutoSwipe.json
-
-Package: com.squidforce.squidextender
-Version: 3.7.4
-Architecture: iphoneos-arm64
-Maintainer: SquidForce
-Installed-Size: 10136
-Depends: mobilesubstrate, preferenceloader, com.opa334.libsandy
-Filename: ./debs/com.squidforce.squidextender_3.7.4_iphoneos-arm64.deb
-Size: 2309496
-MD5sum: 815732f70e9fd937793a894eb68371ac
-SHA1: 1a5179afb2bacbe4c03f8e5d6bfb2c91c7f64e66
-SHA256: ed5f68cf3e8e9184600e41958e4cc62d271b65e973b9f74e7ed022a498c96b2d
-Section: Tweaks
-Description: Extend your keyboard to be more POWERFULL!
-Author: SquidForce
-Icon: https://media.havoc.app/66fc1d79f047a492f9114f30
-Name: SquidExtender
-
-Package: com.squidforce.squidextender
-Version: 3.7.4
-Architecture: iphoneos-arm64e
-Maintainer: SquidForce
-Installed-Size: 10136
-Pre-Depends: rootless-compat(>= 0.9)
-Depends: mobilesubstrate, preferenceloader, com.opa334.libsandy
-Filename: ./debs/com.squidforce.squidextender_3.7.4_iphoneos-arm64e.deb
-Size: 2259616
-MD5sum: e0b0e08cf745727be9e97d1cc604d043
-SHA1: b19cc070c474c55e7ce8cd033e3caa7441f90df6
-SHA256: e9e836bfd33f8e46c6d5069c3a824a5b38e227dd43ff3b8b0bb9a15b4801a3e2
-Section: Tweaks
-Description: Extend your keyboard to be more POWERFULL!
-Author: SquidForce
-Icon: https://media.havoc.app/66fc1d79f047a492f9114f30
-Name: SquidExtender
 
