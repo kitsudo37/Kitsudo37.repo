@@ -1,0 +1,185 @@
+{
+"minVersion": "0.1",
+"headerImage": "https://k37ios.pages.dev/banner/banner.png",
+"tintColor": "#AD4DF5",
+"class": "DepictionTabView",
+"tabs": [
+{
+"tabname": "Giới Thiệu",
+"class": "DepictionStackView",
+"views": [
+{
+"class": "DepictionSpacerView",
+"spacing": 12
+},
+{
+"class": "DepictionButtonView",
+"text": "Tham gia nhóm chat Telegram",
+"action": "https://t.me/jtisvietnamrepo",
+"openExternal": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"markdown": "### PrismClock - Đồng hồ màn hình khoá 5 màu gradient\n\nPrismClock phủ lớp gradient nhiều màu lên đồng hồ và ngày tháng trên Màn hình khoá, giữ nguyên font, kích thước và hiệu ứng gốc của hệ thống.\n\n**Tính năng nổi bật:**\n- Gradient 5 màu cho đồng hồ, mặc định xanh ngọc - xanh dương - tím - hồng - cam\n- Tuỳ chọn áp dụng gradient cho cả dòng ngày tháng\n- Tự chọn từng màu trong 5 màu bằng bảng chọn màu\n- Gradient chuyển động: màu chạy quanh chữ theo vòng lặp, chỉnh được chu kỳ\n- Chỉnh cỡ đồng hồ và vị trí theo chiều dọc\n- Tăng độ dày nét, hợp với các font viền mảnh\n- Tự tắt chuyển động khi bật Chế độ nguồn điện thấp hoặc Giảm chuyển động\n- Hỗ trợ iOS 15 đến 18, rootless và roothide\n- Có sẵn bộ bảo vệ tự tắt tweak nếu SpringBoard lỗi nhiều lần liên tiếp\n\n**Cách dùng:** Vào Cài đặt > Prism Clock, bật tweak, chọn màu rồi tinh chỉnh theo ý thích. Thay đổi áp dụng ngay, không cần respring.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionHeaderView",
+"title": "Ảnh màn hình",
+"useBoldText": true,
+"useBottomMargin": false
+},
+{
+"class": "DepictionScreenshotsView",
+"itemCornerRadius": 8,
+"itemSize": "{185, 400}",
+"screenshots": [
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/PrismClock/1.png",
+"accessibilityText": "Screenshot"
+},
+{
+"url": "https://k37ios.pages.dev/info/Screenshots/PrismClock/2.png",
+"accessibilityText": "Screenshot"
+}
+]
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+},
+{
+"class": "DepictionHeaderView",
+"title": "Thông Tin"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Tác giả",
+"text": "Kitsudo"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Phiên bản",
+"text": "1.1.0"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Thể loại",
+"text": "Tweaks"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Ngày cập nhật",
+"text": "26/10/2026"
+},
+{
+"class": "DepictionTableTextView",
+"title": "Tương thích",
+"text": "iOS 15.0 - 18.x"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 8
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Xem mô tả",
+"action": "https://k37ios.pages.dev/info/depictions/PrismClock.html",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/AD4DF5/document.png"
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Liên hệ tôi",
+"action": "https://t.me/Kitsudo",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/AD4DF5/telegram-app.png"
+},
+{
+"class": "DepictionTableButtonView",
+"title": "Ủng hộ tôi",
+"action": "https://k37ios.pages.dev/info/depictions/donate.html",
+"openExternal": 1,
+"icon": "https://img.icons8.com/ios-filled/50/AD4DF5/hearts.png"
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 24
+},
+{
+"class": "DepictionImageView",
+"URL": "https://k37ios.pages.dev/CydiaIcon.png",
+"width": 40,
+"height": 40,
+"alignment": 1,
+"cornerRadius": 8
+},
+{
+"class": "DepictionMarkdownView",
+"markdown": "<div style='text-align: center; color: #888; font-size: 11px; margin-top: 5px;'>Được tạo bởi ❤️ K37 Repo </div>",
+"useRawFormat": true
+},
+{
+"class": "DepictionSpacerView",
+"spacing": 16
+}
+]
+},
+{
+"tabname": "Nhật Ký Cập Nhật",
+"class": "DepictionStackView",
+"views": [
+{
+"markdown": "### Phiên bản 1.1.0\n- Thêm gradient chuyển động và tuỳ chỉnh chu kỳ\n- Thêm tuỳ chỉnh độ dày nét\n- Hỗ trợ iOS 17 trở lên, tương thích Relaxin\n- Giao diện cài đặt mới có icon và thanh trượt gọn\n- Thêm liên kết tác giả và ủng hộ",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"markdown": "### Phiên bản 1.0.3\n- Hiển thị đủ 5 màu cho cả đồng hồ và ngày tháng\n- Tương thích với tweak đổi font màn hình khoá",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+},
+{
+"class": "DepictionSeparatorView"
+},
+{
+"markdown": "### Phiên bản 1.0.0\n- Phát hành lần đầu.",
+"useSpacing": true,
+"class": "DepictionMarkdownView"
+}
+]
+}
+]
+}

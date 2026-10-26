@@ -176,7 +176,7 @@
 "class":"DepictionSeparatorView"
 },
 {
-"markdown":"### Phiên bản 1.0.1\n- Thêm tuỳ chọn menu các tính năng mới gồm:\n- Bật dền pin\n- Chụp ảnh màn hình\n- Xoá huy hiệu badges\n- Respring làm mới màn hình\n- Và sẽ bổ sung thêm..",
+"markdown":"### Phiên bản 1.0.1\n- Thêm tuỳ chọn menu các tính năng mới gồm:\n- Bật/Tắt đèn pin\n- Chụp ảnh màn hình\n- Xoá huy hiệu badges\n- Respring làm mới màn hình\n- Và sẽ bổ sung thêm..",
 "useSpacing":true,
 "class":"DepictionMarkdownView"
 },
