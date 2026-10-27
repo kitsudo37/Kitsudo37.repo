@@ -14,7 +14,7 @@
 },
 {
 "class": "DepictionButtonView",
-"text": "Tham gia nhóm chat Telegram",
+"text": "Tham gia nhóm K37•JTISVN",
 "action": "https://t.me/jtisvietnamrepo",
 "openExternal": true
 },
@@ -23,7 +23,7 @@
 "spacing": 16
 },
 {
-"markdown": "### PrismClock - Đồng hồ màn hình khoá 5 màu gradient\n\nPrismClock phủ lớp gradient nhiều màu lên đồng hồ và ngày tháng trên Màn hình khoá, giữ nguyên font, kích thước và hiệu ứng gốc của hệ thống.\n\n**Tính năng nổi bật:**\n- Gradient 5 màu cho đồng hồ, mặc định xanh ngọc - xanh dương - tím - hồng - cam\n- Tuỳ chọn áp dụng gradient cho cả dòng ngày tháng\n- Tự chọn từng màu trong 5 màu bằng bảng chọn màu\n- Gradient chuyển động: màu chạy quanh chữ theo vòng lặp, chỉnh được chu kỳ\n- Chỉnh cỡ đồng hồ và vị trí theo chiều dọc\n- Tăng độ dày nét, hợp với các font viền mảnh\n- Tự tắt chuyển động khi bật Chế độ nguồn điện thấp hoặc Giảm chuyển động\n- Hỗ trợ iOS 15 đến 18, rootless và roothide\n- Có sẵn bộ bảo vệ tự tắt tweak nếu SpringBoard lỗi nhiều lần liên tiếp.",
+"markdown": "### PrismClock - Đồng hồ màn hình khoá 5 màu gradient\n\nPrismClock phủ lớp gradient nhiều màu lên đồng hồ và ngày tháng trên Màn hình khoá, giữ nguyên font, kích thước và hiệu ứng gốc của hệ thống.\n\n**Tính năng nổi bật:**\n- Gradient 5 màu cho đồng hồ, mặc định xanh ngọc - xanh dương - tím - hồng - cam\n- Tuỳ chọn áp dụng gradient cho cả dòng ngày tháng\n- Tự chọn từng màu trong 5 màu bằng bảng chọn màu\n- Gradient chuyển động: màu chạy quanh chữ theo vòng lặp, chỉnh được chu kỳ\n- Chỉnh cỡ đồng hồ và vị trí theo chiều dọc\n- Tăng độ dày nét, hợp với các font viền mảnh\n- Tự tắt chuyển động khi bật Chế độ nguồn điện thấp hoặc Giảm chuyển động\n- Hỗ trợ iOS 16 đến 18, rootless và roothide\n- Có sẵn bộ bảo vệ tự tắt tweak nếu SpringBoard lỗi nhiều lần liên tiếp.",
 "useSpacing": true,
 "class": "DepictionMarkdownView"
 },
@@ -97,7 +97,7 @@
 {
 "class": "DepictionTableTextView",
 "title": "Tương thích",
-"text": "iOS 15.0 - 18.x"
+"text": "iOS 16.0 - 18.x"
 },
 {
 "class": "DepictionSpacerView",
